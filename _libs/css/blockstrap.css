@@ -377,7 +377,7 @@ RESPONSIVENESS
     }
     .navbar-collapse.in .navbar-right {
         overflow: auto;
-        max-height: 265px;
+        max-height: 310px;
     }
     .navbar-nav {
         display: block;
