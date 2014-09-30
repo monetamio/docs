@@ -79,12 +79,22 @@ class blockstrap_core
     
     public function content($base, $slug, $directory)
     {
-        $content = false;
+        $header = '';
+        $content = '';
+        $footer = '';
+        if(file_exists($slug.'HEADER.md'))
+        {
+            $header = $this->markdown(file_get_contents($slug.'HEADER.md'));
+        }
         if(file_exists($slug.'README.md'))
         {
             $content = $this->markdown(file_get_contents($slug.'README.md'));
         }
-        return $content;
+        if(file_exists($slug.'FOOTER.md'))
+        {
+            $footer = $this->markdown(file_get_contents($slug.'FOOTER.md'));
+        }
+        return $header.$content.$footer;
     }
     
     public function display($html, $data)
