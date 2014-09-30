@@ -38,7 +38,7 @@ This table of contents should show each of the top-menus in ther available langu
 
 #### Blockchains
 
-* [Modules](en/blockchains/bitcoin/)
-* [Filters](en/blockchains/litecoin/)
-* [Extending](en/blockchains/dogecoin/)
-* [Styling](en/blockchains/testnets/)
+* [Bitcoin](en/blockchains/bitcoin/)
+* [Litecoin](en/blockchains/litecoin/)
+* [Dogecoin](en/blockchains/dogecoin/)
+* [Testnets](en/blockchains/testnets/)

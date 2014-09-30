@@ -37,6 +37,7 @@ This should provide a complete table of contents for all English documentation.
 #### API
 
 * [Blocks](api/v0/blocks/)
+    * [Height](api/v0/blocks/height/)
 * [Addresses](api/v0/addresses/)
 * [Transactions](api/v0/transactions/)
 * [Markets](api/v0/markets/)
@@ -44,7 +45,7 @@ This should provide a complete table of contents for all English documentation.
 
 #### Blockchains
 
-* [Modules](blockchains/bitcoin/)
-* [Filters](blockchains/litecoin/)
-* [Extending](blockchains/dogecoin/)
-* [Styling](blockchains/testnets/)
+* [Bitcoin](blockchains/bitcoin/)
+* [Litecoin](blockchains/litecoin/)
+* [Dogecoin](blockchains/dogecoin/)
+* [Testnets](blockchains/testnets/)

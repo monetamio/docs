@@ -6,6 +6,9 @@
        "brand": "blockstrap.com",
        "meta": "blockstrap documentation"
     },
+    "copy": {
+        "menu": "Menu"
+    },
     "search": {
         "action": "http://blockstrap.com/search/",
         "placeholder": "",
@@ -39,7 +42,8 @@
         {
             "href": "#",
             "css": "active",
-            "text": "Documentation"
+            "text": "Documentation",
+            "sub": true
         },
         {
             "href": "http://blockstrap.com/downloads/",
@@ -50,6 +54,11 @@
             "href": "http://blockstrap.com/support/",
             "css": "",
             "text": "Support"
+        },
+        {
+            "href": "http://blockstrap.com/blog/",
+            "css": "",
+            "text": "Blog"
         }
     ],
     "sidebar": [

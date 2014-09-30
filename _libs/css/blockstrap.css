@@ -58,6 +58,7 @@ NAVIGATION
     font-size: 11px;
     padding: 0;
     margin: 27px 8px;
+    outline: 0;
     text-transform: uppercase;
     color: #00A4E5;
     background: transparent;
@@ -69,6 +70,32 @@ NAVIGATION
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     background: transparent;
+}
+.navbar-nav > li > .dropdown-menu {
+    background: #F7F7F7;
+    border-top: 1px solid #F7F7F7;
+    margin-top: -1px;
+    z-index: 999;
+}
+.navbar-nav .dropdown .caret,
+.navbar-nav .dropdown .dropdown-menu {
+    display: none;
+}
+.navbar-nav .dropdown li.header {
+    padding; 5px 20px;
+    margin-top: -1px 0 0;
+    background: #FFF;
+    border-top: 1px dotted #CCC;
+    border-bottom: 1px dotted #CCC;
+}
+.navbar-nav .dropdown li.header a {
+    font-weight: bold;
+    font-size: 14px;
+}
+.navbar-nav .dropdown li:hover a,
+.navbar-nav .dropdown li.active.sub a {
+    background: #333;
+    color: #FFF;
 }
 
 /*
@@ -231,6 +258,42 @@ MAIN CONTENT
     bottom: 0;
     padding: 0 20px;
 }
+#main-content p {
+    text-align: justify;
+}
+#main-content .center,
+#main-content p.center {
+    text-align: center;
+}
+#main-content ol {
+    display: block;
+    list-style: none;
+    background: #FFF;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    margin: 10px 0 0;
+    padding: 10px;
+    opacity: 0.75;
+}
+#main-content ol:hover {
+    opacity: 1;
+}
+#main-content ol {
+    padding: 5px 15px;
+}
+#main-content ol li {
+    display: inline-block;
+    margin: 5px 0;
+    padding: 5px 0;
+}
+#main-content ol li:after {
+    content: " | ";
+    display: inline;
+    position: relative;
+}
+#main-content ol li:last-child:after {
+    content: "";
+}
 
 /*
 
@@ -247,4 +310,75 @@ GRADIENTS
     background: -ms-linear-gradient(top,  rgba(249,249,249,1) 0%,rgba(236,236,252,1) 100%); /* IE10+ */
     background: linear-gradient(to bottom,  rgba(249,249,249,1) 0%,rgba(236,236,252,1) 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#ececfc',GradientType=0 ); /* IE6-9 */
+}
+
+/*
+
+RESPONSIVENESS
+
+*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+    
+}
+@media only screen and (max-width : 992px) {
+    html, body {
+        overflow: auto;
+        position: relative;
+        height: auto;
+    }
+    #sidebar,
+    .navbar-form {
+        display: none;
+    }
+    #main-content {
+        left: 0;
+        top: 0;
+        padding-top: 0;
+        position: relative;
+    }
+    .navbar-default .navbar-toggle {
+        margin: 19px 20px 0;
+    }
+    .navbar-nav .dropdown .caret,
+    .navbar-nav .dropdown.open .dropdown-menu {
+        display: inline-block;
+    }
+}
+@media only screen and (max-width : 768px) {
+    .navbar .navbar-brand {
+        width: 230px;
+        border-right: none;
+    }
+    .navbar-collapse.collapse,
+    .navbar-collapse.in {
+        margin: -2px 0 0;
+        padding: 0;
+    }
+    .navbar-collapse.in {
+        overflow: visible;
+        box-shadow: none !important;
+    }
+    .navbar-collapse.in .navbar-right {
+        overflow: auto;
+        max-height: 265px;
+    }
+    .navbar-nav {
+        display: block;
+        background: #F7F7F7;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        border-bottom: 1px solid #AAA;
+    }
+    .navbar.navbar-default .navbar-nav > li.active > a, 
+    .navbar-nav > li > a:hover {
+        border-bottom: none;
+    }
+    .navbar-nav .dropdown.open .dropdown-menu {
+        display: block;
+    }
+}
+@media only screen and (max-width : 480px) {
+    
 }
