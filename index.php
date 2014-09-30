@@ -10,31 +10,22 @@ MIT LICENSE
 
 */
 
-$data = false;
-$html = false;
-$content = false;
-$dir = dirname(__FILE__);
 $base = dirname(__FILE__);
-include_once($base.'/core/bs.php');
-$bs = new blockstrap_core();
-$slug = 'index';
+include_once($base.'/_libs/php/bs.php');
+$bs = new blockstrap_core($base);
 
-// GET DATA
-if(file_exists($base.'/data/'.$slug.'.json'))
-{
-    $data = json_decode(file_get_contents($base.'/data/'.$slug.'.json'), true);
-}
+$slug = $bs->slug($_SERVER);
+$directory = $bs->directory($_SERVER);
 
-// GET HTML
-if(file_exists($base.'/html/'.$slug.'.html'))
-{
-    $html = file_get_contents($base.'/html/'.$slug.'.html');
-}
+$data = $bs->data($base, $slug, $directory);
+$html = $bs->html($base, $slug, $directory);
+$content = $bs->content($base, $slug, $directory);
 
-// GET CONTENT
-if(file_exists($dir.'/README.md'))
+if($_GET['debug'] == true)
 {
-    $content = $bs->markdown(file_get_contents($dir.'/README.md'));
+    var_dumped($data);
+    var_dumped($html);
+    var_dumped($content);
 }
 
 // ADD CONTENT TO DATA

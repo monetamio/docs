@@ -1,0 +1,177 @@
+{
+   "page": {
+       "title": "Blockstrap Documentation",
+       "base": "",
+       "lang": "en",
+       "brand": "blockstrap.com",
+       "meta": "blockstrap documentation"
+    },
+    "search": {
+        "action": "http://blockstrap.com/search/",
+        "placeholder": "",
+        "submit": "search"
+    },
+    "css": [
+        {
+            "href": "_libs/css/bootstrap.css"
+        },
+        {
+            "href": "_libs/css/blockstrap.css"
+        }
+    ],
+    "js": [
+        {
+            "src": "_libs/js/jquery.min.js"
+        },
+        {
+            "src": "_libs/js/bootstrap.min.js"
+        },
+        {
+            "src": "_libs/js/blockstrap.js"
+        }
+    ],
+    "nav": [
+        {
+            "href": "http://blockstrap.com/about/",
+            "css": "",
+            "text": "About"
+        },
+        {
+            "href": "#",
+            "css": "active",
+            "text": "Documentation"
+        },
+        {
+            "href": "http://blockstrap.com/downloads/",
+            "css": "",
+            "text": "Downloads"
+        },
+        {
+            "href": "http://blockstrap.com/support/",
+            "css": "",
+            "text": "Support"
+        }
+    ],
+    "sidebar": [
+        {
+            "text": "Welcome",
+            "slug": "#",
+            "css": "active",
+            "links": [
+                {
+                    "href": "#",
+                    "css": "active",
+                    "text": "Table of Contents"
+                }
+            ]
+        },
+        {
+            "text": "Applications",
+            "slug": "applications/",
+            "css": "",
+            "links": [
+                {
+                    "slug": "applications/wallet/",
+                    "css": "",
+                    "text": "Wallet"
+                },
+                {
+                    "slug": "applications/explorer/",
+                    "css": "",
+                    "text": "Explorer"
+                },
+                {
+                    "slug": "applications/prioritizer/",
+                    "css": "",
+                    "text": "Priortizer"
+                },
+                {
+                    "slug": "applications/calculator/",
+                    "css": "",
+                    "text": "Calculator"
+                }
+            ]
+        },
+        {
+            "text": "Framework",
+            "slug": "framework/",
+            "css": "",
+            "links": [
+                {
+                    "slug": "framework/modules/",
+                    "css": "",
+                    "text": "Modules"
+                },
+                {
+                    "slug": "framework/filters/",
+                    "css": "",
+                    "text": "Filters"
+                },
+                {
+                    "slug": "framework/extending/",
+                    "css": "",
+                    "text": "Extending"
+                },
+                {
+                    "slug": "framework/styling/",
+                    "css": "",
+                    "text": "Styling"
+                }
+            ]
+        },
+        {
+            "text": "API",
+            "slug": "api/",
+            "css": "",
+            "links": [
+                {
+                    "slug": "api/v0/blocks/",
+                    "css": "",
+                    "text": "Blocks"
+                },
+                {
+                    "slug": "api/v0/addresses/",
+                    "css": "",
+                    "text": "Addresses"
+                },
+                {
+                    "slug": "api/v0/transactions/",
+                    "css": "",
+                    "text": "Transactions"
+                },
+                {
+                    "slug": "api/v0/markets/",
+                    "css": "",
+                    "text": "Markets"
+                }
+            ]
+        },
+        {
+            "text": "Blockchains",
+            "slug": "blockchains/",
+            "css": "",
+            "links": [
+                {
+                    "slug": "blockchains/bitcoin/",
+                    "css": "",
+                    "text": "Bitcoin"
+                },
+                {
+                    "slug": "blockchains/dogecoin/",
+                    "css": "",
+                    "text": "Dogecoin"
+                },
+                {
+                    "slug": "blockchains/litecoin/",
+                    "css": "",
+                    "text": "Litecoin"
+                },
+                {
+                    "slug": "blockchains/testnets/",
+                    "css": "",
+                    "text": "Testnets"
+                }
+            ]
+        }
+    ]
+}
