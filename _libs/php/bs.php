@@ -166,7 +166,14 @@ class blockstrap_core
             {
                 foreach($data['sidebar'] as $key => $sidebar)
                 {
-                    $sidebar['css'] = '';
+                    if($slug && $directory == $slug && $key > 0)
+                    {
+                        $sidebar['css'] = '';
+                    }
+                    elseif($slug && $directory != $slug)
+                    {
+                        $sidebar['css'] = '';
+                    }
                     if(strpos($slug, $sidebar['slug']) !== false)
                     {
                         $sidebar['css'] = 'active';
@@ -175,7 +182,14 @@ class blockstrap_core
                     {
                         foreach($sidebar['links'] as $link_key => $link)
                         {
-                            $link['css'] = '';
+                            if($slug && $directory == $slug && $key > 0)
+                            {
+                                $link['css'] = '';
+                            }
+                            elseif($slug && $directory != $slug)
+                            {
+                                $link['css'] = '';
+                            }
                             if(strpos($slug, $link['slug']) !== false)
                             {
                                 $link['css'] = 'active';
