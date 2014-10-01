@@ -18,6 +18,12 @@ This should provide a complete table of contents for all English documentation.
 
 #### Framework
 
+* [Core](framework/core/)
+    * [Configuration Settings](framework/core/configuration/)
+    * [Defaults](framework/core/defaults/)
+    * [Core Functions](framework/core/core-functions/)
+    * [Blockstrap Functions](framework/core/blockstrap-functions/)
+    * [Plugin Construct](framework/core/construct/)
 * [Modules](framework/modules/)
     * [Accounts](framework/modules/accounts/)
     * [API](framework/modules/api/)

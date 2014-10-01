@@ -112,6 +112,11 @@
             "css": "",
             "links": [
                 {
+                    "slug": "framework/core/",
+                    "css": "",
+                    "text": "Core"
+                },
+                {
                     "slug": "framework/modules/",
                     "css": "",
                     "text": "Modules"
