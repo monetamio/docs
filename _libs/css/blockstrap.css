@@ -256,7 +256,7 @@ MAIN CONTENT
     left: 275px;
     right: 0;
     bottom: 0;
-    padding: 0 20px;
+    padding: 0 20px 30px;
 }
 #main-content p {
     text-align: justify;
@@ -280,6 +280,7 @@ MAIN CONTENT
 }
 #main-content ol {
     padding: 5px 15px;
+    margin: 10px 0 30px;
 }
 #main-content ol li {
     display: inline-block;
@@ -335,7 +336,6 @@ RESPONSIVENESS
         left: 0;
         top: 0;
         padding-top: 0;
-        padding-bottom: 30px;
         position: relative;
     }
     .navbar-default .navbar-toggle {
