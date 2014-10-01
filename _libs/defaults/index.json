@@ -112,6 +112,11 @@
             "css": "",
             "links": [
                 {
+                    "slug": "framework/started/",
+                    "css": "",
+                    "text": "Getting Started"
+                },
+                {
                     "slug": "framework/core/",
                     "css": "",
                     "text": "Core"
@@ -122,9 +127,9 @@
                     "text": "Modules"
                 },
                 {
-                    "slug": "framework/filters/",
+                    "slug": "framework/assets/",
                     "css": "",
-                    "text": "Filters"
+                    "text": "Assets"
                 },
                 {
                     "slug": "framework/extending/",

@@ -23,8 +23,10 @@ This table of contents should show each of the top-menus in ther available langu
 
 #### Framework
 
+* [Getting Started](en/framework/started/)
+* [Core](en/framework/core/)
 * [Modules](en/framework/modules/)
-* [Filters](en/framework/filters/)
+* [Assets](en/framework/assets/)
 * [Extending](en/framework/extending/)
 * [Styling](en/framework/styling/)
 

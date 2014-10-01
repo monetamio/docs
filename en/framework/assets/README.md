@@ -1,10 +1,10 @@
-## Extending Blockstrap
+## Blockstrap Assets
 
 This needs details.
 
 --------------------------------------------------------------------------------
 
 1. Related Articles
-2. [Themes](themes/)
-3. [Plugins](plugins/)
+2. [Dependencies](dependencies/)
+3. [LESS.css](less/)
 4. [Table of Contents](../../)

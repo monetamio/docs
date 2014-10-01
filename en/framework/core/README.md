@@ -18,4 +18,4 @@ The current components that collectively form core include:
 4. [Core Functions](core-functions/)
 5. [Blockstrap Functions](blockstrap-functions/)
 6. [Plugin Construct](construct/)
-7. [Table of Contents](../)
+7. [Table of Contents](../../)
