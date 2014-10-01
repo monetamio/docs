@@ -18,6 +18,9 @@ This should provide a complete table of contents for all English documentation.
 
 #### Framework
 
+* [Getting Started](framework/started/)
+    * [Download](framework/started/download/)
+    * [Install](framework/started/install/)
 * [Core](framework/core/)
     * [Configuration Settings](framework/core/configuration/)
     * [Defaults](framework/core/defaults/)
@@ -36,9 +39,15 @@ This should provide a complete table of contents for all English documentation.
     * [Security](framework/modules/security/)
     * [Styles](framework/modules/styles/)
     * [Templates](framework/modules/templates/)
-* [Filters](framework/filters/)
+* [Assets](framework/assets/)
+    * [Dependencies](framework/assets/dependencies/)
+    * [LESS.css](framework/assets/less/)
 * [Extending](framework/extending/)
+    * [Themes](framework/extending/themes/)
+    * [Plugins](framework/extending/plugins/)
 * [Styling](framework/styling/)
+    * [CSS](framework/styling/css/)
+    * [JS](framework/styling/js/)
 
 #### API
 
