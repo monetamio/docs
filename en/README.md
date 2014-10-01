@@ -20,7 +20,7 @@ This should provide a complete table of contents for all English documentation.
 
 * [Getting Started](framework/started/)
     * [Download](framework/started/download/)
-    * [Install](framework/started/install/)
+    * [Security](framework/started/security/)
 * [Core](framework/core/)
     * [Configuration Settings](framework/core/configuration/)
     * [Defaults](framework/core/defaults/)
