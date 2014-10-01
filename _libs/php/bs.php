@@ -26,14 +26,14 @@ class blockstrap_core
         include_once($base.'/_libs/php/vendors/mustache.php');
     }
     
-    public function data($base, $slug, $directory)
+    public function data($base, $slug, $directory, $language)
     {
         $data = false;
         if(file_exists($base.'/_libs/defaults/index.json'))
         {
             $contents = file_get_contents($base.'/_libs/defaults/index.json');
             $raw_data = json_decode($contents, true);
-            $data = $this->filter($raw_data, $directory, $slug);
+            $data = $this->filter($raw_data, $directory, $slug, $language);
         }
         if($directory)
         {
@@ -119,6 +119,15 @@ class blockstrap_core
         else return $url_array[0].'/';
     }
     
+    public function language($server)
+    {
+        $self = $server['PHP_SELF'];
+        $url = $server['REDIRECT_URL'];
+        $self_array = array_slice(explode('/', $self), 1, -1);
+        $url_array = array_slice(explode('/', $url), count($self_array) + 1, -1);
+        return $url_array[0];
+    }
+    
     public function slug($server)
     {
         $slug = '';
@@ -133,7 +142,7 @@ class blockstrap_core
         return $slug;
     }
     
-    public function filter($data, $directory, $slug)
+    public function filter($data, $directory, $slug, $language)
     {
         $base = '';
         $slug_index = 0;
@@ -170,11 +179,11 @@ class blockstrap_core
                     {
                         $sidebar['css'] = '';
                     }
-                    elseif($slug && $directory != $slug)
+                    if($slug && $directory != $slug)
                     {
                         $sidebar['css'] = '';
                     }
-                    if(strpos($slug, $sidebar['slug']) !== false)
+                    if($language.'/'.$sidebar['slug'] == $slug)
                     {
                         $sidebar['css'] = 'active';
                     }
@@ -193,6 +202,7 @@ class blockstrap_core
                             if(strpos($slug, $link['slug']) !== false)
                             {
                                 $link['css'] = 'active';
+                                $sidebar['css'] = 'active';
                             }
                             $sidebar['links'][$link_key] = $link;
                         }

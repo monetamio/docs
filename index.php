@@ -15,9 +15,10 @@ include_once($base.'/_libs/php/bs.php');
 $bs = new blockstrap_core($base);
 
 $slug = $bs->slug($_SERVER);
+$language = $bs->language($_SERVER);
 $directory = $bs->directory($_SERVER);
 
-$data = $bs->data($base, $slug, $directory);
+$data = $bs->data($base, $slug, $directory, $language);
 $html = $bs->html($base, $slug, $directory);
 $content = $bs->content($base, $slug, $directory);
 
