@@ -1,7 +1,10 @@
-Download
-========
+Downloading Blockstrap
+======================
 
-And then...?
+There are [various](http://github.com/blockstrap) distributions of the different Blockstrap components available for review or download.
+
+* [View Source on GitHub](http://github.com/blockstrap/framework/)
+* [Download ZIP via GitHub](https://github.com/blockstrap/framework/archive/master.zip)
 
 --------------------------------------------------------------------------------
 
