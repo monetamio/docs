@@ -1,6 +1,30 @@
-## Templates Module
+Templates Module
+================
 
-This needs details.
+### Templates Functions & Variables
+
+The Templates Module features the following functions:
+
+* `$.fn.blockstrap.templates.bootstrap`(type)
+* `$.fn.blockstrap.templates.filter`(html, placeholders, replacements)
+* `$.fn.blockstrap.templates.process`(data, html)
+* `$.fn.blockstrap.templates.render`(slug, callback, force_refresh, skip_rendering, looped_html)
+
+--------------------------------------------------------------------------------
+
+#### `templates.bootstrap`(type)
+
+--------------------------------------------------------------------------------
+
+#### `templates.filter`(html, placeholders, replacements)
+
+--------------------------------------------------------------------------------
+
+#### `templates.process`(data, html)
+
+--------------------------------------------------------------------------------
+
+#### `templates.render`(slug, callback, force_refresh, skip_rendering, looped_html)
 
 ---
 

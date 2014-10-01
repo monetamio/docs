@@ -18,7 +18,7 @@ The API Module features the following functions:
 
 --------------------------------------------------------------------------------
 
-### `api.address`(hash, currency, callback)
+#### `api.address`(hash, currency, callback)
 
 This function uses the selected API to get information pertaining to an address.
 
@@ -61,7 +61,7 @@ Which should provide the following results:
 
 --------------------------------------------------------------------------------
 
-### `api.addresses`(hashes, currency, callback)
+#### `api.addresses`(hashes, currency, callback)
 
 This function uses the selected API to get information pertaining to multiple addresses.
 
@@ -115,7 +115,7 @@ Which should provide the following results:
 
 --------------------------------------------------------------------------------
 
-### `api.balance`(hash, currency, callback)
+#### `api.balance`(hash, currency, callback)
 
 This function uses the selected API to get the balance of an address.
 
@@ -148,7 +148,7 @@ Which should provide the following results:
 
 --------------------------------------------------------------------------------
 
-### `api.block`(height, currency, callback)
+#### `api.block`(height, currency, callback)
 
 This function uses the selected API to get information pertaining to a block.
 
@@ -191,13 +191,13 @@ Which should provide the following results:
 
 --------------------------------------------------------------------------------
 
-### `api.request`(url, callback)
+#### `api.request`(url, callback)
 
 This function is used internally by all other functions within this class to route requests and should not be directly used.
 
 --------------------------------------------------------------------------------
 
-### `api.relay`(hash, currency, callback)
+#### `api.relay`(hash, currency, callback)
 
 This function uses the selected API to relay a raw transaction.
 
@@ -232,7 +232,7 @@ Which should provide the following results:
 
 --------------------------------------------------------------------------------
 
-### `api.transaction`(txid, currency, callback)
+#### `api.transaction`(txid, currency, callback)
 
 This function uses the selected API to get information pertaining to a transaction.
 
@@ -284,7 +284,7 @@ Which should provide the following results:
 
 --------------------------------------------------------------------------------
 
-### `api.transactions`(address, currency, callback)
+#### `api.transactions`(address, currency, callback)
 
 This function uses the selected API to get information pertaining to all the transactions of a single address.
 
@@ -343,7 +343,7 @@ Which should provide the following results:
 
 --------------------------------------------------------------------------------
 
-### `api.unspents`(address, currency, callback, confirms)
+#### `api.unspents`(address, currency, callback, confirms)
 
 This function uses the selected API to check an address for unspent inputs.
 
@@ -379,13 +379,13 @@ Which should provide the following results:
 
 --------------------------------------------------------------------------------
 
-### `api.url`(action, key, currency)
+#### `api.url`(action, key, currency)
 
 This function is used internally by all other functions within this class to help construct URLs prior to API requests and should not be directly used.
 
 --------------------------------------------------------------------------------
 
-### API Mapping
+#### API Mapping
 
 Blockstrap does not lock you in to a specific API provider. We provide functionality that allows you to map each and every API call we make to a specific API end-point of your choosing. For example, if you wanted to map our wallet to the [Hello Block](http://helloblock.io) API you would supply the following map:
 

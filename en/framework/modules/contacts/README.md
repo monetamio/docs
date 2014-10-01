@@ -1,6 +1,20 @@
-## Contacts Module
+Contacts Module
+===============
 
-This needs details.
+#### Contacts Functions & Variables
+
+The Contacts Module features the following functions:
+
+* `$.fn.blockstrap.contacts.get`()
+* `$.fn.blockstrap.contacts.new`(name, address, currency, fields, callback)
+
+--------------------------------------------------------------------------------
+
+#### `contacts.get`()
+
+--------------------------------------------------------------------------------
+
+#### `contacts.new`(name, address, currency, fields, callback)
 
 ---
 

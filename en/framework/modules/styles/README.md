@@ -1,6 +1,30 @@
-## Styles Module
+Styles Module
+=============
 
-This needs details.
+### Styles Functions & Variables
+
+The Styles Module features the following functions:
+
+* `$.fn.blockstrap.styles.element`(key)
+* `$.fn.blockstrap.styles.map`(type)
+* `$.fn.blockstrap.styles.rule`(key, value)
+* `$.fn.blockstrap.styles.set`(id, index)
+
+--------------------------------------------------------------------------------
+
+#### `styles.element`(key)
+
+--------------------------------------------------------------------------------
+
+#### `styles.map`(type)
+
+--------------------------------------------------------------------------------
+
+#### `styles.rule`(key, value)
+
+--------------------------------------------------------------------------------
+
+#### `styles.set`(id, index)
 
 ---
 

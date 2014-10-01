@@ -1,8 +1,44 @@
 ## Blockstrap Modules
 
-This needs details.
+Modules are JavaScript files with a pre-defined pattern designed to communicate with core.
 
----
+The current modules distributed with core include:
+
+* [Accounts](accounts/)
+* [API](api/)
+* [Buttons](buttons/)
+* [Contacts](contacts/)
+* [Currencies](currencies/)
+* [Data](data/)
+* [Filters](filters/)
+* [Forms](forms/)
+* [Security](security/)
+* [Styles](styles/)
+* [Templates](templates/)
+
+--------------------------------------------------------------------------------
+
+An example skeleton module `themes/default/js/modules/theme.js` should be composed as follows:
+
+```
+(function($) 
+{
+    // EMPTY OBJECT
+    var theme = {};
+    
+    // FUNCTIONS FOR OBJECT
+    theme.new = function()
+    {
+        alert('New Function Loaded');
+    }
+    
+    // MERGE THE NEW FUNCTIONS WITH CORE
+    $.extend(true, $.fn.blockstrap, {theme:theme});
+})
+(jQuery);
+```
+
+--------------------------------------------------------------------------------
 
 1. Related Articles
 2. [Accounts](accounts/)

@@ -1,6 +1,65 @@
-## Filters Module
+Filters Module
+==============
 
-This needs details.
+### Filters Functions & Variables
+
+The Filters Module features the following functions:
+
+* `$.fn.blockstrap.filters.accounts`(blockstrap, data)
+* `$.fn.blockstrap.filters.avatars`(blockstrap, data)
+* `$.fn.blockstrap.filters.balances`(blockstrap, data)
+* `$.fn.blockstrap.filters.bootstrap`(blockstrap, data)
+* `$.fn.blockstrap.filters.contacts`(blockstrap, data)
+* `$.fn.blockstrap.filters.get`(blockstrap, data)
+* `$.fn.blockstrap.filters.got`(blockstrap, data)
+* `$.fn.blockstrap.filters.last`(blockstrap, data)
+* `$.fn.blockstrap.filters.setup`(blockstrap, data)
+* `$.fn.blockstrap.filters.total`(blockstrap, data)
+* `$.fn.blockstrap.filters.txs`(blockstrap, data)
+
+--------------------------------------------------------------------------------
+
+#### `filters.accounts`(blockstrap, data)
+
+--------------------------------------------------------------------------------
+
+#### `filters.avatars`(blockstrap, data)
+
+--------------------------------------------------------------------------------
+
+#### `filters.balances`(blockstrap, data)
+
+--------------------------------------------------------------------------------
+
+#### `filters.bootstrap`(blockstrap, data)
+
+--------------------------------------------------------------------------------
+
+#### `filters.contacts`(blockstrap, data)
+
+--------------------------------------------------------------------------------
+
+#### `filters.get`(blockstrap, data)
+
+--------------------------------------------------------------------------------
+
+#### `filters.got`(blockstrap, data)
+
+--------------------------------------------------------------------------------
+
+#### `filters.last`(blockstrap, data)
+
+--------------------------------------------------------------------------------
+
+#### `filters.setup`(blockstrap, data)
+
+--------------------------------------------------------------------------------
+
+#### `filters.total`(blockstrap, data)
+
+--------------------------------------------------------------------------------
+
+#### `filters.txs`(blockstrap, data)
 
 ---
 

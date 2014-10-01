@@ -1,6 +1,25 @@
-## Forms Module
+Forms Module
+============
 
-This needs details.
+### Forms Functions & Variables
+
+The Forms Module features the following functions:
+
+* `$.fn.blockstrap.forms.get`(callback)
+* `$.fn.blockstrap.forms.input`(options)
+* `$.fn.blockstrap.forms.process`(data, form)
+
+--------------------------------------------------------------------------------
+
+#### `forms.get`(callback)
+
+--------------------------------------------------------------------------------
+
+#### `forms.input`(options)
+
+--------------------------------------------------------------------------------
+
+#### `forms.process`(data, form)
 
 ---
 

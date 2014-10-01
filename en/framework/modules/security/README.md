@@ -1,6 +1,30 @@
-## Security Module
+Security Module
+===============
 
-This needs details.
+### Security Functions & Variables
+
+The Security Module features the following functions:
+
+* `$.fn.blockstrap.security.credentials`(username, password, callback)
+* `$.fn.blockstrap.security.logged_in`()
+* `$.fn.blockstrap.security.login`(username, password, callback)
+* `$.fn.blockstrap.security.logout`()
+
+--------------------------------------------------------------------------------
+
+#### `security.credentials`(username, password, callback)
+
+--------------------------------------------------------------------------------
+
+#### `security.logged_in`()
+
+--------------------------------------------------------------------------------
+
+#### `security.login`(username, password, callback)
+
+--------------------------------------------------------------------------------
+
+#### `security.logout`()
 
 ---
 

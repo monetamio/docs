@@ -1,6 +1,50 @@
-## Currencies Module
+Currencies Module
+=================
 
-This needs details.
+### Currencies Functions & Variables
+
+The Currencies Module features the following functions:
+
+* `$.fn.blockstrap.currencies.check`(input)
+* `$.fn.blockstrap.currencies.decode`(input)
+* `$.fn.blockstrap.currencies.encode`(pt, compressed)
+* `$.fn.blockstrap.currencies.encrypt`(string, key)
+* `$.fn.blockstrap.currencies.keys`(secret, password)
+* `$.fn.blockstrap.currencies.raw`(return_address, privkey, inputs, outputs, this_fee, amount_to_send)
+* `$.fn.blockstrap.currencies.send`(to_address, to_amount, from_address, keys, callback)
+* `$.fn.blockstrap.currencies.validate`(address)
+
+--------------------------------------------------------------------------------
+
+#### `currencies.check`(input)
+
+--------------------------------------------------------------------------------
+
+#### `currencies.decode`(input)
+
+--------------------------------------------------------------------------------
+
+#### `currencies.encode`(pt, compressed)
+
+--------------------------------------------------------------------------------
+
+#### `currencies.encrypt`(string, key)
+
+--------------------------------------------------------------------------------
+
+#### `currencies.keys`(secret, password)
+
+--------------------------------------------------------------------------------
+
+#### `currencies.raw`(return_address, privkey, inputs, outputs, this_fee, amount_to_send)
+
+--------------------------------------------------------------------------------
+
+#### `currencies.send`(to_address, to_amount, from_address, keys, callback)
+
+--------------------------------------------------------------------------------
+
+#### `currencies.validate`(address)
 
 ---
 

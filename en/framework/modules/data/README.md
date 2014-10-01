@@ -1,6 +1,30 @@
-## Data Module
+Data Module
+===========
 
-This needs details.
+### Data Functions & Variables
+
+The Data Module features the following functions:
+
+* `$.fn.blockstrap.data.find`(collection, key, callback)
+* `$.fn.blockstrap.data.item`(collection, key)
+* `$.fn.blockstrap.data.option`(key)
+* `$.fn.blockstrap.data.save`(collection, key, value, callback)
+
+--------------------------------------------------------------------------------
+
+#### `data.find`(collection, key, callback)
+
+--------------------------------------------------------------------------------
+
+#### `data.item`(collection, key)
+
+--------------------------------------------------------------------------------
+
+#### `data.option`(key)
+
+--------------------------------------------------------------------------------
+
+#### `data.save`(collection, key, value, callback)
 
 ---
 
