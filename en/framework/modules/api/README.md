@@ -5,13 +5,16 @@ API Module
 
 The API Module features the following functions:
 
-* `$.fn.neuroware.api.address`(hash, currency, callback)
-* `$.fn.neuroware.api.addresses`(hashes, currency, callback)
-* `$.fn.neuroware.api.block`(height, currency, callback)
-* `$.fn.neuroware.api.request`(url, callback)
-* `$.fn.neuroware.api.transaction`(txid, currency, callback)
-* `$.fn.neuroware.api.transactions`(address, currency, callback)
-* `$.fn.neuroware.api.url`(action, key, currency)
+* `$.fn.blockstrap.api.address`(hash, currency, callback)
+* `$.fn.blockstrap.api.addresses`(hashes, currency, callback)
+* `$.fn.blockstrap.api.balance`(hash, currency, callback)
+* `$.fn.blockstrap.api.block`(height, currency, callback)
+* `$.fn.blockstrap.api.request`(url, callback, type, data)
+* `$.fn.blockstrap.api.relay`(hash, currency, callback)
+* `$.fn.blockstrap.api.transaction`(txid, currency, callback)
+* `$.fn.blockstrap.api.transactions`(address, currency, callback)
+* `$.fn.blockstrap.api.unspents`(address, currency, callback, confirms)
+* `$.fn.blockstrap.api.url`(action, key, currency)
 
 --------------------------------------------------------------------------------
 
@@ -23,7 +26,6 @@ The information it is able to map (with the corresponding defaults) includes:
 
 ```
 {
-    url: '#',
     address: 'N/A',
     hash: 'N/A',
     tx_count: 0,
@@ -36,7 +38,7 @@ The information it is able to map (with the corresponding defaults) includes:
 Example usage of this function could look like:
 
 ```
-var api = $.fn.neuroware.prototype.api;
+var api = $.fn.blockstrap.prototype.api;
 api.address('1121cQLqCsDsLPAkJW5ddTCREZ7Bp4ufrk', 'btc', function(results)
 {
     // Your callback
@@ -53,8 +55,7 @@ Which should provide the following results:
     currency: "btc",
     hash: "0030ececbad05ffcdff89f3f26e38ca3d735a8de",
     received: 5000000000,
-    tx_count: 2,
-    url: "#address?key=1121cQLqCsDsLPAkJW5ddTCREZ7Bp4ufrk"
+    tx_count: 2
 }
 ```
 
@@ -68,7 +69,6 @@ The information it is able to map (with the corresponding defaults) includes:
 
 ```
 {
-    url: '#',
     address: 'N/A',
     hash: 'N/A',
     tx_count: 0,
@@ -81,9 +81,9 @@ The information it is able to map (with the corresponding defaults) includes:
 Example usage of this function could look like:
 
 ```
-var api = $.fn.neuroware.prototype.api;
+var api = $.fn.blockstrap.prototype.api;
 api.addresses(
-    '1121cQLqCsDsLPAkJW5ddTCREZ7Bp4ufrk, 12higDjoCCNXSA95xZMWUdPvXNmkAduhWv', 
+    ['1121cQLqCsDsLPAkJW5ddTCREZ7Bp4ufrk, 12higDjoCCNXSA95xZMWUdPvXNmkAduhWv'], 
     'btc', function(results)
     {
         // Your callback
@@ -101,8 +101,7 @@ Which should provide the following results:
     currency: "btc",
     hash: "0030ececbad05ffcdff89f3f26e38ca3d735a8de",
     received: 5000000000,
-    tx_count: 2,
-    url: "#address?key=1121cQLqCsDsLPAkJW5ddTCREZ7Bp4ufrk"
+    tx_count: 2
 },
 {
     address: "12higDjoCCNXSA95xZMWUdPvXNmkAduhWv",
@@ -110,8 +109,40 @@ Which should provide the following results:
     currency: "btc",
     hash: "12ab8dc588ca9d5787dde7eb29569da63c3a238c",
     received: 7762439255612,
-    tx_count: 75,
-    url: "#address?key=12higDjoCCNXSA95xZMWUdPvXNmkAduhWv"
+    tx_count: 75
+}
+```
+
+--------------------------------------------------------------------------------
+
+### `api.balance`(hash, currency, callback)
+
+This function uses the selected API to get the balance of an address.
+
+The information it is able to map (with the corresponding defaults) includes:
+
+```
+{
+    NOT MAPPED YET
+}
+```
+
+Example usage of this function could look like:
+
+```
+var api = $.fn.blockstrap.prototype.api;
+api.balance('1121cQLqCsDsLPAkJW5ddTCREZ7Bp4ufrk', 'btc', function(results)
+{
+    // Your callback
+    console.log(results)
+});
+```
+
+Which should provide the following results:
+
+```
+{
+    0
 }
 ```
 
@@ -125,7 +156,6 @@ The information it is able to map (with the corresponding defaults) includes:
 
 ```
 {
-    url: '#',
     currency: currency,
     height: 'N/A',
     hash: 'N/A',
@@ -138,7 +168,7 @@ The information it is able to map (with the corresponding defaults) includes:
 Example usage of this function could look like:
 
 ```
-var api = $.fn.neuroware.prototype.api;
+var api = $.fn.blockstrap.prototype.api;
 api.block('15968', 'btc', function(results)
 {
     // Your callback
@@ -155,8 +185,7 @@ Which should provide the following results:
     height: 15968,
     prev: "00000000abae6b44fa98526e865a08820f4528eda46cad40445de3690c502ae8",
     time: 1243609567,
-    tx_count: 2,
-    url: "#block?height=15968"
+    tx_count: 2
 }
 ```
 
@@ -165,6 +194,41 @@ Which should provide the following results:
 ### `api.request`(url, callback)
 
 This function is used internally by all other functions within this class to route requests and should not be directly used.
+
+--------------------------------------------------------------------------------
+
+### `api.relay`(hash, currency, callback)
+
+This function uses the selected API to relay a raw transaction.
+
+The information it is able to map (with the corresponding defaults) includes:
+
+```
+{
+    currency: currency,
+    txid: 'N/A'
+}
+```
+
+Example usage of this function could look like:
+
+```
+var api = $.fn.blockstrap.prototype.api;
+api.relay('__RAW_TX__', 'btc', function(results)
+{
+    // Your callback
+    console.log(results)
+});
+```
+
+Which should provide the following results:
+
+```
+{
+    currency: "btc",
+    txid: "00000000201016a83272835468d457d15965d57f57c0da5944dc94ea9389f360"
+}
+```
 
 --------------------------------------------------------------------------------
 
@@ -191,7 +255,7 @@ The information it is able to map (with the corresponding defaults) includes:
 Example usage of this function could look like:
 
 ```
-var api = $.fn.neuroware.prototype.api;
+var api = $.fn.blockstrap.prototype.api;
 api.transaction(
     '06032a172f88ba823785f87341eab26ee7a2eb2de9d2f105220d6580e3affc16', 
     'btc', function(results)
@@ -243,7 +307,7 @@ The information it is able to map (with the corresponding defaults) includes:
 Example usage of this function could look like:
 
 ```
-var api = $.fn.neuroware.prototype.api;
+var api = $.fn.blockstrap.prototype.api;
 api.transactions('1121cQLqCsDsLPAkJW5ddTCREZ7Bp4ufrk', 'btc', function(results)
 {
     // Your callback
@@ -279,6 +343,42 @@ Which should provide the following results:
 
 --------------------------------------------------------------------------------
 
+### `api.unspents`(address, currency, callback, confirms)
+
+This function uses the selected API to check an address for unspent inputs.
+
+The information it is able to map (with the corresponding defaults) includes:
+
+```
+{
+    txid: 'N/A',
+    index: 0,
+    value: 0,
+    script: 'N/A'
+}
+```
+
+Example usage of this function could look like:
+
+```
+var api = $.fn.blockstrap.prototype.api;
+api.unspents('1121cQLqCsDsLPAkJW5ddTCREZ7Bp4ufrk', 'btc', function(results)
+{
+    // Your callback
+    console.log(results)
+});
+```
+
+Which should provide the following results:
+
+```
+{
+    TO BE TESTED
+}
+```
+
+--------------------------------------------------------------------------------
+
 ### `api.url`(action, key, currency)
 
 This function is used internally by all other functions within this class to help construct URLs prior to API requests and should not be directly used.
@@ -287,7 +387,7 @@ This function is used internally by all other functions within this class to hel
 
 ### API Mapping
 
-Neuroware does not lock you in to a specific API provider. We provide functionality that allows you to map each and every API call we make to a specific API end-point of your choosing. For example, if you wanted to map our wallet to the [Hello Block](http://helloblock.io) API you would supply the following map:
+Blockstrap does not lock you in to a specific API provider. We provide functionality that allows you to map each and every API call we make to a specific API end-point of your choosing. For example, if you wanted to map our wallet to the [Hello Block](http://helloblock.io) API you would supply the following map:
 
 ```
 var map = {
