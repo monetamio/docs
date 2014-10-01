@@ -27,6 +27,7 @@ These sample applications are intended to help demonstrate how Blockstrap can be
 
 If you are new to Blockstrap, we would suggest reading some of the following articles:
 
+* [Download](started/download/)
 * [Getting Started](started/)
 * [Plugin Construct](core/construct/)
 * [Extending Blockstrap](extending/)
