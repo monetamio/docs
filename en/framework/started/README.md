@@ -1,13 +1,22 @@
 ## Getting Started
 
-When you [download](download/) Blockstrap and open the `index.html` file from within a browser (or visit the root directory from a server) you should be presented with a rendered user-view of the default [wallet](../../applications/wallet/) application, which is one of several themes included within core. If this is the first time you have used Blockstrap from that domain on that device, you should be asked to setup your device salt else you would in the case of the default wallet be presented with the wallet itself.
+When you [download](download/) Blockstrap and open the `index.html` file from within a browser (or visit the root directory from a server) you should be presented with a rendered user-view of the default [wallet](../../applications/wallet/) application, which is one of several themes included within core. If this is the first time you have used Blockstrap from that domain on that device, you should be asked to setup your device salt - else you would in the case of the default wallet be presented with the wallet itself.
 
-However, what you see and when you see it is very much dependent on the theme or application that is being used or presented. In the case of [prioritizer](../../applications/priortizer/) there are even admin and user views, and only adminstrators are ever asked to set things up.
+However, what you see and when you see it is very much dependent on the application that is being used or presented. In the case of [prioritizer](../../applications/priortizer/) there are even admin and user views, and only adminstrators are ever asked to set things up. In addition to that, if you are only using [core](../core/) and have not included any additional [modules](../modules/) or the necessary configuration files, you may end-up seeing nothing.
 
-----------------
-### Device Salts
+By default, the following applications are included within [core](../core/):
 
-By default, the [installation of the wallet](../../applications/wallet/installation/) guides new users through the process of deterministaclly generating a device salt. We use compounding encryption through a modular method that allows each application developer to deploy systems of varying levels of [security](security/).
+* [Wallet](../../applications/wallet/)
+* [Prioritizer](../../applications/prioritizer/)
+
+Blockstrap Core is a [jQuery](http://jquery.com) plugin, so without [core](../core/) (`blockstrap/js/blockstrap.js`) or jQuery, nothing will work. By default, Blockstrap is set to auto include jQuery prior to then loading the other listed [assets](../assets/) and completing the process by initializing itself. For a deeper look at the exact logic flow, we would suggest reading the [Plugin Construct](../core/construct/) article. For a better explanation of device salts and how we generate private keys it is essential that you review our [security](security/) article.
+
+Continue learning more by selecting something from below:
+
+* [Download Blockstrap](download/)
+* [Understanding Core](../core/)
+* [Extending Blockstrap](../extending/)
+* [Styling Blockstrap](../styling/)
 
 --------------------------------------------------------------------------------
 
