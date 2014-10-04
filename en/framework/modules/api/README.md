@@ -379,7 +379,7 @@ Which should provide the following results:
 
 --------------------------------------------------------------------------------
 
-#### `api.url`(action, key, currency) <i class="icon-up"><a name="api_url"></a> [- back to top](#docs_home)</i>
+#### `api.url`(action, key, currency) <a name="api_url" class="icon-up" href="#docs_home">- back to top</a>
 
 This function is used internally by all other functions within this class to help construct URLs prior to API requests and should not be directly used.
 
