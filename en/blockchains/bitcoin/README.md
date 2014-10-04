@@ -2,6 +2,11 @@
 
 This needs details.
 
+Specific areas of further interest include:
+
+* [Bitcoin History](history/)
+* [Bitcoin Magic Numbers](magic-numbers/)
+
 ---
 
 1. Related Articles

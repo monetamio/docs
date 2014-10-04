@@ -63,6 +63,12 @@ This should provide a complete table of contents for all English documentation.
 #### Blockchains
 
 * [Bitcoin](blockchains/bitcoin/)
+    * [History](blockchains/bitcoin/history/)
+    * [Magic Numbers](blockchains/bitcoin/magic-numbers/)
 * [Litecoin](blockchains/litecoin/)
+    * [History](blockchains/litecoin/history/)
+    * [Magic Numbers](blockchains/litecoin/magic-numbers/)
 * [Dogecoin](blockchains/dogecoin/)
+    * [History](blockchains/dogecoin/history/)
+    * [Magic Numbers](blockchains/dogecoin/magic-numbers/)
 * [Testnets](blockchains/testnets/)

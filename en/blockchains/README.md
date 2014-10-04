@@ -1,6 +1,15 @@
 ## The Blockchains
 
-The framework is...
+The blockchains as a whole needs to be introduced.
+
+Also an excuse to link to the [blockchains explorer](http://blockchains.io).
+
+The blockchains currently parsed include:
+
+* [Bitcoin](bitcoin/)
+* [Litecoin](litecoin/)
+* [Dogecoin](dogecoin/)
+* [Testnets](testnets/)
 
 ---
 

@@ -2,6 +2,11 @@
 
 This needs details.
 
+Specific areas of further interest include:
+
+* [Litecoin History](history/)
+* [Litecoin Magic Numbers](magic-numbers/)
+
 ---
 
 1. Related Articles
