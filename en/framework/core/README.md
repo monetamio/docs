@@ -1,14 +1,16 @@
 ## Blockstrap Core
 
-The Blockstrap Core has been compiled as a jQuery plugin.
+Blockstrap Core (`blockstrap/js/blockstrap.js`) is a [jQuery](http://jquery.com) plugin. It will not run without jQuery. We will be adding alternative versions of core in the future for both vanilla JavaScript as well as other languages. By default, simply by including core in your header, it will auto-include and load jQuery before then continuing to load the additional [dependencies](../assets/dependencies/) that are listed within the [configuration](configurations/) files.
 
-The current components that collectively form core include:
+The current components accessed from core include:
 
 * [Configuration Settings](configuration/)
 * [Defaults](defaults/)
 * [Core Functions](core-functions/)
 * [Blockstrap Functions](blockstrap-functions/)
 * [Plugin Construct](construct/)
+
+
 
 ---
 

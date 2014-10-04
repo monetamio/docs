@@ -1,15 +1,28 @@
-Configuration Settings
-======================
+## Configuring Blockstrap Core
 
+Each blockstrap application that is powered by core is constructed from three configuration files.
+
+* __Default Configuration__ (`/defaults.json`) - _must be located in the root folder_
+* __Custom Configuration__ (`/themes/config.json`) - _assuming `themes` is set by `defaults`_
+* __Theme Configuration__ (`/themes/default/config.json`) - _assuming the `default` theme is being used_
+
+If these files are not found in these locations, or in the locations set by each of the corresponding configuration files, blockstrap will fail to function properly.
+
+-------------------------
 ### Default Configuration
 
-And then...?
+This is used to set all the defaults for all of the available options that can be configured.
 
----
+-------------------------
+### Custom Configuration
 
+This is used by an application owner to configure universal settings.
+
+-------------------------
 ### Theme Configuration
 
-And then...?
+This is used by a theme or application owner to configure things relevant to that theme.
+
 
 ---
 
