@@ -115,6 +115,7 @@ Which should provide the following results:
     tx_count: 75
 }
 ```
+<a href="#docs_home"><small>- back to top</small></a>
 
 --------------------------------------------------------------------------------
 
@@ -148,6 +149,7 @@ Which should provide the following results:
     0
 }
 ```
+<a href="#docs_home"><small>- back to top</small></a>
 
 --------------------------------------------------------------------------------
 
@@ -191,12 +193,15 @@ Which should provide the following results:
     tx_count: 2
 }
 ```
+<a href="#docs_home"><small>- back to top</small></a>
 
 --------------------------------------------------------------------------------
 
 #### `api.request`(url, callback) <a name="api_request" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
 This function is used internally by all other functions within this class to route requests and should not be directly used.
+
+<a href="#docs_home"><small>- back to top</small></a>
 
 --------------------------------------------------------------------------------
 
@@ -232,6 +237,7 @@ Which should provide the following results:
     txid: "00000000201016a83272835468d457d15965d57f57c0da5944dc94ea9389f360"
 }
 ```
+<a href="#docs_home"><small>- back to top</small></a>
 
 --------------------------------------------------------------------------------
 
@@ -284,6 +290,7 @@ Which should provide the following results:
     url: "#transaction?txid=06032a172f88ba823785f87341eab26ee7a2eb2de9d2f105220d6580e3affc16"
 }
 ```
+<a href="#docs_home"><small>- back to top</small></a>
 
 --------------------------------------------------------------------------------
 
@@ -343,6 +350,7 @@ Which should provide the following results:
     url: "#transaction?txid=7f065b4a2a7f5393a5d1b74e8f340ac961d21bb7e8b77a59c9db580eeaf78d03"
 }
 ```
+<a href="#docs_home"><small>- back to top</small></a>
 
 --------------------------------------------------------------------------------
 
@@ -379,12 +387,15 @@ Which should provide the following results:
     TO BE TESTED
 }
 ```
+<a href="#docs_home"><small>- back to top</small></a>
 
 --------------------------------------------------------------------------------
 
 #### `api.url`(action, key, currency) <a name="api_url" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
 This function is used internally by all other functions within this class to help construct URLs prior to API requests and should not be directly used.
+
+<a href="#docs_home"><small>- back to top</small></a>
 
 --------------------------------------------------------------------------------
 
@@ -452,6 +463,7 @@ var map = {
     }
 }
 ```
+<a href="#docs_home"><small>- back to top</small></a>
 
 
 ---

@@ -1,20 +1,24 @@
-Contacts Module
-===============
+Contacts Module <a name="docs_home"></a>
+========================================
 
 #### Contacts Functions & Variables
 
 The Contacts Module features the following functions:
 
-* `$.fn.blockstrap.contacts.get`()
-* `$.fn.blockstrap.contacts.new`(name, address, currency, fields, callback)
+* [`$.fn.blockstrap.contacts.get`()](#contacts_get)
+* [`$.fn.blockstrap.contacts.new`(name, address, currency, fields, callback)](#contacts_new)
 
 --------------------------------------------------------------------------------
 
-#### `contacts.get`()
+#### `contacts.get`() <a name="contacts_get" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+
+<a href="#docs_home"><small>- back to top</small></a>
 
 --------------------------------------------------------------------------------
 
-#### `contacts.new`(name, address, currency, fields, callback)
+#### `contacts.new`(name, address, currency, fields, callback) <a name="contacts_new" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+
+<a href="#docs_home"><small>- back to top</small></a>
 
 ---
 

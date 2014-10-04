@@ -1,30 +1,38 @@
-Styles Module
-=============
+Styles Module <a name="docs_home"></a>
+======================================
 
 ### Styles Functions & Variables
 
 The Styles Module features the following functions:
 
-* `$.fn.blockstrap.styles.element`(key)
-* `$.fn.blockstrap.styles.map`(type)
-* `$.fn.blockstrap.styles.rule`(key, value)
-* `$.fn.blockstrap.styles.set`(id, index)
+* [`$.fn.blockstrap.styles.element`(key)](#styles_element)
+* [`$.fn.blockstrap.styles.map`(type)](#styles_map)
+* [`$.fn.blockstrap.styles.rule`(key, value)](#styles_rule)
+* [`$.fn.blockstrap.styles.set`(id, index)](#styles_set)
 
 --------------------------------------------------------------------------------
 
-#### `styles.element`(key)
+#### `styles.element`(key) <a name="styles_element" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+
+<a href="#docs_home"><small>- back to top</small></a>
 
 --------------------------------------------------------------------------------
 
-#### `styles.map`(type)
+#### `styles.map`(type) <a name="styles_map" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+
+<a href="#docs_home"><small>- back to top</small></a>
 
 --------------------------------------------------------------------------------
 
-#### `styles.rule`(key, value)
+#### `styles.rule`(key, value) <a name="styles_rule" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+
+<a href="#docs_home"><small>- back to top</small></a>
 
 --------------------------------------------------------------------------------
 
-#### `styles.set`(id, index)
+#### `styles.set`(id, index) <a name="styles_set" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+
+<a href="#docs_home"><small>- back to top</small></a>
 
 ---
 

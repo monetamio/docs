@@ -1,30 +1,38 @@
-Templates Module
-================
+Templates Module <a name="docs_home"></a>
+=========================================
 
 ### Templates Functions & Variables
 
 The Templates Module features the following functions:
 
-* `$.fn.blockstrap.templates.bootstrap`(type)
-* `$.fn.blockstrap.templates.filter`(html, placeholders, replacements)
-* `$.fn.blockstrap.templates.process`(data, html)
-* `$.fn.blockstrap.templates.render`(slug, callback, force_refresh, skip_rendering, looped_html)
+* [`$.fn.blockstrap.templates.bootstrap`(type)](#templates_bootstrap)
+* [`$.fn.blockstrap.templates.filter`(html, placeholders, replacements)](#templates_filter)
+* [`$.fn.blockstrap.templates.process`(data, html)](#templates_process)
+* [`$.fn.blockstrap.templates.render`(slug, callback, force_refresh, skip_rendering, looped_html)](#templates_render)
 
 --------------------------------------------------------------------------------
 
-#### `templates.bootstrap`(type)
+#### `templates.bootstrap`(type) <a name="templates_bootstrap" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+
+<a href="#docs_home"><small>- back to top</small></a>
 
 --------------------------------------------------------------------------------
 
-#### `templates.filter`(html, placeholders, replacements)
+#### `templates.filter`(html, placeholders, replacements) <a name="templates_filter" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+
+<a href="#docs_home"><small>- back to top</small></a>
 
 --------------------------------------------------------------------------------
 
-#### `templates.process`(data, html)
+#### `templates.process`(data, html) <a name="templates_process" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+
+<a href="#docs_home"><small>- back to top</small></a>
 
 --------------------------------------------------------------------------------
 
-#### `templates.render`(slug, callback, force_refresh, skip_rendering, looped_html)
+#### `templates.render`(slug, callback, force_refresh, skip_rendering, looped_html) <a name="templates_render" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+
+<a href="#docs_home"><small>- back to top</small></a>
 
 ---
 

@@ -1,30 +1,38 @@
-Security Module
-===============
+Security Module <a name="docs_home"></a>
+========================================
 
 ### Security Functions & Variables
 
 The Security Module features the following functions:
 
-* `$.fn.blockstrap.security.credentials`(username, password, callback)
-* `$.fn.blockstrap.security.logged_in`()
-* `$.fn.blockstrap.security.login`(username, password, callback)
-* `$.fn.blockstrap.security.logout`()
+* [`$.fn.blockstrap.security.credentials`(username, password, callback)](#security_credentials)
+* [`$.fn.blockstrap.security.logged_in`()](#security_logged_in)
+* [`$.fn.blockstrap.security.login`(username, password, callback)](#security_login)
+* [`$.fn.blockstrap.security.logout`()](#security_logout)
 
 --------------------------------------------------------------------------------
 
-#### `security.credentials`(username, password, callback)
+#### `security.credentials`(username, password, callback) <a name="security_credentials" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+
+<a href="#docs_home"><small>- back to top</small></a>
 
 --------------------------------------------------------------------------------
 
-#### `security.logged_in`()
+#### `security.logged_in`() <a name="security_logged_in" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+
+<a href="#docs_home"><small>- back to top</small></a>
 
 --------------------------------------------------------------------------------
 
-#### `security.login`(username, password, callback)
+#### `security.login`(username, password, callback) <a name="security_login" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+
+<a href="#docs_home"><small>- back to top</small></a>
 
 --------------------------------------------------------------------------------
 
-#### `security.logout`()
+#### `security.logout`() <a name="security_logout" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+
+<a href="#docs_home"><small>- back to top</small></a>
 
 ---
 

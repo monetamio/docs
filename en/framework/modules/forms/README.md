@@ -1,25 +1,31 @@
-Forms Module
-============
+Forms Module <a name="docs_home"></a>
+=====================================
 
 ### Forms Functions & Variables
 
 The Forms Module features the following functions:
 
-* `$.fn.blockstrap.forms.get`(callback)
-* `$.fn.blockstrap.forms.input`(options)
-* `$.fn.blockstrap.forms.process`(data, form)
+* [`$.fn.blockstrap.forms.get`(callback)](#forms_get)
+* [`$.fn.blockstrap.forms.input`(options)](#forms_input)
+* [`$.fn.blockstrap.forms.process`(data, form)](#forms_process)
 
 --------------------------------------------------------------------------------
 
-#### `forms.get`(callback)
+#### `forms.get`(callback) <a name="forms_get" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+
+<a href="#docs_home"><small>- back to top</small></a>
 
 --------------------------------------------------------------------------------
 
-#### `forms.input`(options)
+#### `forms.input`(options) <a name="forms_input" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+
+<a href="#docs_home"><small>- back to top</small></a>
 
 --------------------------------------------------------------------------------
 
-#### `forms.process`(data, form)
+#### `forms.process`(data, form) <a name="forms_process" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+
+<a href="#docs_home"><small>- back to top</small></a>
 
 ---
 

@@ -1,50 +1,66 @@
-Currencies Module
-=================
+Currencies Module <a name="docs_home"></a>
+==========================================
 
 ### Currencies Functions & Variables
 
 The Currencies Module features the following functions:
 
-* `$.fn.blockstrap.currencies.check`(input)
-* `$.fn.blockstrap.currencies.decode`(input)
-* `$.fn.blockstrap.currencies.encode`(pt, compressed)
-* `$.fn.blockstrap.currencies.encrypt`(string, key)
-* `$.fn.blockstrap.currencies.keys`(secret, password)
-* `$.fn.blockstrap.currencies.raw`(return_address, privkey, inputs, outputs, this_fee, amount_to_send)
-* `$.fn.blockstrap.currencies.send`(to_address, to_amount, from_address, keys, callback)
-* `$.fn.blockstrap.currencies.validate`(address)
+* [`$.fn.blockstrap.currencies.check`(input)](#currencies_check)
+* [`$.fn.blockstrap.currencies.decode`(input)](#currencies_decode)
+* [`$.fn.blockstrap.currencies.encode`(pt, compressed)](#currencies_encode)
+* [`$.fn.blockstrap.currencies.encrypt`(string, key)](#currencies_encrypt)
+* [`$.fn.blockstrap.currencies.keys`(secret, password)](#currencies_keys)
+* [`$.fn.blockstrap.currencies.raw`(return_address, privkey, inputs, outputs, this_fee, amount_to_send)](#currencies_raw)
+* [`$.fn.blockstrap.currencies.send`(to_address, to_amount, from_address, keys, callback)](#currencies_send)
+* [`$.fn.blockstrap.currencies.validate`(address)](#currencies_validate)
 
 --------------------------------------------------------------------------------
 
-#### `currencies.check`(input)
+#### `currencies.check`(input) <a name="currencies_check" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+
+<a href="#docs_home"><small>- back to top</small></a>
 
 --------------------------------------------------------------------------------
 
-#### `currencies.decode`(input)
+#### `currencies.decode`(input)) <a name="currencies_decode" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+
+<a href="#docs_home"><small>- back to top</small></a>
 
 --------------------------------------------------------------------------------
 
-#### `currencies.encode`(pt, compressed)
+#### `currencies.encode`(pt, compressed)) <a name="currencies_encode" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+
+<a href="#docs_home"><small>- back to top</small></a>
 
 --------------------------------------------------------------------------------
 
-#### `currencies.encrypt`(string, key)
+#### `currencies.encrypt`(string, key)) <a name="currencies_encrypt" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+
+<a href="#docs_home"><small>- back to top</small></a>
 
 --------------------------------------------------------------------------------
 
-#### `currencies.keys`(secret, password)
+#### `currencies.keys`(secret, password)) <a name="currencies_keys" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+
+<a href="#docs_home"><small>- back to top</small></a>
 
 --------------------------------------------------------------------------------
 
-#### `currencies.raw`(return_address, privkey, inputs, outputs, this_fee, amount_to_send)
+#### `currencies.raw`(return_address, privkey, inputs, outputs, this_fee, amount_to_send)) <a name="currencies_raw" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+
+<a href="#docs_home"><small>- back to top</small></a>
 
 --------------------------------------------------------------------------------
 
-#### `currencies.send`(to_address, to_amount, from_address, keys, callback)
+#### `currencies.send`(to_address, to_amount, from_address, keys, callback)) <a name="currencies_send" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+
+<a href="#docs_home"><small>- back to top</small></a>
 
 --------------------------------------------------------------------------------
 
-#### `currencies.validate`(address)
+#### `currencies.validate`(address)) <a name="currencies_validate" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+
+<a href="#docs_home"><small>- back to top</small></a>
 
 ---
 
