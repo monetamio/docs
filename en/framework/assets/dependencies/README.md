@@ -11,6 +11,7 @@ Dependencies <a name="docs_home"></a>
 * [`crypto.js`](#dep_crypto) - [CryptoJS](https://code.google.com/p/crypto-js/) `v3.1.2` __BSD License__
 * [`effects.js`](#dep_effects) - [jQuery UI Effects](http://jqueryui.com) `v1.9.2` __MIT License__
 * [`jquery.js`](#dep_jquery) - [jQuery](http://jquery.com) `v1.11.0` __MIT License__
+* [`less.js`](#dep_less) - [Less.js](http://lesscss.org/) `v1.7.0` __Apache License 2.0__
 * [`mustache.js`](#dep_mustache) - [MustacheJS](https://github.com/janl/mustache.js) `v0.8.2` __MIT License__
 * [`qrcode.js`](#dep_qrcode) - [jQuery QRCode](http://larsjung.de/jquery-qrcode/) `v0.10.0` __MIT License__
 * [`sha3.js`](#dep_sha3) - [SHA3 - CryptoJS](https://code.google.com/p/crypto-js/) `v3.1.2` __BSD License__
@@ -22,62 +23,69 @@ Dependencies <a name="docs_home"></a>
 
 <small><a href="#docs_home">- back to top</a></small>
 
-------------------------------------
+-------------------------------------------
 #### `bitcoinjs.js` <a name="dep_btcjs"></a>
 
 <small><a href="#docs_home">- back to top</a></small>
 
-------------------------------------
+-------------------------------------------
 #### `bootstrap.js` <a name="dep_boot"></a>
 
 <small><a href="#docs_home">- back to top</a></small>
 
-------------------------------------
+-----------------------------------------------------------
 #### `bootstrap-filestyle..js` <a name="dep_boot_file"></a>
 
 <small><a href="#docs_home">- back to top</a></small>
 
-------------------------------------
+---------------------------------------------------------
 #### `bootstrap-switch.js` <a name="dep_boot_switch"></a>
 
 <small><a href="#docs_home">- back to top</a></small>
 
-------------------------------------
+------------------------------------------
 #### `crypto.js` <a name="dep_crypto"></a>
 
 <small><a href="#docs_home">- back to top</a></small>
 
-------------------------------------
+--------------------------------------------
 #### `effects.js` <a name="dep_effects"></a>
 
 <small><a href="#docs_home">- back to top</a></small>
 
-------------------------------------
+------------------------------------------
 #### `jquery.js` <a name="dep_jquery"></a>
 
 <small><a href="#docs_home">- back to top</a></small>
 
-------------------------------------
+--------------------------------------
+#### `less.js` <a name="dep_less"></a>
+
+Strictly speaking, this is not a dependency as it is not found within the dependency folders and is only loaded if the `less: true` is set in the configuration files.
+
+<small><a href="#docs_home">- back to top</a></small>
+
+----------------------------------------------
 #### `mustache.js` <a name="dep_mustache"></a>
 
 <small><a href="#docs_home">- back to top</a></small>
 
-------------------------------------
+------------------------------------------
 #### `qrcode.js` <a name="dep_qrcode"></a>
 
 <small><a href="#docs_home">- back to top</a></small>
 
-------------------------------------
+--------------------------------------
 #### `sha3.js` <a name="dep_sha3"></a>
 
 <small><a href="#docs_home">- back to top</a></small>
 
-------------------------------------
+------------------------------------------
 #### `tables.js` <a name="dep_tables"></a>
 
 <small><a href="#docs_home">- back to top</a></small>
 
-------------------------------------
+----------------------------------
 #### `tx.js` <a name="dep_tx"></a>
 
 <small><a href="#docs_home">- back to top</a></small>
