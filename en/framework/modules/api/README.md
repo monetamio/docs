@@ -1,4 +1,4 @@
-API Module
+API Module <a name="api_home"></a>
 ==========
 
 ### API Functions & Variables
@@ -379,7 +379,7 @@ Which should provide the following results:
 
 --------------------------------------------------------------------------------
 
-#### `api.url`(action, key, currency)<a name="api_url"></a>
+#### `api.url`(action, key, currency) <a name="api_url"></a> [top](#api_home)
 
 This function is used internally by all other functions within this class to help construct URLs prior to API requests and should not be directly used.
 
