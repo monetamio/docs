@@ -383,6 +383,15 @@ Which should provide the following results:
 
 This function is used internally by all other functions within this class to help construct URLs prior to API requests and should not be directly used.
 
+<div class="row">
+    <div class="col-md-6">
+    test
+    </div>
+    <div class="col-md-6">
+    test
+    </div>
+</div>
+
 --------------------------------------------------------------------------------
 
 #### API Mapping
