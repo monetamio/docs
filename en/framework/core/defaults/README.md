@@ -1,15 +1,23 @@
-Defaults
-========
+## Blockstrap Defaults
 
-### Default Configuration
+There are certain components that will be included regardless of whether they are added to the configuration file or not.
 
-And then...?
+This is currently controlled by `$.fn.blockstrap.defaults()` and auto-includes the following dependencies:
 
----
+* __dependencies/crypt.js__
+* __dependencies/sha3.js__
+* __dependencies/mustache.js__
 
-### Theme Configuration
+As well as the following modules:
 
-And then...?
+* __modules/templates.js__
+* __modules/theme.js__
+
+In addition to the `$.fn.blockstrap.defaults()` function called prior to the dependencies and modules being included there is another function as __core__ (`$.fn.blockstrap.core.defaults`) that creates skeleton functionality for the following functions if their corresponding modules are not included within the initial configuration:
+
+* __Data Module__: `$.fn.blockstrap.data.find()`
+* __Data Module__: `$.fn.blockstrap.data.save()`
+* __Security Module__: `$.fn.blockstrap.security.loggedin()`
 
 ---
 

@@ -14,7 +14,7 @@ The API Module features the following functions:
 * `$.fn.blockstrap.api.transaction`(txid, currency, callback)
 * `$.fn.blockstrap.api.transactions`(address, currency, callback)
 * `$.fn.blockstrap.api.unspents`(address, currency, callback, confirms)
-* `$.fn.blockstrap.api.url`(action, key, currency)
+* [`$.fn.blockstrap.api.url`(action, key, currency)](#api_url)
 
 --------------------------------------------------------------------------------
 
@@ -379,7 +379,7 @@ Which should provide the following results:
 
 --------------------------------------------------------------------------------
 
-#### `api.url`(action, key, currency)
+#### `api.url`(action, key, currency)<a name="api_url"></a>
 
 This function is used internally by all other functions within this class to help construct URLs prior to API requests and should not be directly used.
 

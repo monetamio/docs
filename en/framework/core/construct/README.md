@@ -1,9 +1,8 @@
-Plugin Construction
-===================
+## The jQuery Plugin Construct
 
-### The Flow
+The `plugin` function at __core__ is what defines the order of initization:
 
-And then...?
+* 
 
 ---
 
