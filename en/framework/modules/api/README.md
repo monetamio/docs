@@ -20,7 +20,7 @@ You may also want to learn about [API Mapping](#api_mapping).
 
 --------------------------------------------------------------------------------
 
-#### `api.address`(hash, currency, callback) <a name="api_address" class="icon-up" href="#docs_home">- back to top</a>
+#### `api.address`(hash, currency, callback) <a name="api_address" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
 This function uses the selected API to get information pertaining to an address.
 
@@ -63,7 +63,7 @@ Which should provide the following results:
 
 --------------------------------------------------------------------------------
 
-#### `api.addresses`(hashes, currency, callback) <a name="api_addresses" class="icon-up" href="#docs_home">- back to top</a>
+#### `api.addresses`(hashes, currency, callback) <a name="api_addresses" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
 This function uses the selected API to get information pertaining to multiple addresses.
 
@@ -117,7 +117,7 @@ Which should provide the following results:
 
 --------------------------------------------------------------------------------
 
-#### `api.balance`(hash, currency, callback) <a name="api_balance" class="icon-up" href="#docs_home">- back to top</a>
+#### `api.balance`(hash, currency, callback) <a name="api_balance" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
 This function uses the selected API to get the balance of an address.
 
@@ -150,7 +150,7 @@ Which should provide the following results:
 
 --------------------------------------------------------------------------------
 
-#### `api.block`(height, currency, callback) <a name="api_block" class="icon-up" href="#docs_home">- back to top</a>
+#### `api.block`(height, currency, callback) <a name="api_block" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
 This function uses the selected API to get information pertaining to a block.
 
@@ -193,13 +193,13 @@ Which should provide the following results:
 
 --------------------------------------------------------------------------------
 
-#### `api.request`(url, callback) <a name="api_request" class="icon-up" href="#docs_home">- back to top</a>
+#### `api.request`(url, callback) <a name="api_request" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
 This function is used internally by all other functions within this class to route requests and should not be directly used.
 
 --------------------------------------------------------------------------------
 
-#### `api.relay`(hash, currency, callback) <a name="api_relay" class="icon-up" href="#docs_home">- back to top</a>
+#### `api.relay`(hash, currency, callback) <a name="api_relay" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
 This function uses the selected API to relay a raw transaction.
 
@@ -234,7 +234,7 @@ Which should provide the following results:
 
 --------------------------------------------------------------------------------
 
-#### `api.transaction`(txid, currency, callback) <a name="api_transaction" class="icon-up" href="#docs_home">- back to top</a>
+#### `api.transaction`(txid, currency, callback) <a name="api_transaction" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
 This function uses the selected API to get information pertaining to a transaction.
 
@@ -286,7 +286,7 @@ Which should provide the following results:
 
 --------------------------------------------------------------------------------
 
-#### `api.transactions`(address, currency, callback) <a name="api_transactions" class="icon-up" href="#docs_home">- back to top</a>
+#### `api.transactions`(address, currency, callback) <a name="api_transactions" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
 This function uses the selected API to get information pertaining to all the transactions of a single address.
 
@@ -345,7 +345,7 @@ Which should provide the following results:
 
 --------------------------------------------------------------------------------
 
-#### `api.unspents`(address, currency, callback, confirms) <a name="api_unspents" class="icon-up" href="#docs_home">- back to top</a>
+#### `api.unspents`(address, currency, callback, confirms) <a name="api_unspents" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
 This function uses the selected API to check an address for unspent inputs.
 
@@ -381,13 +381,13 @@ Which should provide the following results:
 
 --------------------------------------------------------------------------------
 
-#### `api.url`(action, key, currency) <a name="api_url" class="icon-up" href="#docs_home">- back to top</a>
+#### `api.url`(action, key, currency) <a name="api_url" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
 This function is used internally by all other functions within this class to help construct URLs prior to API requests and should not be directly used.
 
 --------------------------------------------------------------------------------
 
-#### API Mapping <a name="api_mapping" class="icon-up" href="#docs_home">- back to top</a>
+#### API Mapping <a name="api_mapping" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
 Blockstrap does not lock you in to a specific API provider. We provide functionality that allows you to map each and every API call we make to a specific API end-point of your choosing. For example, if you wanted to map our wallet to the [Hello Block](http://helloblock.io) API you would supply the following map:
 

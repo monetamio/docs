@@ -295,6 +295,14 @@ MAIN CONTENT
 #main-content ol li:last-child:after {
     content: "";
 }
+#main-content a.pull-right {
+    text-indent: -999em;
+}
+#main-content a.pull-right i {
+    float: right;
+    text-indent: 0;
+    outline: 0;
+}
 
 /*
 
