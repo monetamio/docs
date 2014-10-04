@@ -60,7 +60,7 @@ Which should provide the following results:
     tx_count: 2
 }
 ```
-<a name="api_address" href="#docs_home"><small>- back to top</small></a>
+<a href="#docs_home"><small>- back to top</small></a>
 
 --------------------------------------------------------------------------------
 
