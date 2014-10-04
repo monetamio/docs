@@ -1,7 +1,7 @@
-LESS.css
+Mustache
 ========
 
-### What is LESS.csss ...?
+### What is Mustache.js ...?
 
 And then...?
 

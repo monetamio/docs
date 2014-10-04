@@ -41,6 +41,8 @@ This should provide a complete table of contents for all English documentation.
     * [Templates](framework/modules/templates/)
 * [Assets](framework/assets/)
     * [Dependencies](framework/assets/dependencies/)
+    * [Bootstrap](framework/assets/bootstrap/)
+    * [Mustache](framework/assets/mustache/)
     * [LESS.css](framework/assets/less/)
 * [Extending](framework/extending/)
     * [Themes](framework/extending/themes/)
