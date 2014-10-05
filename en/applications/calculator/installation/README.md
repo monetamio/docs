@@ -1,6 +1,6 @@
 ## Calculator Installation
 
-This needs details.
+How do you install something that does not exist...?
 
 ---
 

@@ -1,6 +1,12 @@
 ## Blockstrap Prioritizer
 
-This needs details.
+Without building and using our own applications, there would be no real way for us to innovate within the functionality of our own tools. Our journey with Blockstrap started with our desire to build a wallet that did not store any private keys anywhere, could store any crypto-currency, and be easily extended via themes and plugins. After building that foundation, we needed to test the fact that [core](../../framework/core/) could handle multiple themes, so we decided to build something simple (over a weekend) for the second one.
+
+Prioritizer essentially transforms a list of issues into a collection of addresses, that can then be ordered and filtered based upon the number of contributions, amount contributed and formula set within configuration.
+
+For more information relevant to this theme, please see:
+
+* [Installing Prioritizer](installation/)
 
 ---
 

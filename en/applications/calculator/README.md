@@ -1,6 +1,8 @@
 ## Blockstrap Calculator
 
-This needs details.
+This does not yet even exist, so may need to be removed.
+
+Strictly speaking, it should exist as part of the Blockchains.io header navigation as a widget.
 
 ---
 
