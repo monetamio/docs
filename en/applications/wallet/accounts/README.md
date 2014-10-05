@@ -28,7 +28,7 @@ Please note that the `id` field is auto-generated from the `name`.
 
 The `currency` selection is a parameter of the function and should only allow those supported via configuration.
 
-The `keys` field is an array of the components used to generate the keys. A salted hash of each of these is added to the hash of the next. We store what was used so we know what to ask for when needed.
+The `keys` field is an array of the components used to generate the key-pair. A salted hash of each of these and their hidden values are added to the hash of the next. We store what was used so we know what to ask for when needed.
 
 We only store the public key, as seen in the `address` field.
 
@@ -42,7 +42,7 @@ If the new transaction account is higher than the currently saved count, it will
 
 ```
 {
-    "id": "my_first_wallet",
+    "id": "my_wallet",
     "currency": {
         "type": "Bitcoin",
         "code": "btc"
