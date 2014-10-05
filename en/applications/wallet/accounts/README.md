@@ -1,4 +1,4 @@
-## Blockstrap Accounts
+## Blockstrap Accounts <a name="docs_home"></a>
 
 Accounts can be accessed from any application that includes the [$.fn.blockstrap.accounts](../../../framework/modules/accounts/) module.
 
@@ -375,7 +375,7 @@ If the new transaction account is higher than the currently saved count, it will
     }
 }
 ```
-
+<small><a href="#docs_home">- back to top</a></small>
 
 ---
 
