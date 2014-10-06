@@ -34,7 +34,12 @@
         }
     ],
     "nav": [
-                {
+        {
+            "href": "http://blockstrap.com/",
+            "css": "",
+            "text": "Home"
+        },
+        {
             "href": "http://blockstrap.com/downloads/",
             "css": "",
             "text": "Downloads"
@@ -42,8 +47,13 @@
         {
             "href": "#",
             "css": "active",
-            "text": "Documentation",
+            "text": "Docs",
             "sub": true
+        },
+        {
+            "href": "http://blockstrap.com/showcase/",
+            "css": "",
+            "text": "Showcase"
         },
         {
             "href": "http://blockstrap.com/pricing/",
@@ -59,6 +69,11 @@
             "href": "http://blockstrap.com/blog/",
             "css": "",
             "text": "Blog"
+        },
+        {
+            "href": "http://blockchains.io/",
+            "css": "",
+            "text": "Explorer"
         }
     ],
     "sidebar": [
