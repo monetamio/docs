@@ -6,7 +6,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 <title>{{page.title}}</title>
 <meta name=”description” content=”{{page.meta}}”>
+{{#tags}}
+    <meta content="{{content}}" property="{{property}}" />
+{{/tags}}
 <link rel='shortcut icon' href='favicon.ico'>
+<link href="http://docs.blockstrap.com/{{urls.slug}}" rel="canonical" />
 {{#css}}
     <link href="{{href}}" type="text/css" rel="stylesheet">
 {{/css}}

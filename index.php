@@ -10,6 +10,8 @@ MIT LICENSE
 
 */
 
+error_reporting(-1);
+
 $base = dirname(__FILE__);
 include_once($base.'/_libs/php/bs.php');
 $bs = new blockstrap_core($base);
@@ -22,7 +24,7 @@ $data = $bs->data($base, $slug, $directory, $language);
 $html = $bs->html($base, $slug, $directory);
 $content = $bs->content($base, $slug, $directory);
 
-if($_GET['debug'] == true)
+if(isset($_GET['debug']) && $_GET['debug'] == true)
 {
     var_dumped($data);
     var_dumped($html);

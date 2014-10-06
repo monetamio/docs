@@ -56,6 +56,8 @@ class blockstrap_core
                 );
             }
         }
+        $data['urls'] = array();
+        $data['urls']['slug'] = $slug;
         return $data;
     }
     
@@ -111,8 +113,12 @@ class blockstrap_core
     
     public function directory($server)
     {
+        $url = '';
         $self = $server['PHP_SELF'];
-        $url = $server['REDIRECT_URL'];
+        if(isset($server['REDIRECT_URL']))
+        {
+            $url = $server['REDIRECT_URL'];
+        }
         $self_array = array_slice(explode('/', $self), 1, -1);
         $url_array = array_slice(explode('/', $url), count($self_array) + 1, -1);
         if(count($url_array) < 1) return '';
@@ -121,18 +127,27 @@ class blockstrap_core
     
     public function language($server)
     {
+        $url = '';
         $self = $server['PHP_SELF'];
-        $url = $server['REDIRECT_URL'];
+        if(isset($server['REDIRECT_URL']))
+        {
+            $url = $server['REDIRECT_URL'];
+        }
         $self_array = array_slice(explode('/', $self), 1, -1);
         $url_array = array_slice(explode('/', $url), count($self_array) + 1, -1);
-        return $url_array[0];
+        if(count($url_array) > 0) return $url_array[0];
+        else return '';
     }
     
     public function slug($server)
     {
+        $url = '';
         $slug = '';
         $self = $server['PHP_SELF'];
-        $url = $server['REDIRECT_URL'];
+        if(isset($server['REDIRECT_URL']))
+        {
+            $url = $server['REDIRECT_URL'];
+        }
         $self_array = array_slice(explode('/', $self), 1, -1);
         $url_array = array_slice(explode('/', $url), count($self_array) + 1, -1);
         foreach($url_array as $url)
@@ -199,7 +214,7 @@ class blockstrap_core
                             {
                                 $link['css'] = '';
                             }
-                            if(strpos($slug, $link['slug']) !== false)
+                            if(isset($link['slug']) && strpos($slug, $link['slug']) !== false)
                             {
                                 $link['css'] = 'active';
                                 $sidebar['css'] = 'active';
