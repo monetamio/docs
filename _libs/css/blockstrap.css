@@ -97,6 +97,9 @@ NAVIGATION
     background: #333;
     color: #FFF;
 }
+.navbar-form .form-control {
+    width: 160px;
+}
 
 /*
 
@@ -367,6 +370,9 @@ RESPONSIVENESS
     .navbar-nav .dropdown .caret,
     .navbar-nav .dropdown.open .dropdown-menu {
         display: inline-block;
+    }
+    .navbar-form .form-control {
+        width: 100%;
     }
 }
 @media only screen and (max-width : 768px) {
