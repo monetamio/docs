@@ -2,11 +2,14 @@ var blockchains = {
     // INITIALIZE
     init: function()
     {
-        
+        blockchains.forms();
     },
-    nav: function()
+    forms: function()
     {
-        
+        $('#main-content table').each(function(i)
+        {
+            $(this).addClass('table table-striped');
+        });
     }
 };
 

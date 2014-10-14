@@ -9,13 +9,11 @@ Notes:
 * Address functions include pagination query string options: `records=500`, `skip=1000`
 * Values are in Satoshi (or chain equivalent) Fiat currencies are approximate values.
 
-
 | Method | URL | Notes |
 |--------|-----|-------|
 |block|`<API_ENDPOINT>/v0/<CHN>/block/<BLOCKHASH>`|None|
 |blockLatest|`<API_ENDPOINT>/v0/<CHN>/blockLatest`|None|
 |blockHeight|`<API_ENDPOINT>/v0/<CHN>/blockHeight/<INT_HEIGHT>`|None|
-
 
 1. [Return to API](../../../)
 1. [Return to Notes](../)
