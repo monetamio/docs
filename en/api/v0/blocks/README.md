@@ -2,8 +2,10 @@
 
 This needs details.
 
----
+* [Block](block)
+* [BlockHeight](blockHeight)
+* [BlockLatest](blockLatest)
 
-1. Related Articles
-2. [Height](height/)
-3. [Table of Contents](../../../)
+---
+1. [Return to API](../../)
+1. [Table of Contents](../../../)
