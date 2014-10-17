@@ -12,7 +12,7 @@
 <link rel='shortcut icon' href='favicon.ico'>
 <link href="http://docs.blockstrap.com/{{urls.slug}}" rel="canonical" />
 {{#css}}
-    <link href="{{href}}" type="text/css" rel="stylesheet">
+    <link href="{{page.base}}{{href}}" type="text/css" rel="stylesheet">
 {{/css}}
 </head>
 <body>
@@ -90,7 +90,7 @@
 </div>
     
 {{#js}}
-    <script src="{{src}}"></script>
+    <script src="{{page.base}}{{src}}"></script>
 {{/js}}
     
 </body>

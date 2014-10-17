@@ -19,11 +19,30 @@ function var_dumped($results)
 
 class blockstrap_core
 {
-    function __construct($base)
+    function __construct($php_base)
     {
-        if(!$base) $base = dirname(__FILE__);
-        include_once($base.'/_libs/php/vendors/parsedown.php');
-        include_once($base.'/_libs/php/vendors/mustache.php');
+        if(!$php_base) $php_base = dirname(__FILE__);
+        $base = $this->base($_SERVER);
+        $language = $this->language($_SERVER);
+        $directory = $this->directory($_SERVER);
+        $slug = $this->slug($_SERVER);
+        $language_length = strlen($language);
+        if($language_length && $language_length != 2)
+        {
+            header('Location: '.$base, true, 302);
+            exit;
+        }
+        elseif($slug && !file_exists($php_base.'/'.$slug.'/README.md'))
+        {
+            $url = $base.$language.'/404/';
+            header('Location: '.$url, true, 302);
+            exit;
+        }
+        else
+        {
+            include_once($php_base.'/_libs/php/vendors/parsedown.php');
+            include_once($php_base.'/_libs/php/vendors/mustache.php');
+        }
     }
     
     public function data($base, $slug, $directory, $language)
@@ -48,11 +67,11 @@ class blockstrap_core
         }
         if($slug)
         {
-            if(file_exists($base.'/'.$slug.'/data.json'))
+            if(file_exists($base.'/'.$slug.'data.json'))
             {
                 $data = array_merge(
                     $data, 
-                    json_decode(file_get_contents($base.'/'.$slug.'/data.json'), true)
+                    json_decode(file_get_contents($base.'/'.$slug.'data.json'), true)
                 );
             }
         }
@@ -71,9 +90,9 @@ class blockstrap_core
         if($slug)
         {
             // GET SPECIFIC HTML
-            if(file_exists($base.'/html/'.$slug.'.html'))
+            if(file_exists($base.'/html/'.rtrim($slug, '/').'.html'))
             {
-                $html = file_get_contents($base.'/html/'.$slug.'.html');
+                $html = file_get_contents($base.'/html/'.rtrim($slug, '/').'.html');
             }
         }
         return $html;
@@ -84,17 +103,17 @@ class blockstrap_core
         $header = '';
         $content = '';
         $footer = '';
-        if(file_exists($slug.'HEADER.md'))
+        if(file_exists($base.'/'.$slug.'/HEADER.md'))
         {
-            $header = $this->markdown(file_get_contents($slug.'HEADER.md'));
+            $header = $this->markdown(file_get_contents($base.'/'.$slug.'/HEADER.md'));
         }
-        if(file_exists($slug.'README.md'))
+        if(file_exists($base.'/'.$slug.'/README.md'))
         {
-            $content = $this->markdown(file_get_contents($slug.'README.md'));
+            $content = $this->markdown(file_get_contents($base.'/'.$slug.'/README.md'));
         }
-        if(file_exists($slug.'FOOTER.md'))
+        if(file_exists($base.'/'.$slug.'/FOOTER.md'))
         {
-            $footer = $this->markdown(file_get_contents($slug.'FOOTER.md'));
+            $footer = $this->markdown(file_get_contents($base.'/'.$slug.'/FOOTER.md'));
         }
         return $header.$content.$footer;
     }
@@ -121,8 +140,33 @@ class blockstrap_core
         }
         $self_array = array_slice(explode('/', $self), 1, -1);
         $url_array = array_slice(explode('/', $url), count($self_array) + 1, -1);
-        if(count($url_array) < 1) return '';
-        else return $url_array[0].'/';
+        if(count($url_array) < 1)
+        {
+            return '';
+        }
+        else 
+        {
+            if(!isset($url_array[1]))
+            {
+                return false;
+            }
+            else
+            {
+                return $url_array[1];
+            }
+        }
+    }
+    
+    public function base($server)
+    {
+        $url = '';
+        $slug = $this->slug($server);
+        if(isset($server['REDIRECT_URL']))
+        {
+            $url = $server['REDIRECT_URL'];
+        }
+        $base = substr($url, 0, 0 - strlen($slug) - 1);
+        return $base;
     }
     
     public function language($server)
@@ -141,8 +185,8 @@ class blockstrap_core
     
     public function slug($server)
     {
-        $url = '';
         $slug = '';
+        $url = '';
         $self = $server['PHP_SELF'];
         if(isset($server['REDIRECT_URL']))
         {
@@ -154,7 +198,7 @@ class blockstrap_core
         {
             $slug.= $url.'/';
         }
-        return $slug;
+        return rtrim($slug, '/');
     }
     
     public function filter($data, $directory, $slug, $language)
@@ -162,19 +206,20 @@ class blockstrap_core
         $base = '';
         $slug_index = 0;
         $slug_array = explode('/', $slug);
-        $slug_count = count($slug_array) - 1;
+        $slug_count = count($slug_array);
         while($slug_index < $slug_count)
         {
             $slug_index++;
             $base.= '../';
         }
+        $data['page']['base'] = $base;
         if($directory)
         {
             if(is_array($data['css']))
             {
                 foreach($data['css'] as $key => $css)
                 {
-                    $css['href'] = $base.$css['href'];
+                    $css['href'] = $css['href'];
                     $data['css'][$key] = $css;
                 }
             }
@@ -182,7 +227,7 @@ class blockstrap_core
             {
                 foreach($data['js'] as $key => $js)
                 {
-                    $js['src'] = $base.$js['src'];
+                    $js['src'] = $js['src'];
                     $data['js'][$key] = $js;
                 }
             }
