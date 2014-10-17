@@ -75,6 +75,13 @@ class blockstrap_core
                 );
             }
         }
+        if(file_exists($base.'/config.ini'))
+        {
+            $data = array_merge(
+                $data, 
+                parse_ini_file($base.'/config.ini', true)
+            );
+        }
         $data['urls'] = array();
         $data['urls']['slug'] = $slug;
         return $data;
