@@ -3,14 +3,14 @@
     GET <API_ENDPOINT>/v0/<CHAIN>/blockLatest
 
 Returns information for the most recent Block processed by the Blockstrap API 
-for the specified `<CHAIN>`
+for the specified [`<CHAIN>`](../../notes/chains/)
 
-Returns a [Block object](../blockobject). 
-By default, only minimal Transaction informaiton is returned. For additional [Transaction details](../../notes/detailAndPagination) use the
+Returns a [Block object](../blockobject/). 
+By default, only minimal Transaction information is returned. For additional [Transaction details](../../notes/detailAndPagination/) use the
 ?showtxn=1 and showtxnio=1 query parameters.
 
 Note: Because the latest block is most likely at the top of the block chain you
-must be aware of the [gotchas at the top of the blockchain](../../notes/topOfTheChain).
+must be aware of the [gotchas at the top of the blockchain](../../notes/topOfTheChain/).
 
 
 ### Examples
@@ -68,17 +68,18 @@ Example Output
     }
 
 #### Also see
-* [Block object](../blockobject) For a full breakdown of the elements
-* [Transaction details and Pagination](../../notes/detailAndPagination)
-* [Values and Currency](../../notes/valuesAndCurrencies) How we handle values and currencies
-* [Request object](../../notes/requestobject)
+* [Block object](../blockobject/) For a full breakdown of the elements
+* [Transaction details and Pagination](../../notes/detailAndPagination/)
+* [Values and Currency](../../notes/valuesAndCurrencies/) How we handle values and currencies
+* [Request object](../../notes/requestobject/)
+* [Supported Chains](../../notes/chains/)
 
 #### Access Criteria
 * GET
 * There is no sensitive or custom information in the data returned by this API method.
 * HTTP or HTTPS
-* No API key required, but subjected to [usage/rate limits](../../notes/limitsAndTiers).
-* If API key provided, then subject to [Usage Tiers](../../notes/limitsAndTiers).
+* No API key required, but subjected to [usage/rate limits](../../notes/limitsAndTiers/).
+* If API key provided, then subject to [Usage Tiers](../../notes/limitsAndTiers/).
 
 
 1. [Return to API](../../../)
@@ -87,4 +88,5 @@ Example Output
 1. [Block](../block/)
 1. [BlockHeight](../blockHeight/)
 1. [BlockLatest](../blockLatest/)
+1. [BlocksLatest](../blocksLatest/)
 1. [Table of Contents](../../../../)

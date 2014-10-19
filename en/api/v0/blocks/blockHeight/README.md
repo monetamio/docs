@@ -2,12 +2,14 @@
 
     GET <API_ENDPOINT>/v0/<CHAIN>/blockHeight/<INTEGER_HEIGHT>
 
-Returns information for *ALL* Blocks at the specified <INTEGER_HEIGHT> for the specified `<CHAIN>`.
+Returns information for *ALL* Blocks at the specified <INTEGER_HEIGHT> for the specified [`<CHAIN>`](../../notes/chains/).
 Although rare, there can be multiple Blocks at a given height. Only one is in the Main Chain, the
-others are orphaned forks. The first Block in the array is the one from the Main Chain.
+others are orphaned forks, or forks currently competing to be the Main Chain.
 
-Returns an array of [Block objects](../blockobject). 
-By default, only minimal Transaction informaiton is returned. For additional [Transaction details](../../notes/detailAndPagination) use the
+The first Block in the array is the one from the Main Chain.
+
+Returns an array of [Block objects](../blockobject/). 
+By default, only minimal Transaction information is returned. For additional [Transaction details](../../notes/detailAndPagination/) use the
 ?showtxn=1 and showtxnio=1 query parameters.
 
 Note: Because the latest block is most likely at the top of the block chain you
@@ -15,9 +17,10 @@ must be aware of the [gotchas at the top of the blockchain](../../notes/topOfThe
 
 
 ### Examples
-* [BTC blocks at height 100](https://api.blockstrap.com/v0/btc/blockHeight/100)
-* [DOGE blocks at height 150000](https://api.blockstrap.com/v0/doge/blockHeight/150000)
-* [LTC blocks at height 101010](https://api.blockstrap.com/v0/ltc/blockHeight/101010)
+* [BTC block at height 100](https://api.blockstrap.com/v0/btc/blockHeight/100)
+* [BTC 3 blocks at height 317930](https://api.blockstrap.com/v0/btc/blockHeight/317930)
+* [DOGE block at height 150000](https://api.blockstrap.com/v0/doge/blockHeight/150000)
+* [LTC block at height 101010](https://api.blockstrap.com/v0/ltc/blockHeight/101010)
 
 Example Output
     {
@@ -57,8 +60,7 @@ Example Output
                     "_destroyed_satoshi_seconds": 0,
                     "Transactions": [
                         {
-                            "id": "4B862760EF439DDFA3E3069BEBC74C3E8FD2556A5CE909D2B56C2B7EF364DA24",
-                            "_can_cache": 0
+                            "id": "4B862760EF439DDFA3E3069BEBC74C3E8FD2556A5CE909D2B56C2B7EF364DA24"
                         }
                     ]
                 }
@@ -70,10 +72,11 @@ Example Output
     }
 
 #### Also see
-* [Block object](../blockobject) For a full breakdown of the elements
-* [Transaction details and Pagination](../../notes/detailAndPagination)
-* [Values and Currency](../../notes/valuesAndCurrencies) How we handle values and currencies
-* [Request object](../../notes/requestobject)
+* [Block object](../blockobject/) For a full breakdown of the elements
+* [Transaction details and Pagination](../../notes/detailAndPagination/)
+* [Values and Currency](../../notes/valuesAndCurrencies/) How we handle values and currencies
+* [Request object](../../notes/requestobject/)
+* [Supported Chains](../../notes/chains/)
 
 #### Access Criteria
 * GET
@@ -89,4 +92,5 @@ Example Output
 1. [Block](../block/)
 1. [BlockHeight](../blockHeight/)
 1. [BlockLatest](../blockLatest/)
+1. [BlocksLatest](../blocksLatest/)
 1. [Table of Contents](../../../../)

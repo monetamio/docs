@@ -2,16 +2,16 @@
 
     GET <API_ENDPOINT>/v0/<CHAIN>/block/<BLOCK_HASH>
 
-Returns a [Block object](../blockobject) for the block specified by the `<CHAIN>` and `<BLOCK_HASH>` values.
+Returns a [Block object](../blockobject) for the block specified by the [`<CHAIN>`](../../notes/chains/) and `<BLOCK_HASH>` values.
 
-By default, only minimal Transaction information is returned. For additional [Transaction details](../../notes/detailAndPagination) use the
+By default, only minimal Transaction information is returned. For additional [Transaction details](../../notes/detailAndPagination/) use the
 ?showtxn=1 and showtxnio=1 query parameters.
 
 Examples
 --
 * [BTC Genesis block](https://api.blockstrap.com/v0/btc/block/000000000019D6689C085AE165831E934FF763AE46A2A6C172B3F1B60A8CE26F)
 * [BTC block 00000000C937983704A73AF28ACDEC37B049D214ADBDA81D7E2A3DD146F6ED09](https://api.blockstrap.com/v0/btc/block/00000000C937983704A73AF28ACDEC37B049D214ADBDA81D7E2A3DD146F6ED09)
-* [LTC Genesis block](https://api.blockstrap.com/v0/ltc/block/0000050C34A64B415B6B15B37F2216634B5B1669CB9A2E38D76F7213B0671E00)
+* [LTC block 7EB1160F01939C087A21A3E14290EEF905EBCA0E9079FDD711CFA4CFE3425C43](https://api.blockstrap.com/v0/ltc/block/7EB1160F01939C087A21A3E14290EEF905EBCA0E9079FDD711CFA4CFE3425C43)
 
 Example Output
     {
@@ -50,8 +50,7 @@ Example Output
                 "_destroyed_satoshi_seconds": 0,
                 "Transactions": [
                     {
-                        "id": "01414FB7FCFE2A7AF0603AC5C75426756CDF8F4622EDDBC2DD09BC9BA46F2B5B",
-                        "_can_cache": 0
+                        "id": "01414FB7FCFE2A7AF0603AC5C75426756CDF8F4622EDDBC2DD09BC9BA46F2B5B"
                     }
                 ]
             },
@@ -64,17 +63,18 @@ Example Output
 
 
 #### Also see
-* [Block object](../blockobject) For a full breakdown of the elements
-* [Transaction details and Pagination](../../notes/detailAndPagination)
-* [Values and Currency](../../notes/valuesAndCurrencies) How we handle values and currencies
-* [Request object](../../notes/requestobject)
+* [Block object](../blockobject/) For a full breakdown of the elements
+* [Transaction details and Pagination](../../notes/detailAndPagination/)
+* [Values and Currency](../../notes/valuesAndCurrencies/) How we handle values and currencies
+* [Request object](../../notes/requestobject/)
+* [Supported Chains](../../notes/chains/)
 
 #### Access Criteria
 * GET
 * There is no sensitive or custom information in the data returned by this API method.
 * HTTP or HTTPS
-* No API key required, but subjected to [usage/rate limits](../../notes/limitsAndTiers).
-* If API key provided, then subject to [Usage Tiers](../../notes/limitsAndTiers).
+* No API key required, but subjected to [usage/rate limits](../../notes/limitsAndTiers/).
+* If API key provided, then subject to [Usage Tiers](../../notes/limitsAndTiers/).
 
 1. [Return to API](../../../)
 1. [Return to Blocks](../)
@@ -82,4 +82,5 @@ Example Output
 1. [Block](../block/)
 1. [BlockHeight](../blockHeight/)
 1. [BlockLatest](../blockLatest/)
+1. [BlocksLatest](../blocksLatest/)
 1. [Table of Contents](../../../../)
