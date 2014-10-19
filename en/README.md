@@ -13,8 +13,6 @@ This should provide a complete table of contents for all English documentation.
     * [Installation](applications/explorer/installation/)
 * [Prioritizer](applications/prioritizer/)
     * [Installation](applications/prioritizer/installation/)
-* [Calculator](applications/calculator/)
-    * [Installation](applications/calculator/installation/)
 
 #### Framework
 

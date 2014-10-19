@@ -19,7 +19,6 @@ This table of contents should show each of the top-menus in ther available langu
 * [Wallet](en/applications/wallet/)
 * [Explorer](en/applications/explorer/)
 * [Prioritizer](en/applications/prioritizer/)
-* [Calculator](en/applications/calculator/)
 
 #### Framework
 

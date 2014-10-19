@@ -9,7 +9,6 @@ With that said, feel free to jump straight-in and play around with the following
 * [Wallet](wallet/) - [Framework](../framework/) Theme - [[Demo](#)]
 * [Explorer](explorer/) - Standalone PHP / [API](../api/) Application - [[Demo](#)]
 * [Prioritizer](prioritizer/) - [Framework](../framework/) Theme - [[Demo](#)]
-* [Calculator](calculator/) - [Framework](../framework/) Plugin - [[Demo](#)]
 
 ---
 
@@ -17,5 +16,4 @@ With that said, feel free to jump straight-in and play around with the following
 2. [Wallet](wallet/)
 3. [Explorer](explorer/)
 4. [Prioritizer](prioritizer/)
-5. [Calculator](calculator/)
-6. [Table of Contents](../)
+5. [Table of Contents](../)

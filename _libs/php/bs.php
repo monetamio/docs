@@ -67,11 +67,11 @@ class blockstrap_core
         }
         if($slug)
         {
-            if(file_exists($base.'/'.$slug.'data.json'))
+            if(file_exists($base.'/'.$slug.'/data.json'))
             {
                 $data = array_merge(
                     $data, 
-                    json_decode(file_get_contents($base.'/'.$slug.'data.json'), true)
+                    json_decode(file_get_contents($base.'/'.$slug.'/data.json'), true)
                 );
             }
         }
