@@ -107,8 +107,8 @@ Example Object [taken from here](https://api.blockstrap.com/v0/btc/block/0000000
 
 1. [Return to API](../../../)
 1. [Return to Blocks](../)
-1. [Block](../block/)
-1. [BlockHeight](../blockHeight/)
-1. [BlockLatest](../blockLatest/)
-1. [BlocksLatest](../blocksLatest/)
+1. [block](../block/)
+1. [blockHeight](../blockHeight/)
+1. [blockLatest](../blockLatest/)
+1. [blocksLatest](../blocksLatest/)
 1. [Table of Contents](../../../../)

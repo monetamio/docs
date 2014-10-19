@@ -8,7 +8,7 @@ By default, only minimal Transaction information is returned. For additional [Tr
 ?showtxn=1 and showtxnio=1 query parameters.
 
 Examples
---
+
 * [BTC Genesis block](https://api.blockstrap.com/v0/btc/block/000000000019D6689C085AE165831E934FF763AE46A2A6C172B3F1B60A8CE26F?prettyprint=1)
 * [BTC block 00000000C937983704A73AF28ACDEC37B049D214ADBDA81D7E2A3DD146F6ED09](https://api.blockstrap.com/v0/btc/block/00000000C937983704A73AF28ACDEC37B049D214ADBDA81D7E2A3DD146F6ED09?prettyprint=1)
 * [LTC block 7EB1160F01939C087A21A3E14290EEF905EBCA0E9079FDD711CFA4CFE3425C43](https://api.blockstrap.com/v0/ltc/block/7EB1160F01939C087A21A3E14290EEF905EBCA0E9079FDD711CFA4CFE3425C43?prettyprint=1)
@@ -79,8 +79,8 @@ Example Output
 1. [Return to API](../../../)
 1. [Return to Blocks](../)
 1. [Block Object](../blockobject/)
-1. [Block](../block/)
-1. [BlockHeight](../blockHeight/)
-1. [BlockLatest](../blockLatest/)
-1. [BlocksLatest](../blocksLatest/)
+1. [block](../block/)
+1. [blockHeight](../blockHeight/)
+1. [blockLatest](../blockLatest/)
+1. [blocksLatest](../blocksLatest/)
 1. [Table of Contents](../../../../)

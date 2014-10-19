@@ -2,10 +2,10 @@
 
 Block methods return details on Blocks in the blockchain.
 
-* [Block](block/) - Gets details on a Block from it's hash
-* [BlockHeight](blockHeight/) - Gets details of Blocks at a given chain height
-* [BlockLatest](blockLatest/) - Gets the details of the most recent Block
-* [BlocksLatest](blockLatest/) - Gets details of the most recent n Blocks
+* [block](block/) - Gets details on a Block from it's hash
+* [blockHeight](blockHeight/) - Gets details of Blocks at a given chain height
+* [blockLatest](blockLatest/) - Gets the details of the most recent Block
+* [blocksLatest](blockLatest/) - Gets details of the most recent n Blocks
 
 All Block functions return a [Block object](blockobject/) (or an array of them).
 By default, only minimal Transaction information is returned. For additional [Transaction details](../../notes/detailAndPagination/) use the
@@ -14,8 +14,8 @@ By default, only minimal Transaction information is returned. For additional [Tr
 
 1. [Return to API](../../)
 1. [Block object](blockobject/)
-1. [Block](block/)
-1. [BlockHeight](blockHeight/)
-1. [BlockLatest](blockLatest/)
-1. [BlocksLatest](blockLatest/)
+1. [block](block/)
+1. [blockHeight](blockHeight/)
+1. [blockLatest](blockLatest/)
+1. [blocksLatest](blockLatest/)
 1. [Table of Contents](../../../)
