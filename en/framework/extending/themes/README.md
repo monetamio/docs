@@ -34,4 +34,5 @@ The benefits of including a `theme.js` module can be seen from the auto-loading 
 4. [Plugins](../plugins/)
 5. [Buttons](../buttons/)
 6. [Filters](../filters/)
-7. [Table of Contents](../../../)
+7. [Hooks](../hooks/)
+8. [Table of Contents](../../../)
