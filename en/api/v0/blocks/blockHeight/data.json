@@ -1,6 +1,6 @@
 {
    "page": {
-       "title": "blockHeight |  Blocks | API | Blockstrap Documentation",
+       "title": "blockHeight | Blocks | API | Blockstrap Documentation",
        "meta": "API Call to get all Blocks at a certain height in the blockchain",
        "base": "../../../../../",
        "lang": "en"

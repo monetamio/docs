@@ -5,12 +5,12 @@
 Returns information for the specificed Transaction for the specified [`<CHAIN>`](../../notes/chains/)
 
 Returns a [Transaction object](../transactionobject/). By default, only medium Transaction information is returned. For additional [Transaction details](../../notes/detailAndPagination/) use the
-?showtxn=1 and showtxnio=1 query parameters. 
+?showtxnio=1 query parameter. 
 
 ### Examples
-* [BTC Block with minimal Transaction information](https://api.blockstrap.com/v0/btc/blockLatest)
-* [BTC Transaction with medium information](https://api.blockstrap.com/v0/btc/transaction/ABD2D6C1AB01F1CA22137AC67F73ABC72D006A1519F313522FDD759F71347764)
-* [BTC Transaction with maximum information](https://api.blockstrap.com/v0/btc/transaction/ABD2D6C1AB01F1CA22137AC67F73ABC72D006A1519F313522FDD759F71347764?showtxnio=1)
+* [BTC Block with minimal Transaction information](https://api.blockstrap.com/v0/btc/blockLatest?prettyprint=1)
+* [BTC Transaction with medium information](https://api.blockstrap.com/v0/btc/transaction/ABD2D6C1AB01F1CA22137AC67F73ABC72D006A1519F313522FDD759F71347764?prettyprint=1)
+* [BTC Transaction with maximum information](https://api.blockstrap.com/v0/btc/transaction/ABD2D6C1AB01F1CA22137AC67F73ABC72D006A1519F313522FDD759F71347764?showtxnio=1&prettyprint=1)
 
 
 Example Output
@@ -136,14 +136,6 @@ Maximum Information
 * [Values and Currency](../../notes/valuesAndCurrencies/) How we handle values and currencies
 * [Request object](../../notes/requestobject/)
 * [Supported Chains](../../notes/chains/)
-
-#### Access Criteria
-* GET
-* There is no sensitive or custom information in the data returned by this API method.
-* HTTP or HTTPS
-* No API key required, but subjected to [usage/rate limits](../../notes/limitsAndTiers/).
-* If API key provided, then subject to [Usage Tiers](../../notes/limitsAndTiers/).
-
 
 1. [Return to API](../../../)
 1. [Transaction](../transaction/)

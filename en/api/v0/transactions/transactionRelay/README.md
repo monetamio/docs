@@ -28,7 +28,7 @@ Example Output
 * [Supported Chains](../../notes/chains/)
 
 #### Access Criteria
-* GET
+* GET or POST
 * There is no sensitive or custom information in the data returned by this API method.
 * HTTP or HTTPS
 * No API key required, but subjected to [usage/rate limits](../../notes/limitsAndTiers/).

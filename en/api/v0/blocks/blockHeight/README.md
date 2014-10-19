@@ -17,10 +17,10 @@ must be aware of the [gotchas at the top of the blockchain](../../notes/topOfThe
 
 
 ### Examples
-* [BTC block at height 100](https://api.blockstrap.com/v0/btc/blockHeight/100)
-* [BTC 3 blocks at height 317930](https://api.blockstrap.com/v0/btc/blockHeight/317930)
-* [DOGE block at height 150000](https://api.blockstrap.com/v0/doge/blockHeight/150000)
-* [LTC block at height 101010](https://api.blockstrap.com/v0/ltc/blockHeight/101010)
+* [BTC block at height 100](https://api.blockstrap.com/v0/btc/blockHeight/100?prettyprint=1)
+* [BTC 3 blocks at height 317930](https://api.blockstrap.com/v0/btc/blockHeight/317930?prettyprint=1)
+* [DOGE block at height 150000](https://api.blockstrap.com/v0/doge/blockHeight/150000?prettyprint=1)
+* [LTC block at height 101010](https://api.blockstrap.com/v0/ltc/blockHeight/101010?prettyprint=1)
 
 Example Output
     {

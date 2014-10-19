@@ -1,6 +1,6 @@
 {
    "page": {
-       "title": "blockLatest |  Blocks | API | Blockstrap Documentation",
+       "title": "blockLatest | Blocks | API | Blockstrap Documentation",
        "meta": "API function to get the most recent block from the blockchain.",
        "base": "../../../../../",
        "lang": "en"

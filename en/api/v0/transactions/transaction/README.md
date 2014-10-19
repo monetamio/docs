@@ -8,11 +8,8 @@ Returns a [Transaction object](../transactionobject/). By default, only medium T
 ?showtxn=1 and showtxnio=1 query parameters. 
 
 ### Examples
-* [BTC Transaction](https://api.blockstrap.com/v0/btc/transaction/94C0BBEA9CE28A5631642252E0EEAE36F9DC91E62F87310B064CEC4BFCE9DCBA)
-* []()
-* []()
-* []()
-* []()
+* [BTC Transaction](https://api.blockstrap.com/v0/btc/transaction/94C0BBEA9CE28A5631642252E0EEAE36F9DC91E62F87310B064CEC4BFCE9DCBA?prettyprint=1)
+
 
 Example Output
     {

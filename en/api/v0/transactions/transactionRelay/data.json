@@ -1,6 +1,6 @@
 {
    "page": {
-       "title": "transactionRelay |  Transactions | API | Blockstrap Documentation",
+       "title": "transactionRelay | Transactions | API | Blockstrap Documentation",
        "meta": "How to send a signed transaction through the Blockstrap API",
        "base": "../../../../../",
        "lang": "en"

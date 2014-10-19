@@ -9,7 +9,7 @@ Used to diagnose relay failures, or to check that you're created a transaction c
 
 This is basically a wrapper for the xcoind `decoderawtransaction` RPC call.
 
-Example Ouput
+Example Output
     {
         "status": "success",
         "data": {

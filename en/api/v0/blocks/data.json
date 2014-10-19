@@ -1,7 +1,7 @@
 {
    "page": {
-       "title": "Blockstrap Documentation | API | Blocks",
-       "meta": "blockstrap blocks meta description",
+       "title": "Blocks | API | Blockstrap Documentation",
+       "meta": "Block functions on the Blockstrap API",
        "base": "../../../../",
        "lang": "en"
     }

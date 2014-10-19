@@ -1,9 +1,9 @@
 ## Block Object
 
 
-Represents a block in the blockchain.
+Represents a Block in the blockchain.
 
-Example Object [taken from here](https://api.blockstrap.com/v0/btc/block/000000000000000015DB0BCB1A6651E9E4910B598C3B027941EACF9764172211)
+Example Object [taken from here](https://api.blockstrap.com/v0/btc/block/000000000000000015DB0BCB1A6651E9E4910B598C3B027941EACF9764172211?prettyprint=1)
     {
         "id": "000000000000000015DB0BCB1A6651E9E4910B598C3B027941EACF9764172211",
         "height": 326027,
@@ -92,9 +92,9 @@ Example Object [taken from here](https://api.blockstrap.com/v0/btc/block/0000000
 
 
 ### Examples
-* [BTC Latest block](https://api.blockstrap.com/v0/btc/blockLatest)
-* [DOGE Latest block](https://api.blockstrap.com/v0/doge/blockLatest)
-* [LTC Latest block](https://api.blockstrap.com/v0/ltc/blockLatest)
+* [BTC Latest block](https://api.blockstrap.com/v0/btc/blockLatest?prettyprint=1)
+* [DOGE Latest block](https://api.blockstrap.com/v0/doge/blockLatest?prettyprint=1)
+* [LTC Latest block](https://api.blockstrap.com/v0/ltc/blockLatest?prettyprint=1)
 
 #### Also see
 * [Transaction details and Pagination](../../notes/detailAndPagination/)

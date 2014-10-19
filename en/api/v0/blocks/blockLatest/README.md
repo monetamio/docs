@@ -14,9 +14,9 @@ must be aware of the [gotchas at the top of the blockchain](../../notes/topOfThe
 
 
 ### Examples
-* [BTC Latest block](https://api.blockstrap.com/v0/btc/blockLatest)
-* [DOGE Latest block](https://api.blockstrap.com/v0/doge/blockLatest)
-* [LTC Latest block](https://api.blockstrap.com/v0/ltc/blockLatest)
+* [BTC Latest block](https://api.blockstrap.com/v0/btc/blockLatest?prettyprint=1)
+* [DOGE Latest block](https://api.blockstrap.com/v0/doge/blockLatest?prettyprint=1)
+* [LTC Latest block](https://api.blockstrap.com/v0/ltc/blockLatest?prettyprint=1)
 
 Example Output
 
