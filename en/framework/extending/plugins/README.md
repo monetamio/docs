@@ -11,4 +11,5 @@ An exposed plugin architecture is not yet defined.
 4. [Plugins](../plugins/)
 5. [Buttons](../buttons/)
 6. [Filters](../filters/)
-7. [Table of Contents](../../../)
+7. [Hooks](../hooks/)
+8. [Table of Contents](../../../)
