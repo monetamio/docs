@@ -205,7 +205,6 @@ class blockstrap_core
         {
             $slug.= $url.'/';
         }
-        var_dumped($slug);
         return rtrim($slug, '/');
     }
     
