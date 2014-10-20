@@ -34,12 +34,6 @@ This table of contents should show each of the top-menus in ther available langu
 * [Blocks](en/api/v0/blocks/)
 * [Addresses](en/api/v0/addresses/)
 * [Transactions](en/api/v0/transactions/)
-* [Markets](en/api/v0/markets/)
+* [Notes](en/api/v0/notes/)
 
 
-#### Blockchains
-
-* [Bitcoin](en/blockchains/bitcoin/)
-* [Litecoin](en/blockchains/litecoin/)
-* [Dogecoin](en/blockchains/dogecoin/)
-* [Testnets](en/blockchains/testnets/)
