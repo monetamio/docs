@@ -205,6 +205,7 @@ class blockstrap_core
         {
             $slug.= $url.'/';
         }
+        var_dumped($slug);
         return rtrim($slug, '/');
     }
     
@@ -216,8 +217,11 @@ class blockstrap_core
         $slug_count = count($slug_array);
         while($slug_index < $slug_count)
         {
+            if($slug_array[$slug_index])
+            {
+                $base.= '../';
+            }
             $slug_index++;
-            $base.= '../';
         }
         $data['page']['base'] = $base;
         if($directory)
