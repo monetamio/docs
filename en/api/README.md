@@ -2,20 +2,32 @@
 
 Welcome to the Blockstrap API.
 
+
+Almost everything is done as a REST GET to either `http://api.blockstrap.com` or `https://api.blockstrap.com`
+
+
 [Quickstart CheatSheet](v0/notes/atAGlance)
 
-
-Blockchain data functions.
-* [Blocks](v0/blocks) 
-  * [BlockHeight](v0/blocks/blockHeight)
-  * [BlockHash](v0/blocks/blockHash)
-  * [BlockLatest](v0/blocks/blockLatest)
-* [Transactions](v0/transactions)
-  * [Transaction](v0/transactions/transaction)
-* [Addresses](v0/addresses)
-  * [Address](v0/addresses/address)
-  * [AddressTransactions](v0/addresses/addressTransactions)
-  * [AddressUnspents](v0/addresses/addressUnspents)
+* [Notes](v0/notes) give an overview of the API
+  * [supported chains](v0/notes/chains)
+  * [The Request object](v0/notes/requestobject)
+  * [Dangers at the top of the chain](v0/notes/topOfTheChain)
+  * [Values and Currencies](v0/notes/valuesAndCurrencies)
+* [Blocks](v0/blocks) methods return a [Block object](v0/blocks/blockobject)
+  * [block](v0/blocks/block)
+  * [blockHeight](v0/blocks/blockHeight)
+  * [blockLatest](v0/blocks/blockLatest)
+  * [blocksLatest](v0/blocks/blocksLatest)
+* [Transactions](v0/transactions) methods return a [Transaction Object](v0/transactions/transactionobject)
+  * [transaction](v0/transactions/transaction)
+  * [transactionDecode](v0/transactions/transactionDecode)
+  * [transactionRelay](v0/transactions/transactionRelay)
+* [Addresses](v0/addresses) methods return an [Address object](v0/addresses/addressobject)
+  * [address](v0/addresses/address)
+  * [addresses](v0/addresses/addresses)
+  * [addressTransactions](v0/addresses/addressTransactions)
+  * [addressUnspents](v0/addresses/addressUnspents)
+  * [addressHash160ToAddress](v0/addresses/addressHash160ToAddress)
 
 Market Functions
 
