@@ -2,10 +2,19 @@
 
     GET <API_ENDPOINT>/v0/<CHAIN>/transaction/<TXN_HASH>
 
-Returns information for the specificed Transaction for the specified [`<CHAIN>`](../../notes/chains/)
+Transaction objects are returned by multiple methods, in varying levels of detail. The API will give you
+less detail by default, and you can add URL params to increase the detail level.
+In general:
+* No url param will show the minimal information (usually just the id of the Transaction)
+* ?showtxn=1 will show Transaction information
+* ?showtxnio=1 will show Tranaction information and the Inputs and Outputs for the Transaction
 
-Returns a [Transaction object](../transactionobject/). By default, only medium Transaction information is returned. For additional [Transaction details](../../notes/detailAndPagination/) use the
-?showtxnio=1 query parameter. 
+Be warned that just requesting ?showtxnio=1 every time will considerably slow down the response time
+of the API and increase the amount of data you'll receive in each API call. Only turn these options on
+when you're sure you need the additional information.
+
+Note Transaction return by Address functions have a special set of extra info to that reflects the
+relationship between the Transaction and the Address. (see below for the extra elements)
 
 ### Examples
 * [BTC Block with minimal Transaction information](https://api.blockstrap.com/v0/btc/blockLatest?prettyprint=1)
@@ -130,6 +139,18 @@ Maximum Information
     * `spending_tx_id`: String, The id (or hash) of the Transaction that spends this `output`. NULL indicates the `output` has not been spent
     * `spending_tx_pos`: Integer, The position of this output, as the input in the spending Transaction
     * `is_spent`: Integer, Has the output been spent by another Transaction 0=no 1=yes
+
+### Special Address elements
+When a Transaction object is returned as part of an Address method the following extra elements are provided.
+* `tx_address_tx_pos`: Integer, The position of the output in the Transaction that is affecting the Address
+* `tx_address_value`: Integer, the absolute value (in satoshies) of the value affecting the Address
+* `tx_address_value_fiat_now`:String, A representation of the *Approximate* value of the `tx_address_value` payment in the specified fiat currency ,
+* `tx_address_value_disp`: String, A 'display friendly' representation of the `tx_address_value` (in full coins)
+* `tx_address_direction`: String ('input' or 'output'), Shows the direction of movement of the `tx_address_value` relative to the address.
+* `tx_address_script_pub_key`: String (hex), the pub key script.
+* `tx_address_ledger`: Integer, How the `tx_address_value` affects the balance of the Address. Positive number increases the balance, negative number decreases the balance
+* `tx_address_ledger_fiat_now`: String, A representation of the *Approximate* value of how the `tx_address_value` payment in the specified fiat currency has affected the balance of the Address
+* `tx_address_ledger_disp`: String, A 'display friendly' representation of the how the `tx_address_value` (in full coins) has affected the balance of the Address
 
 #### Also see
 * [Transaction details and Pagination](../../notes/detailAndPagination/)

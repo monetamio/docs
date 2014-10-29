@@ -9,10 +9,10 @@
 {{#tags}}
     <meta content="{{content}}" property="{{property}}" />
 {{/tags}}
-<link rel='shortcut icon' href='favicon.ico'>
+<link rel='shortcut icon' href='{{base}}favicon.ico'>
 <link href="http://docs.blockstrap.com/{{urls.slug}}" rel="canonical" />
 {{#css}}
-    <link href="{{page.base}}{{href}}" type="text/css" rel="stylesheet">
+    <link href="{{base}}{{href}}" type="text/css" rel="stylesheet">
 {{/css}}
 </head>
 <body>
@@ -38,7 +38,7 @@
             <button type="submit" class="btn btn-default">{{search.submit}}</button>
         </form>
         <ul class="nav navbar-nav navbar-right">
-            {{#nav}}
+            {{#navigation}}
                 {{#sub}}<li class="{{css}} dropdown">{{/sub}}
                 {{^sub}}<li class="{{css}}">{{/sub}}
                     {{#sub}}
@@ -63,7 +63,7 @@
                     </ul>
                     {{/sub}}
                 </li>
-            {{/nav}}
+            {{/navigation}}
         </ul>
     </div><!-- /.navbar-collapse -->
 </nav>

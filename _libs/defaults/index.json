@@ -33,7 +33,7 @@
             "src": "_libs/js/blockstrap.js"
         }
     ],
-    "nav": [
+    "navigation": [
         {
             "href": "http://blockstrap.com/",
             "css": "",
@@ -169,38 +169,12 @@
                     "text": "Transactions"
                 },
                 {
-                    "slug": "api/v0/markets/",
+                    "slug": "api/v0/notes/",
                     "css": "",
-                    "text": "Markets"
-                }
-            ]
-        },
-        {
-            "text": "Blockchains",
-            "slug": "blockchains/",
-            "css": "",
-            "links": [
-                {
-                    "slug": "blockchains/bitcoin/",
-                    "css": "",
-                    "text": "Bitcoin"
-                },
-                {
-                    "slug": "blockchains/dogecoin/",
-                    "css": "",
-                    "text": "Dogecoin"
-                },
-                {
-                    "slug": "blockchains/litecoin/",
-                    "css": "",
-                    "text": "Litecoin"
-                },
-                {
-                    "slug": "blockchains/testnets/",
-                    "css": "",
-                    "text": "Testnets"
+                    "text": "Notes"
                 }
             ]
         }
+        
     ]
 }
