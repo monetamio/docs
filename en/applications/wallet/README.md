@@ -6,7 +6,7 @@ The primary features of the wallet include:
 
 * [Deterministic by Default](../../framework/started/security/#qa_01)
 * [Module by Nature](../../framework/modules/)
-* [Easily Extended](../../framwork/extending/)
+* [Easily Extended](../../framework/extending/)
 * [OpenSource](http://github.com/blockstrap/framework)
 * __API Neutral__
 
