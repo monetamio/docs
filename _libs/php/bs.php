@@ -121,7 +121,7 @@ class blockstrap_core
         {
             $header = $this->markdown(file_get_contents($slug.'/HEADER.md'));
         }
-        if($home && file_exists($slug.'/README.md'))
+        if($directory && file_exists($slug.'/README.md'))
         {
             $content = file_get_contents($slug.'/README.md');
             $content = str_replace('{{base}}', $home, $content);
@@ -185,17 +185,14 @@ class blockstrap_core
         $slug = '';
         $url = '';
         $self = $server['PHP_SELF'];
+        $self_len = strlen($self) - strlen('/index.php');
+        $request = substr($server['PHP_SELF'], 0, $self_len);
+        $request_len = strlen($request);
         if(isset($server['REDIRECT_URL']))
         {
-            $url = $server['REDIRECT_URL'];
+            $url = substr($server['REDIRECT_URL'], $request_len);
         }
-        $self_array = array_slice(explode('/', $self), 1, -1);
-        $url_array = array_slice(explode('/', $url), count($self_array) + 1, -1);
-        foreach($url_array as $url)
-        {
-            $slug.= $url.'/';
-        }
-        return rtrim($slug, '/');
+        return ltrim(rtrim($url, '/'), '/');
     }
     
     public function blog($data, $base, $directory, $slug, $language = 'en')
@@ -301,7 +298,7 @@ class blockstrap_core
                     $data['nav'][$key] = $link;
                 }
             }
-            if(is_array($data['sidebar']))
+            if(isset($data['sidebar']) && is_array($data['sidebar']))
             {
                 foreach($data['sidebar'] as $key => $sidebar)
                 {
