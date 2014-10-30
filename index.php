@@ -38,7 +38,13 @@ $content = $bs->content($php_base, $slug, $directory, true);
 
 if($slug)
 {
-    if(isset($data['404']) && $data['404'] === true)
+    if($directory && $directory[2] != '/')
+    {
+        $url = $base.'en/'.$slug;
+        header('Location: '.$url, true, 302);
+        exit;
+    }
+    elseif(isset($data['404']) && $data['404'] === true)
     {
         // HARDCODED FOR NOW
         $language = 'en';
@@ -53,12 +59,6 @@ if($slug)
         }
         $html = $bs->html($php_base, $slug, $directory);
         $content = $bs->content($php_base, $slug, $directory, $base);
-    }
-    elseif($directory && $directory[2] != '/')
-    {
-        $url = $base.'en/'.$slug;
-        header('Location: '.$url, true, 302);
-        exit;
     }
     elseif($directory && $directory[2] == '/' && $directory == $slug.'/')
     {
