@@ -281,7 +281,7 @@ class blockstrap_core
         }
         if($directory)
         {
-            if(is_array($data['nav']))
+            if(isset($data['nav']) && is_array($data['nav']))
             {
                 foreach($data['nav'] as $key => $link)
                 {
