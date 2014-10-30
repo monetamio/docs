@@ -21,7 +21,7 @@ These [modules](modules/) include:
 The current disribution of Blockstrap not only includes the core modules listed above, but is also bundled with the following sample applications:
 
 * [Wallet](../applications/wallet/)
-* [Prioritizer](../applications/prioritzer/)
+* [Prioritizer](../applications/prioritizer/)
 
 These sample applications are intended to help demonstrate how Blockstrap can be used in different ways to do very different things. Neither of them have been developed with the intention of being used to store large quantities of coins, and you should only ever send coins to an address where you can verifably demonstrate ownership of the private keys. We have created them so that developers have a starting point for their own ideas.
 

@@ -20,7 +20,7 @@ relationship between the Transaction and the Address.
 * [BTC Transaction with medium information](https://api.blockstrap.com/v0/btc/transaction/ABD2D6C1AB01F1CA22137AC67F73ABC72D006A1519F313522FDD759F71347764?prettyprint=1)
 * [BTC Transaction with maximum information](https://api.blockstrap.com/v0/btc/transaction/ABD2D6C1AB01F1CA22137AC67F73ABC72D006A1519F313522FDD759F71347764?showtxnio=1&prettyprint=1)
 
-see [Transaction object](../../transaction/transactionobject/) for more information.
+see [Transaction object](../../transactions/transactionobject/) for more information.
 
 
 ### Pagination
@@ -44,7 +44,5 @@ Return records 201-300
 
 1. [Return to API](../../../)
 1. [Return to Notes](../)
-1. [Top of the chain](../topOfTheChain/)
-1. [BlockHeight](../blockHeight/)
-1. [BlockLatest](../blockLatest/)
+
 1. [Table of Contents](../../../../)

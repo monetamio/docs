@@ -8,7 +8,7 @@ Block methods return details on Blocks in the blockchain.
 * [blocksLatest](blockLatest/) - Gets details of the most recent n Blocks
 
 All Block functions return a [Block object](blockobject/) (or an array of them).
-By default, only minimal Transaction information is returned. For additional [Transaction details](../../notes/detailAndPagination/) use the
+By default, only minimal Transaction information is returned. For additional [Transaction details](../notes/detailAndPagination/) use the
 ?showtxn=1 and showtxnio=1 query parameters.
 
 

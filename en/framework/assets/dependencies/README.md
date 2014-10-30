@@ -7,7 +7,7 @@ Dependencies <a name="docs_home"></a>
 * [`bitcoinjs.js`](#dep_btcjs) - [BitcoinJS](http://bitcoinjs.org/) `v0.1.3` __MIT License__
 * [`bootstrap.js`](#dep_boot) - [Bootstrap](http://getbootstrap.com/) `v3.2.0` __MIT License__
 * [`bootstrap-filestyle.js`](#dep_boot_file) - [Bootstrap FileStyle](http://markusslima.github.io/bootstrap-filestyle/) `v1.1.2` __MIT License__
-* [`bootstrap-switch.js`](#dep_boot_switch) - [Boostrap Switch](www.bootstrap-switch.org) `v3.0.2` __Apache License 2.0__
+* [`bootstrap-switch.js`](#dep_boot_switch) - [Boostrap Switch](http://www.bootstrap-switch.org) `v3.0.2` __Apache License 2.0__
 * [`crypto.js`](#dep_crypto) - [CryptoJS](https://code.google.com/p/crypto-js/) `v3.1.2` __BSD License__
 * [`effects.js`](#dep_effects) - [jQuery UI Effects](http://jqueryui.com) `v1.9.2` __MIT License__
 * [`jquery.js`](#dep_jquery) - [jQuery](http://jquery.com) `v1.11.0` __MIT License__
