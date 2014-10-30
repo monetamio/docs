@@ -38,20 +38,10 @@ $content = $bs->content($php_base, $slug, $directory, true);
 
 if($slug)
 {
-    if($directory && $directory[2] != '/')
+    if(isset($data['404']) && $data['404'] === true)
     {
-        $url = $base.'en/'.$slug;
-        header('Location: '.$url, true, 302);
-        exit;
-    }
-    elseif($directory && $directory[2] == '/' && $directory == $slug.'/')
-    {
-        $url = $base;
-        header('Location: '.$url, true, 302);
-        exit;
-    }
-    elseif(isset($data['404']) && $data['404'] === true)
-    {
+        // HARDCODED FOR NOW
+        $language = 'en';
         $slug_array = explode('/', $slug);
         header("HTTP/1.0 404 Not Found");
         $slug = $language.'/404';
@@ -63,6 +53,18 @@ if($slug)
         }
         $html = $bs->html($php_base, $slug, $directory);
         $content = $bs->content($php_base, $slug, $directory, $base);
+    }
+    elseif($directory && $directory[2] != '/')
+    {
+        $url = $base.'en/'.$slug;
+        header('Location: '.$url, true, 302);
+        exit;
+    }
+    elseif($directory && $directory[2] == '/' && $directory == $slug.'/')
+    {
+        $url = $base;
+        header('Location: '.$url, true, 302);
+        exit;
     }
 }
 
