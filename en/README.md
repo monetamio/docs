@@ -52,7 +52,7 @@ This should provide a complete table of contents for all English documentation.
 #### API
 
 * [Blocks](api/v0/blocks/)
-    * [Height](api/v0/blocks/height/)
+    * [Height](api/v0/blocks/blockHeight/)
 * [Addresses](api/v0/addresses/)
 * [Transactions](api/v0/transactions/)
 * [Markets](api/v0/markets/)

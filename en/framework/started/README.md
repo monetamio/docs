@@ -5,7 +5,7 @@ When you [download](download/) Blockstrap and open the `index.html` file from wi
 --------------
 ### Disclaimer
 
-However, what you see and when you see it is very much dependent on the application that is being used or presented. In the case of [prioritizer](../../applications/priortizer/) there are even admin and user views, and only adminstrators are ever asked to set things up. In addition to that, if you are only using [core](../core/) and have not included any additional [modules](../modules/) or the necessary configuration files, you may end-up seeing nothing.
+However, what you see and when you see it is very much dependent on the application that is being used or presented. In the case of [prioritizer](../../applications/prioritizer/) there are even admin and user views, and only adminstrators are ever asked to set things up. In addition to that, if you are only using [core](../core/) and have not included any additional [modules](../modules/) or the necessary configuration files, you may end-up seeing nothing.
 
 By default, the following applications are included within [core](../core/):
 

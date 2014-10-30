@@ -8,8 +8,8 @@ Returns details on Transactions
 
 #### Also see
 * [Transaction details and Pagination](../../notes/detailAndPagination/)
-* [Values and Currency](../../notes/valuesAndCurrencies/) How we handle values and currencies
-* [Supported Chains](../../notes/chains/)
+* [Values and Currency](../notes/valuesAndCurrencies/) How we handle values and currencies
+* [Supported Chains](../notes/chains/)
 
 1. [Return to API](../../)
 1. [Table of Contents](../../../)
