@@ -40,7 +40,7 @@ if($slug)
 {
     if($directory && $directory[2] != '/')
     {
-        $url = $base.'en/'.$slug;
+        $url = rtrim($base.'en/'.$slug, '/').'/';
         header('Location: '.$url, true, 302);
         exit;
     }
