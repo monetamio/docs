@@ -1,7 +1,7 @@
 {
    "page": {
-       "title": "Blockstrap Documentation | Framework | Extending | Filters",
-       "meta": "filters api description",
+       "title": "Filters | Extending | Framework | Blockstrap Documentation",
+       "meta": "Extending the Blockstrap Framework using Filters",
        "base": "../../../../",
        "lang": "en"
     }

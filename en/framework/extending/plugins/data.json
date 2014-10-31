@@ -1,7 +1,7 @@
 {
    "page": {
-       "title": "Blockstrap Documentation | Framework | Extending | Plugins",
-       "meta": "plugins meta description",
+       "title": "Plugins | Extending | Framework | Blockstrap Documentation",
+       "meta": "Extending the Blockstrap Framework using Plugins",
        "base": "../../../../",
        "lang": "en"
     }
