@@ -5,6 +5,7 @@ In addition to development styling through [LESS.css](../../assets/less/) and co
 
 The common use of this module would be in editing the [configuration](../../core/configuration/) files, such as:
 
+<!--pre-javascript-->
 ```
 {
     styles: {

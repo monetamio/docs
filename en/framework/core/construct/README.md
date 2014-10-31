@@ -17,6 +17,7 @@ The `plugin` function at [core](../../core/) is what defines the order of initiz
 
 As seen here:
 
+<!--pre-javascript-->
 ```
 function plugin(element, options, defaults)
 {

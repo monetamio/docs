@@ -4,6 +4,7 @@ Prioritizer is a little different to the default [wallet](../../wallet/) in that
 
 For example, if we start out with the following `/themes/priority/js/dependenccies/issues.json` array:
 
+<!--pre-javascript-->
 ```
 {
     title: "Issue 01: Provide support for stellar",

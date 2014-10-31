@@ -3,6 +3,7 @@ CSS
 
 You do not need to manually include CSS within the HTML as styles are dyanmically added to the header by Blockstrap based upon the `css: []` options in [configuration](../../core/configuration/). Simply add or remove items in the options array to modify the stylesheets that are added to the page. By default, the following should be included:
 
+<!--pre-javascript-->
 ```
 {
     css: [

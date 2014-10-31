@@ -20,6 +20,7 @@ The current modules distributed with core include:
 
 An example skeleton module `themes/default/js/modules/theme.js` should be composed as follows:
 
+<!--pre-javascript-->
 ```
 (function($) 
 {

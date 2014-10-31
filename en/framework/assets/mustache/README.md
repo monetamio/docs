@@ -13,6 +13,7 @@ Other areas of interest for MustacheJS and Blockstrap include:
 
 As seen from the corresponding documentation, a quick example of how Mustache can be used:
 
+<!--pre-javascript-->
 ```
 var view = {
     title: "Joe",

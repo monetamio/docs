@@ -15,6 +15,7 @@ The [`$.fn.blockstrap.currencies`](../framework/modules/currencies/) module util
 
 It does this via a modified version of BitcoinJS-Lib with the following `networks.js` settings:
 
+<!--pre-javascript-->
 ```
 var networks = {
     bitcoin: {

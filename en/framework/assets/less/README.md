@@ -3,6 +3,7 @@ LESS.css
 
 [Less](http://lesscss.org/) is a CSS pre-processor, meaning that it extends the CSS language, adding features that allow variables, mixins, functions and many other techniques that allow you to make CSS that is more maintainable, themable and extendable. For example:
 
+<!--pre-css-->
 ```
 @base: #f938ab;
 
@@ -22,6 +23,7 @@ LESS.css
 
 This would compile to:
 
+<!--pre-css-->
 ```
 .box {
   color: #fe33ac;

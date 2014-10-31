@@ -6,6 +6,7 @@ By utilizing this module, the wallet is able to create and manage contacts.
 
 When first creating a new contacts called ___Blockstrap Donations___, information such as the following is added to [localStorage](http://en.wikipedia.org/wiki/Web_storage):
 
+<!--pre-javascript-->
 ```
 {
     id: "blockstrap_donations",

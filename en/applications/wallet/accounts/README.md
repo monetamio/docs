@@ -6,6 +6,7 @@ By utilizing this module, the wallet is able to create and manage accounts.
 
 When first creating a new ___Bitcoin___ account called ___My Wallet___, information such as the following is added to [localStorage](http://en.wikipedia.org/wiki/Web_storage):
 
+<!--pre-javascript-->
 ```
 {
     id: "my_wallet",
@@ -40,6 +41,7 @@ At the point of creation and (or) depending on `cache` [configuration](../../../
 
 If the new transaction account is higher than the currently saved count, it will then make another API call and collect and store additional transaction information, such as:
 
+<!--pre-javascript-->
 ```
 {
     "id": "my_wallet",

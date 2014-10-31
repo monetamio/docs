@@ -26,6 +26,7 @@ This function uses the selected API to get information pertaining to an address.
 
 The information it is able to map (with the corresponding defaults) includes:
 
+<!--pre-javascript-->
 ```
 {
     address: 'N/A',
@@ -39,6 +40,7 @@ The information it is able to map (with the corresponding defaults) includes:
 
 Example usage of this function could look like:
 
+<!--pre-javascript-->
 ```
 var api = $.fn.blockstrap.prototype.api;
 api.address('1121cQLqCsDsLPAkJW5ddTCREZ7Bp4ufrk', 'btc', function(results)
@@ -50,6 +52,7 @@ api.address('1121cQLqCsDsLPAkJW5ddTCREZ7Bp4ufrk', 'btc', function(results)
 
 Which should provide the following results:
 
+<!--pre-javascript-->
 ```
 {
     address: "1121cQLqCsDsLPAkJW5ddTCREZ7Bp4ufrk",
@@ -70,6 +73,7 @@ This function uses the selected API to get information pertaining to multiple ad
 
 The information it is able to map (with the corresponding defaults) includes:
 
+<!--pre-javascript-->
 ```
 {
     address: 'N/A',
@@ -83,6 +87,7 @@ The information it is able to map (with the corresponding defaults) includes:
 
 Example usage of this function could look like:
 
+<!--pre-javascript-->
 ```
 var api = $.fn.blockstrap.prototype.api;
 api.addresses(
@@ -97,6 +102,7 @@ api.addresses(
 
 Which should provide the following results:
 
+<!--pre-javascript-->
 ```
 {
     address: "1121cQLqCsDsLPAkJW5ddTCREZ7Bp4ufrk",
@@ -133,6 +139,7 @@ The information it is able to map (with the corresponding defaults) includes:
 
 Example usage of this function could look like:
 
+<!--pre-javascript-->
 ```
 var api = $.fn.blockstrap.prototype.api;
 api.balance('1121cQLqCsDsLPAkJW5ddTCREZ7Bp4ufrk', 'btc', function(results)
@@ -159,6 +166,7 @@ This function uses the selected API to get information pertaining to a block.
 
 The information it is able to map (with the corresponding defaults) includes:
 
+<!--pre-javascript-->
 ```
 {
     currency: currency,
@@ -172,6 +180,7 @@ The information it is able to map (with the corresponding defaults) includes:
 
 Example usage of this function could look like:
 
+<!--pre-javascript-->
 ```
 var api = $.fn.blockstrap.prototype.api;
 api.block('15968', 'btc', function(results)
@@ -183,6 +192,7 @@ api.block('15968', 'btc', function(results)
 
 Which should provide the following results:
 
+<!--pre-javascript-->
 ```
 {
     currency: "btc",
@@ -211,6 +221,7 @@ This function uses the selected API to relay a raw transaction.
 
 The information it is able to map (with the corresponding defaults) includes:
 
+<!--pre-javascript-->
 ```
 {
     currency: currency,
@@ -220,6 +231,7 @@ The information it is able to map (with the corresponding defaults) includes:
 
 Example usage of this function could look like:
 
+<!--pre-javascript-->
 ```
 var api = $.fn.blockstrap.prototype.api;
 api.relay('__RAW_TX__', 'btc', function(results)
@@ -231,6 +243,7 @@ api.relay('__RAW_TX__', 'btc', function(results)
 
 Which should provide the following results:
 
+<!--pre-javascript-->
 ```
 {
     currency: "btc",
@@ -247,6 +260,7 @@ This function uses the selected API to get information pertaining to a transacti
 
 The information it is able to map (with the corresponding defaults) includes:
 
+<!--pre-javascript-->
 ```
 {
     url: '#',
@@ -263,6 +277,7 @@ The information it is able to map (with the corresponding defaults) includes:
 
 Example usage of this function could look like:
 
+<!--pre-javascript-->
 ```
 var api = $.fn.blockstrap.prototype.api;
 api.transaction(
@@ -277,6 +292,7 @@ api.transaction(
 
 Which should provide the following results:
 
+<!--pre-javascript-->
 ```
 {
     block: 15968,
@@ -300,6 +316,7 @@ This function uses the selected API to get information pertaining to all the tra
 
 The information it is able to map (with the corresponding defaults) includes:
 
+<!--pre-javascript-->
 ```
 {
     url: '#',
@@ -316,6 +333,7 @@ The information it is able to map (with the corresponding defaults) includes:
 
 Example usage of this function could look like:
 
+<!--pre-javascript-->
 ```
 var api = $.fn.blockstrap.prototype.api;
 api.transactions('1121cQLqCsDsLPAkJW5ddTCREZ7Bp4ufrk', 'btc', function(results)
@@ -327,6 +345,7 @@ api.transactions('1121cQLqCsDsLPAkJW5ddTCREZ7Bp4ufrk', 'btc', function(results)
 
 Which should provide the following results:
 
+<!--pre-javascript-->
 ```
 {
     block: 15968,
@@ -360,6 +379,7 @@ This function uses the selected API to check an address for unspent inputs.
 
 The information it is able to map (with the corresponding defaults) includes:
 
+<!--pre-javascript-->
 ```
 {
     txid: 'N/A',
@@ -371,6 +391,7 @@ The information it is able to map (with the corresponding defaults) includes:
 
 Example usage of this function could look like:
 
+<!--pre-javascript-->
 ```
 var api = $.fn.blockstrap.prototype.api;
 api.unspents('1121cQLqCsDsLPAkJW5ddTCREZ7Bp4ufrk', 'btc', function(results)
@@ -403,6 +424,7 @@ This function is used internally by all other functions within this class to hel
 
 Blockstrap does not lock you in to a specific API provider. We provide functionality that allows you to map each and every API call we make to a specific API end-point of your choosing. For example, if you wanted to map our wallet to the [Hello Block](http://helloblock.io) API you would supply the following map:
 
+<!--pre-javascript-->
 ```
 var map = {
     ends: {
