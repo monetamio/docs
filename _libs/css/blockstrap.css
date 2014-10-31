@@ -385,6 +385,17 @@ SNIPPETS
     content: "";
     display: none;
 }
+#main-content .snippet-menu pre {
+    background: #00a4e5;
+    color: #FFF;
+}
+#main-content .snippet-menu pre a {
+    color: #FFF;
+    text-decoration: none;
+}
+#main-content .snippet-menu pre a:hover {
+    color: #FFFF99;
+}
 
 /*
 
