@@ -27,6 +27,9 @@
             "src": "_libs/js/jquery.min.js"
         },
         {
+            "src": "_libs/js/snippet.js"
+        },
+        {
             "src": "_libs/js/bootstrap.min.js"
         },
         {

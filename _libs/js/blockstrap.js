@@ -3,6 +3,7 @@ var blockchains = {
     init: function()
     {
         blockchains.forms();
+        blockchains.snippets();
         $('body').on('click', '.ga-track', function(e)
         {
             e.preventDefault();
@@ -18,6 +19,24 @@ var blockchains = {
         {
             $(this).addClass('table table-striped');
         });
+    },
+    snippets: function()
+    {
+        $('*').contents().filter(function()
+        {
+            return this.nodeType == 8;
+        }).each(function(i, e)
+        {
+            var contents = e.nodeValue;
+            if(contents.indexOf('pre-') > -1)
+            {
+                var obj = contents.split('-');
+                if(obj[0] == 'pre' && typeof obj[1] != 'undefined')
+                {
+                    $($(e).next()).snippet(obj[1], {style:'ide-eclipse'});
+                }
+            }
+        });  
     },
     track: function(e, href, action, place)
     {

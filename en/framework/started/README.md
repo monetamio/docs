@@ -19,6 +19,7 @@ Blockstrap Core is a [jQuery](http://jquery.com) plugin, so without [core](../co
 
 Assuming you have included core within the header of your HTML and have the default HTML element in the body waiting as follows:
 
+<!--pre-html-->
 ```
 <head>
     <script src="blockstrap/js/blockstrap.js"></script>
@@ -35,6 +36,7 @@ The default application will be initiated.
 
 You can manually initiate the plugin whilst adding options as follows:
 
+<!--pre-html-->
 ```
 <head>
     <script src="blockstrap/js/blockstrap.js"></script>
@@ -54,6 +56,7 @@ $(document).ready(function()
 
 This same configuration could also be achieved as follows:
 
+<!--pre-html-->
 ```
 <head>
     <script src="blockstrap/js/blockstrap.js"></script>
