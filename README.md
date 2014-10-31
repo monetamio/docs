@@ -56,7 +56,7 @@ This should provide a complete table of contents for all English documentation.
     * [JS](framework/styling/js/)
 
 #### API
-[Quickstart CheatSheet](v0/notes/atAGlance)
+[Quickstart CheatSheet](api/v0/notes/atAGlance)
 
 
 * [Blocks](api/v0/blocks) methods return a [Block object](api/v0/blocks/blockobject/)
