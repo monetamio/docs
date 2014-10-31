@@ -1,6 +1,6 @@
 ## Blockstrap Wallet
 
-Without building and using our own applications, there would be no real way for us to innovate within the functionality of our own tools. Our journey with Blockstrap started with our desire to build a wallet that did not store any private keys anywhere, could store any crypto-currency, and be easily extended via themes and plugins. This is the foundation for that wallet, but in the process of building the wallet, we realized that the tools we were building to make it possible were more important than the end result.
+Without building and using our own applications, there would be no real way for us to innovate within the functionality of our own tools. Our journey with Blockstrap started with our desire to build a wallet that did not store any private keys anywhere, could transact with any crypto-currency, and be easily extended via themes and plugins. This is the foundation for that wallet, but in the process of building the wallet, we realized that the tools we were building to make it possible were more important than the end result.
 
 The primary features of the wallet include:
 
@@ -10,7 +10,7 @@ The primary features of the wallet include:
 * [OpenSource](http://github.com/blockstrap/framework)
 * __API Neutral__
 
-We have prepared the following guides to get you started with this theme:
+We have prepared the following guides to get you started with this particular theme / application:
 
 * [Installaing Blockstrap Wallet](installation/)
 * [Understanding Wallet Security](security/)
