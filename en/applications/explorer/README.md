@@ -1,6 +1,10 @@
 ## Blockstrap Explorer
 
-This needs details.
+Without building and using our own applications, there would be no real way for us to innovate within the functionality of our own tools. Our journey with Blockstrap started with our desire to build a wallet that did not store any private keys anywhere, could transact with any crypto-currency, and be easily extended via themes and plugins. In order to do this, we needed an API that could handle multiple currencies, and do so in a consistent manner, so we built our own. Nonetheless, an API without an explorer is also kind of pointless, so we also launched [blockchains.io](http://blockchains.io) and released it as a standalone OpenSource PHP Application for others to learn how to manipulate data from our API.
+
+For more information relevant to this particular theme / application, please see the followng:
+
+* [Installing Explorer](installation/)
 
 ---
 
