@@ -1,7 +1,7 @@
 {
    "page": {
-       "title": "Blockstrap Documentation | Applications | Wallet | Contacts",
-       "meta": "wallet contacts meta description",
+       "title": "Contacts | Wallet | Applications | Blockstrap Documentation",
+       "meta": "Learn how our wallet utilizes the Blockstrap contacts module",
        "base": "../../../../",
        "lang": "en"
     }

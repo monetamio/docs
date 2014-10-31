@@ -1,7 +1,7 @@
 {
    "page": {
-       "title": "Blockstrap Documentation | Applications | Wallet | Accounts",
-       "meta": "wallet accounts meta description",
+       "title": "Accounts | Wallet | Applications | Blockstrap Documentation",
+       "meta": "Learn how our wallet utilizes the Blockstrap accounts module",
        "base": "../../../../",
        "lang": "en"
     }
