@@ -1,6 +1,6 @@
 ## Welcome to The Blockstrap Community
 
-This documentation can be viewed online at [http://blockstrap.com/docs/](http://blockstrap.com/docs/) or even downloaded and run locally from your own server.
+This documentation can be viewed online at [http://docs.blockstrap.com/](http://docs.blockstrap.com/) or even [downloaded](https://github.com/blockstrap/docs/) and run locally from your own server.
 
 ---------------------
 

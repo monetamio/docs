@@ -38,7 +38,7 @@ $content = $bs->content($php_base, $slug, $directory, true);
 
 if($slug)
 {
-    if($directory && $directory[2] != '/')
+    if($language && strlen($language) != 2)
     {
         $url = rtrim($base.'en/'.$slug, '/').'/';
         header('Location: '.$url, true, 302);

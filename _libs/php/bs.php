@@ -22,9 +22,6 @@ class blockstrap_core
     function __construct($php_base)
     {
         if(!$php_base) $php_base = dirname(__FILE__);
-        $slug = $this->slug($_SERVER);
-        $directory = $this->directory($_SERVER);
-        $base = $this->base($_SERVER);
         include_once($php_base.'/_libs/php/vendors/parsedown.php');
         include_once($php_base.'/_libs/php/vendors/mustache.php');
     }
@@ -96,17 +93,18 @@ class blockstrap_core
         if($slug)
         {
             // GET SPECIFIC HTML
-            if(file_exists($base.'/html/'.$slug.'/index.html'))
+
+            if(file_exists($base.'/html/'.$slug.'/template.html'))
             {
-                $html = file_get_contents($base.'/html/'.$slug.'/index.html');
+                $html = file_get_contents($base.'/html/'.$slug.'/template.html');
             }
-            elseif(file_exists($base.'/'.$slug.'/index.html'))
+            elseif(file_exists($base.'/'.$slug.'/template.html'))
             {
-                $html = file_get_contents($base.'/'.$slug.'/index.html');
+                $html = file_get_contents($base.'/'.$slug.'/template.html');
             }
-            elseif(file_exists($base.'/'.$lang.'/'.$directory.'/index.html'))
+            elseif(file_exists($base.'/'.$lang.'/'.$directory.'/template.html'))
             {
-                $html = file_get_contents($base.'/'.$lang.'/'.$directory.'/index.html');
+                $html = file_get_contents($base.'/'.$lang.'/'.$directory.'/template.html');
             }
         }
         return $html;
@@ -162,8 +160,8 @@ class blockstrap_core
         }
         $self_array = array_slice(explode('/', $self), 1, -1);
         $url_array = array_slice(explode('/', $url), count($self_array) + 1, -1);
-        if(count($url_array) < 1) return '';
-        else return $url_array[0].'/';
+        if(count($url_array) < 2) return '';
+        else return $url_array[1];
     }
     
     public function language($server)
@@ -290,7 +288,7 @@ class blockstrap_core
                     {
                         $link['href'] = $base;
                     }
-                    elseif($language.'/'.$link['href'] == $slug)
+                    elseif($language.'/'.$link['href'] == $slug.'/')
                     {
                         $link['css'] = 'active';
                         $link['href'] = '#';
