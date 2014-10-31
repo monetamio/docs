@@ -29,16 +29,10 @@ Almost everything is done as a REST GET to either `http://api.blockstrap.com` or
   * [addressUnspents](v0/addresses/addressUnspents/)
   * [addressHash160ToAddress](v0/addresses/addressHash160ToAddress/)
 
-Market Functions
-
-
-Wallet Functions
-
 ---
 
 1. Related Articles
 2. [Blocks](v0/blocks/)
 3. [Addresses](v0/addresses/)
 4. [Transactions](v0/transactions/)
-5. [Markets](v0/markets/)
 6. [Table of Contents](../)
