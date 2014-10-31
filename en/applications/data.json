@@ -1,7 +1,7 @@
 {
    "page": {
        "title": "Blockstrap Documentation | Applications",
-       "meta": "blockstrap application meta description",
+       "meta": "Blockstrap Applications are self-contained fully-functioning packaged distributions that interact with one or more of the primary Blockstrap Components",
        "base": "../../",
        "lang": "en"
     }

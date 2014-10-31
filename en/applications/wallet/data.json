@@ -1,7 +1,7 @@
 {
    "page": {
        "title": "Blockstrap Documentation | Applications | Wallet",
-       "meta": "blockstrap wallet meta description",
+       "meta": "The Blockstrap wallet currently support six blockchains and can be easily extended with themes and plugins",
        "base": "../../../",
        "lang": "en"
     }
