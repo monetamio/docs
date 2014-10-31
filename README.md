@@ -56,11 +56,26 @@ This should provide a complete table of contents for all English documentation.
     * [JS](framework/styling/js/)
 
 #### API
-
-* [Blocks](api/v0/blocks/)
-    * [Height](api/v0/blocks/blockHeight/)
-* [Addresses](api/v0/addresses/)
-* [Transactions](api/v0/transactions/)
-* [Markets](api/v0/markets/)
+[Quickstart CheatSheet](v0/notes/atAGlance)
 
 
+* [Blocks](v0/blocks) methods return a [Block object](v0/blocks/blockobject/)
+  * [block](v0/blocks/block/)
+  * [blockHeight](v0/blocks/blockHeight/)
+  * [blockLatest](v0/blocks/blockLatest/)
+  * [blocksLatest](v0/blocks/blocksLatest/)
+* [Transactions](v0/transactions/) methods return a [Transaction Object](v0/transactions/transactionobject/)
+  * [transaction](v0/transactions/transaction/)
+  * [transactionDecode](v0/transactions/transactionDecode/)
+  * [transactionRelay](v0/transactions/transactionRelay/)
+* [Addresses](v0/addresses/) methods return an [Address object](v0/addresses/addressobject/)
+  * [address](v0/addresses/address/)
+  * [addresses](v0/addresses/addresses/)
+  * [addressTransactions](v0/addresses/addressTransactions/)
+  * [addressUnspents](v0/addresses/addressUnspents/)
+  * [addressHash160ToAddress](v0/addresses/addressHash160ToAddress/)
+* [Notes](v0/notes) give an overview of the API
+  * [supported chains](v0/notes/chains/)
+  * [The Request object](v0/notes/requestobject/)
+  * [Dangers at the top of the chain](v0/notes/topOfTheChain/)
+  * [Values and Currencies](v0/notes/valuesAndCurrencies/)
