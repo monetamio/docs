@@ -2,39 +2,11 @@
 
 We were unable to find the page you were looking for, so have redirected you here instead.
 
-----------
+Perhaps you are looking for something related to one of the following areas:
 
-### Table of Contents
+* [Applications](http://docs.blockstrap.com/applications/)
+* [Framework](http://docs.blockstrap.com/framework/)
+* [API](http://docs.blockstrap.com/api/)
 
-This table of contents should show each of the top-menus in ther available language.
+A full table of contents can be found at [http://docs.blockstrap.com](http://docs.blockstrap.com).
 
-#### Applications
-
-* [Wallet](../applications/wallet/)
-* [Explorer](../applications/explorer/)
-* [Prioritizer](../applications/prioritizer/)
-* [Calculator](../applications/calculator/)
-
-#### Framework
-
-* [Getting Started](../framework/started/)
-* [Core](../framework/core/)
-* [Modules](../framework/modules/)
-* [Assets](../framework/assets/)
-* [Extending](../framework/extending/)
-* [Styling](../framework/styling/)
-
-#### API
-
-* [Blocks](../api/v0/blocks/)
-* [Addresses](../api/v0/addresses/)
-* [Transactions](../api/v0/transactions/)
-* [Markets](../api/v0/markets/)
-
-
-#### Blockchains
-
-* [Bitcoin](../blockchains/bitcoin/)
-* [Litecoin](../blockchains/litecoin/)
-* [Dogecoin](../blockchains/dogecoin/)
-* [Testnets](../blockchains/testnets/)
