@@ -84,6 +84,16 @@ Please also note the optional inclusion of the `slug` attribute. Adding this wil
 
 ![Installation Complete](../../../../_libs/img/docs/applications/prioritizer/installation/completed-setup.jpg)
 
+Each transaction for each address adds to the contribution count, each of which is worth one point (regardless of the amount), whereas one full coin is worth 10 points (divided as required per transaction). These are defined and currently only configurable by editing `/themes/priority/js/modules/theme.js` in the following section:
+
+<!--pre-javascript-->
+```
+theme.formulas = {
+    tx: 1,
+    coin: 10
+};
+```
+
 ---
 
 1. Related Articles
