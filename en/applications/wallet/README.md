@@ -4,11 +4,16 @@ Without building and using our own applications, there would be no real way for 
 
 The primary features of the wallet include:
 
+* __Entirely HTML5 / Browser Based__
 * [Deterministic by Default](../../framework/started/security/#qa_01)
 * [Module by Nature](../../framework/modules/)
 * [Easily Extended](../../framework/extending/)
 * [OpenSource](http://github.com/blockstrap/framework)
 * __API Neutral__
+
+Not to mention a one-page 3 minute install as seen below:
+
+![Default Blockstrap Wallet](../../../_libs/img/docs/applications/wallet/setup.jpg)
 
 We have prepared the following guides to get you started with this particular theme / application:
 
