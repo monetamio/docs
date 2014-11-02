@@ -89,6 +89,11 @@
                     "href": "#",
                     "css": "active",
                     "text": "Table of Contents"
+                },
+                {
+                    "slug": "downloads/",
+                    "css": "",
+                    "text": "Downloads"
                 }
             ]
         },
