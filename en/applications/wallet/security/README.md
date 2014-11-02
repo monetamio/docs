@@ -1,32 +1,22 @@
 ## Wallet Security
 
-There are two types of people involved in Bitcoin...
+#### TL;DR - When in doubt, stick to the testnets!
 
-Those who put their life savings into experimental hybrid web-wallets behind deterministic layers of compounding encryption that by default don't store private keys anywhere and are still in Beta...
+There are two types of people involved in Bitcoin. There are those that put their life savings into experimental hybrid web-wallets using deterministic means of compounding personal information into encrypted salts used to generate private keys inline without actually storing them anywhere, and those that don't.
 
-And those who don't.
+_**Don't store any significant value within the Blockstrap Framework example applications, especially whilst we are still in Beta!**_
 
-Don't be that first guy.
+To understand the implications of using our wallet it is important to know how Blockstrap generates private keys and in what format it stores them, or in our case, does not store them. The Blockstrap framework uses compounding encryption to generate hashes from a series of personal questions, such as (by default) the following minimum requirements; your full name, username, password, date of birth and city of birth, from which it is able to then generate a __device salt__. With each security question a hash is generated and added to the raw string of the next hashed answer to generate a new hash, which goes on and on. This is to prevent random brute force attacks. Additional rounds of optional entropy can be added by (for example) uploading a unique hashed avatar or even creating your own questions and answers. Since the Blockstrap framework is module, the possibilities are endless and need not even remain purely deterministic - as seen with the potentially dangerous yet excessively secure option of taking a photo of yourself, loading it onto your local device and then deleting it. __Use at your own risk!__
 
-_**Don't store any significant value in your Blockstrap wallet while we are in Beta.**_
+At the end of the setup process when your __device salt__ has been generated and stored locally within your browser you may then create new crypto-currency accounts that use the salt in conjuction with a new series of compunding encryption to generate individual keys for each currency.
 
-To understand the implications of using our wallet it is important to know how Blockstrap generates private keys and in what format it stores them (**hint** - _it doesnt_.)
+__At no point are any private keys ever stored or transmitted to or from the browser.__
 
-The Blockstrap wallet uses compounding encryption of answers to info such as name, date of birth, city of birth, email address, pin number and password and so on.
+However, the down-side to this is that if you loose your device or accidentally clear the localStorage and are then also unable to recreate the exact steps used to initially set-up your wallets, you may __loose access to your coins forever__.
 
-With each security question a hash is generated and added to the raw string of the next question to generate a new hash, which in turn is compounded again and combined with the previous to create a new hash. With each question you answer the higher the level of entropy becomes and the harder it is for someone to access your wallet.
+It is possible to backup your device, and or even print QR codes of each individual private key (upon request and the necessary recreation of security steps), so at all times value is stored within these example applications, we would strongly suggest taking the time to back-up as required and even test those backups, just to be safe.
 
-You can even add a photo to your device salt as an additional layer of entropy which would need to be uploaded each time to access your private keys.
-
-At the end of the setup process your salt is finally created and parts of it are stored on your device. It is by recreating the steps in the setup process that you generate your device salt and get access to your private keys. If for whatever reason you cannot recreate the answers in the exact same way, you will NOT be able to get access to your wallet.
-
-Because private keys are hashed in the browser before ever reaching us Blockstrap has absolutely no access to them. We never see them and certainly can't help recover them.
-
-We have built it this way as believers of the philosophy that it's harder for someone to hack your brain than it is for them to hack your server. But it's easy to forget things too, so make sure you store all of your details in a safe place.
-
-Should you encounter any bugs, glitches, lack of functionality or any other problems that might compromise your wallet, please let us know immediately by raising an issue on GitHub so we can rectify these accordingly. Your help in making Blockstrap a more reliable experience is greatly appreciated.
-
-**TL;DR - When in doubt, stick to the testnets.**
+__If in doubt, stick to the testnets!__
 
 
 
