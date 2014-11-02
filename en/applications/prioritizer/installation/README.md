@@ -1,6 +1,6 @@
 ## Prioritizer Installation
 
-Prioritizer is a little different to the default [wallet](../../wallet/) in that it features user and admin views.
+Prioritizer is a little different to the default [wallet](../../wallet/) in that it features users and administrator views.
 
 These are controlled via new options introduced within `/themes/priority/config.json`:
 
@@ -56,7 +56,7 @@ Administrators of the site will be notified when there are issues that do not ha
 
 ![Generate Addresses](../../../../_libs/img/docs/applications/prioritizer/installation/generate-addresses.jpg)
 
-You will then need to copy the address and slugs back into the `/themes/priority/js/dependenccies/issues.json` array:
+You will then need to copy the addresses and slugs back into the `/themes/priority/js/dependenccies/issues.json` array as follows:
 
 <!--pre-javascript-->
 ```
@@ -80,7 +80,9 @@ You will then need to copy the address and slugs back into the `/themes/priority
 }
 ```
 
-Please also note the optional inclusion of the `slug` attribute. Adding this will prevent loss of control should you change the title of an issue. If you do not add this, and then change the issue title later, the theme will be incapable of determining the appropriate keys required to control the corresponding address. Once that's all done, or if you are visiting the site and do not have a device salt that matches-up with the necessary security options, you should be presented with the public view as follows:
+Please also note the optional inclusion of the `slug` attribute. Adding this will prevent loss of control should you change the title of an issue. If you do not add this, and then change the issue title later, the theme will be incapable of determining the appropriate keys required to control the corresponding address and you __may loose access to your coins__.
+
+Once that's all done, or if you are visiting the site and do not have a device salt that matches-up with the necessary security options, you should be presented with the public view, which should look something like this:
 
 ![Installation Complete](../../../../_libs/img/docs/applications/prioritizer/installation/completed-setup.jpg)
 
@@ -93,6 +95,17 @@ theme.formulas = {
     coin: 10
 };
 ```
+
+The variables that can then be used inline to filter the list include:
+
+* Addresses
+* Title
+* Author
+* Contributions
+* Amount
+* Points
+
+We use the legendary [Isotope.js](http://isotope.metafizzy.co/) to perform these animated filters.
 
 ---
 
