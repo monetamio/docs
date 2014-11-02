@@ -1,10 +1,14 @@
-## Wallet Security
+## Wallet / Framework Security
 
 #### TL;DR - When in doubt, stick to the testnets!
 
 There are two types of people involved in Bitcoin. There are those that put their life savings into experimental hybrid web-wallets using deterministic means of compounding personal information into encrypted salts used to generate private keys inline without actually storing them anywhere, and those that don't.
 
 _**Don't store any significant value within the Blockstrap Framework example applications, especially whilst we are still in Beta!**_
+
+-----
+
+1. For more information and specifics please visit our [Security Q&A Section](../../../framework/started/security/) for further details.
 
 To understand the implications of using our wallet it is important to know how Blockstrap generates private keys and in what format it stores them, or in our case, does not store them. The Blockstrap framework uses compounding encryption to generate hashes from a series of personal questions, such as (by default) the following minimum requirements; your full name, username, password, date of birth and city of birth, from which it is able to then generate a __device salt__. With each security question a hash is generated and added to the raw string of the next hashed answer to generate a new hash, which goes on and on. This is to prevent random brute force attacks. Additional rounds of optional entropy can be added by (for example) uploading a unique hashed avatar or even creating your own questions and answers. Since the Blockstrap framework is module, the possibilities are endless and need not even remain purely deterministic - as seen with the potentially dangerous yet excessively secure option of taking a photo of yourself, loading it onto your local device and then deleting it. __Use at your own risk!__
 
