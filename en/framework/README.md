@@ -1,6 +1,11 @@
 ## Blockstrap Framework
 
-The Blockstrap Framework is a component of the Blockstrap Stack. It provides a front-end HTML5 interface for web-applications to communicate and manipulate blockchains and other dynamic data stores via external APIs. By default, it is configured to use the [Blockstrap API](../api/) but is API-neutral throughout. This allows you to host and manage your own API end-points or select from others configured at core, with examples included for other popular APIs such as [Hello Block](https://helloblock.io/).
+The Blockstrap Framework is a component of the Blockstrap Stack. It provides a front-end HTML5 interface for web-applications to communicate and manipulate blockchains and other dynamic data stores via external APIs. By default, it is configured to use the [Blockstrap API](../api/) but is API-neutral throughout. This allows you to host and manage your own API end-points or select from others configured at core, with examples included for other popular APIs such as:
+
+* [Blockchains.io](http://blockchains.io) (6 Chains)
+* [SoChain.io](http://chain.so) (6 Chains)
+* [Blockr.io](http://blockr.io) (4 Chains)
+* [HelloBlock.io](https://helloblock.io/) (BTC only)
 
 The Framework has been developed with modularity and flexibility as the focal point of each technical decision. Currently providing a choice of 11 interchangable modules, features can be easily extended, included, replaced or removed depending on the need of each application.
 

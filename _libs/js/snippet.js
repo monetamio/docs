@@ -117,11 +117,7 @@
 						if($(this).html().length<2){
 							var rep = ($(this).html()).replace(/\s/g,"");
 							if(rep==""){
-								if($.browser.opera){
-									$(this).html("&nbsp;");
-								} else {
-									$(this).html("<span style='display:none;'>&nbsp;</span>");	
-								}
+								$(this).html("<span style='display:none;'>&nbsp;</span>");
 							}
 						}
 					});
@@ -266,11 +262,6 @@
 							o.find("li.box, li.box-top, li.box-mid, li.box-bot").addClass('box-bg').css('background-color',defaults.boxFill);
 						}	
 						
-						if($.browser.webkit){
-							o.find(".snippet-num li.box").css('margin-left','-3.3em');
-							o.find(".snippet-num li .box-sp").css('width','21px');	
-						}
-						
 					}					
 					
 					// adds a css class to all links in the snippet so they are themed properly
@@ -352,16 +343,8 @@
 						
 						if(defaults.boxFill!=""){
 							o.find("li.box").addClass('box-bg').css('background-color',defaults.boxFill);
-						}					
-						
-						if($.browser.webkit){
-							o.find(".snippet-num li.box").css('margin-left','-3.3em');
-							o.find(".snippet-num li .box-sp").css('width','21px');
-						}						
-						
+						}								
 					}
-					
-
 					
 					sh_highlightDocument();
 					

@@ -18,7 +18,30 @@ The current modules distributed with core include:
 
 --------------------------------------------------------------------------------
 
-An example skeleton module `themes/default/js/modules/theme.js` should be composed as follows:
+An example skeleton module that has only a single `test` function should be constructed as follows:
+
+<!--pre-javascript-->
+```
+(function($) 
+{
+    // EMPTY OBJECT
+    var example = {};
+    
+    // THIS IS AN EXAMPLE FUNCTION
+    example.test = function()
+    {
+        // THIS WOULD BE ACCESSED AS FOLLOWS
+        // $.fn.blockstrap.example.test();
+        alert('Test Activated');
+    }
+    
+    // MERGE THE NEW FUNCTIONS WITH CORE
+    $.extend(true, $.fn.blockstrap, {example:example});
+})
+(jQuery);
+```
+
+When including a `theme` module within your theme you are required to add a `new` function as seen in `themes/default/js/modules/theme.js`.
 
 <!--pre-javascript-->
 ```
@@ -27,10 +50,10 @@ An example skeleton module `themes/default/js/modules/theme.js` should be compos
     // EMPTY OBJECT
     var theme = {};
     
-    // FUNCTIONS FOR OBJECT
+    // THIS IS CALLED EACH TIME NEW CONTENT IS ADDED TO DOM
     theme.new = function()
     {
-        alert('New Function Loaded');
+        // BY DEFAULT THIS DOES NOTHING YET
     }
     
     // MERGE THE NEW FUNCTIONS WITH CORE
@@ -38,6 +61,44 @@ An example skeleton module `themes/default/js/modules/theme.js` should be compos
 })
 (jQuery);
 ```
+
+You may however notice that the __priority theme__ auto-includes filters and button actions as seen in `themes/priority/js/modules/theme.js`:
+
+<!--pre-javascript-->
+```
+(function($) 
+{
+    // EMPTY OBJECT
+    var theme = {};
+    
+    // THIS IS CALLED EACH TIME NEW CONTENT IS ADDED TO DOM
+    theme.new = function()
+    {
+        alert('theme.new activated');
+    }
+    
+    // OPTIONALLY AUTO-LOADED THEME FILTERS
+    // ADD AS MANY AS YOU LIKE
+    theme.filters.test = function(bs, data)
+    {
+        return data;
+    }
+    
+    // OPTIONALLY AUTO-LOADED BUTTON FUNCTIONS
+    // ADD AS MANY AS YOU LIKE
+    theme.buttons.test = function()
+    {
+    
+    }
+    
+    // MERGE THE NEW FUNCTIONS WITH CORE
+    $.extend(true, $.fn.blockstrap, {theme:theme});
+})
+(jQuery);
+```
+
+You make pick and choose which modules to include within your theme or easily write and include your own. Please note that some modules may try to utilize other modules and at the moment there is __very limited support for missing modules__ and no module dependency management.
+
 
 --------------------------------------------------------------------------------
 
