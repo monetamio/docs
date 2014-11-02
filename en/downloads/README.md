@@ -11,7 +11,4 @@ If you want to run the priority theme, please download the framework above and e
 --------------------------------------------------------------------------------
 
 1. Related Articles
-2. [Return to Getting Started](../../started/)
-3. [Download](../download/)
-4. [Security](../security/)
-5. [Table of Contents](../../../)
+2. [Table of Contents](../../../)

@@ -81,7 +81,7 @@
     ],
     "sidebar": [
         {
-            "text": "Welcome",
+            "text": "Important",
             "slug": "#",
             "css": "active",
             "links": [
@@ -94,6 +94,11 @@
                     "slug": "downloads/",
                     "css": "",
                     "text": "Downloads"
+                },
+                {
+                    "slug": "plugins/",
+                    "css": "",
+                    "text": "Plugins"
                 }
             ]
         },

@@ -8,6 +8,13 @@ This documentation can be viewed online at [http://docs.blockstrap.com/](http://
 
 This should provide a complete table of contents for all English documentation.
 
+
+#### Important
+
+* [Downloads](downloads/)
+* [Plugins](plugins/)
+    * [Markets](plugins/markets/)
+
 #### Applications
 
 * [Wallet](applications/wallet/)

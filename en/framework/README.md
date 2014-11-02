@@ -37,6 +37,10 @@ The current disribution of Blockstrap not only includes the core modules listed 
 * [Wallet](../applications/wallet/)
 * [Prioritizer](../applications/prioritizer/)
 
+As well as the following plugins:
+
+* [Markets](../plugins/markets/)
+
 These sample applications are intended to help demonstrate how Blockstrap can be used in different ways to do very different things. Neither of them have been developed with the intention of being used to store large quantities of coins, and you should only ever send coins to an address where you can verifably demonstrate ownership of the private keys. We have created them so that developers have a starting point for their own ideas.
 
 If you are new to Blockstrap, we would suggest reading some of the following articles:
