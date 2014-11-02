@@ -4,10 +4,14 @@ Without building and using our own applications, there would be no real way for 
 
 Prioritizer essentially transforms a list of issues into a collection of addresses, which can then be ordered and filtered based upon the number of contributions, amount contributed and (or) formula that is set. It also allowed us to introduce the concept of public and private views as well as basic user roles for administrators.
 
+![Screen-Shot](../../../_libs/img/docs/applications/prioritizer/installation/completed-setup.jpg)
+
 For more information relevant to this particular theme / application, please see the followng:
 
+* [Live Demo](http://demo.blockstrap.com/priority/v0.1.0.1/)
 * [Installing Prioritizer](installation/)
 * [Framework Security](../wallet/security/)
+* [Downloads](../../downloads/)
 
 ---
 
