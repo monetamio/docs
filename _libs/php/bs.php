@@ -119,7 +119,7 @@ class blockstrap_core
         {
             $header = $this->markdown(file_get_contents($slug.'/HEADER.md'));
         }
-        if($directory && file_exists($slug.'/README.md'))
+        if($slug && file_exists($slug.'/README.md'))
         {
             $content = file_get_contents($slug.'/README.md');
             $content = str_replace('{{base}}', $home, $content);

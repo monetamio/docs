@@ -5,7 +5,9 @@ The following plugins are available and included with the Blockstrap [Framework]
 
 * [Markets](markets/)
 
-A plugin should take the form of a folder with the same name as the plugin (this provides a place to add other non auto-loaded files related to the plugin). Including the name of the plugin within the [configuration](../framework/core/configuration/) array will activate the plugin, as follows:
+A plugin should take the form of a folder with the same name as the plugin (this provides a place to add other non auto-loaded files related to the plugin). 
+
+Including the name of the plugin within the [configuration](../framework/core/configuration/) array will activate the plugin, as follows:
 
 <!--pre-javascript-->
 ```
