@@ -11,4 +11,4 @@ If you want to run the priority theme, please download the framework above and e
 --------------------------------------------------------------------------------
 
 1. Related Articles
-2. [Table of Contents](../../../)
+2. [Table of Contents](../../)
