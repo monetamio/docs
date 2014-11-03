@@ -1,9 +1,7 @@
-Filters API
-===========
+Snippets
+========
 
-If a theme contains the `js/modules/theme.js` module, it will attempt to auto-load and auto-assign filter functions as follows:
-
-* `theme.filter.example()` - this will be envoked when `func: "example"` is found within an incoming JSON data stream
+Coming soon!
 
 --------------------------------------------------------------------------------
 

@@ -17,4 +17,5 @@ If the function name does not contain an underscore it will be assigned to a cla
 5. [Buttons](../buttons/)
 6. [Filters](../filters/)
 7. [Hooks](../hooks/)
-8. [Table of Contents](../../../)
+8. [Snippets](../snippets/)
+9. [Table of Contents](../../../)

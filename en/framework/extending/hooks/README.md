@@ -12,4 +12,5 @@ Hooks allow you to insert new events into the core processes without needing to 
 5. [Buttons](../buttons/)
 6. [Filters](../filters/)
 7. [Hooks](../hooks/)
-8. [Table of Contents](../../../)
+8. [Snippets](../snippets/)
+9. [Table of Contents](../../../)

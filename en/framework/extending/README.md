@@ -14,6 +14,8 @@ The following modules have their own APIs too:
 
 Themes and plugins are also able to utilize [hooks](hooks/) for injecting new events into core without having to edit core files.
 
+Pre-packaged easily accessible HTML [snippets](snippets/) are also available.
+
 --------------------------------------------------------------------------------
 
 1. Related Articles
