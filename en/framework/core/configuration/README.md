@@ -6,7 +6,7 @@ Each blockstrap application that is powered by core is constructed from three co
 * __Custom Configuration__ (`/themes/config.json`) - _assuming `themes` is set by `defaults`_
 * __Theme Configuration__ (`/themes/default/config.json`) - _assuming the `default` theme is being used_
 
-If these files are not found in these locations, or in the locations set by each of the corresponding configuration files, blockstrap may fail to function properly. All options can also be provided via regular jQuery plugin initialization options or via HTML5 data attributes.
+If these files are not found in these locations, or in the locations set by each of the corresponding configuration files, blockstrap may fail to function properly. All options can also be provided via regular jQuery plugin initialization options (where they will only override the default configuration) or via HTML5 data attributes where they will also override custom configuration. At either previous configuration point, skipping all other configuration files is also possible by setting `skip_config: true`.
 
 -------------------------
 ### Default Configuration

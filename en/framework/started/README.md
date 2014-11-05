@@ -12,7 +12,7 @@ By default, the following applications are included within [core](../core/):
 * [Wallet](../../applications/wallet/)
 * [Prioritizer](../../applications/prioritizer/)
 
-Blockstrap Core is a [jQuery](http://jquery.com) plugin, so without [core](../core/) (`blockstrap/js/blockstrap.js`) or jQuery, nothing will work. By default, Blockstrap is set to auto include jQuery prior to then loading the other listed [assets](../assets/) and completing the process by initializing itself. For a deeper look at the exact logic flow, we would suggest reading the [Plugin Construct](../core/construct/) article. For a better explanation of device salts and how we generate private keys it is essential that you review our [security](security/) article.
+Blockstrap Core is a [jQuery](http://jquery.com) plugin, so without [core](../core/) (`blockstrap/js/blockstrap.js`) or jQuery, nothing will work. By default, Blockstrap is set to auto include jQuery prior to then loading the other listed [assets](../assets/) and completing the process by initializing itself. For a deeper look at the exact logic flow, we would suggest reading the [Plugin Construct](../core/construct/) article. For a better explanation of device salts and how we generate private keys it is essential that you review our [security](../../applications/wallet/security/) article.
 
 ---------------
 ### Quick Start
@@ -29,7 +29,7 @@ Assuming you have included core within the header of your HTML and have the defa
 </body>
 ```
 
-The default application will be initiated.
+The default application will be initiated automatically due to having the `blockstrap` ID within the main document.
 
 ---------------------
 ### Manual Initiation
@@ -66,7 +66,7 @@ This same configuration could also be achieved as follows:
 </body>
 ```
 
-In both cases, [LESS.css](../assets/less/) would be activated.
+In both cases, [LESS.css](../assets/less/) would be activated as all options can be provided via JavaScript or HTML5 data attributes.
 
 Continue learning more by selecting something from below:
 
@@ -79,5 +79,5 @@ Continue learning more by selecting something from below:
 
 1. Related Articles
 2. [Download](download/)
-3. [Security](security/)
+3. [Security Q&A](security/)
 4. [Table of Contents](../../)
