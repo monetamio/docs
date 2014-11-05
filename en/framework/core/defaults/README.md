@@ -13,11 +13,13 @@ As well as the following modules:
 * __modules/templates.js__
 * __modules/theme.js__
 
-In addition to the `$.fn.blockstrap.defaults()` function called prior to the dependencies and modules being included there is another function as __core__ (`$.fn.blockstrap.core.defaults`) that creates skeleton functionality for the following functions if their corresponding modules are not included within the initial configuration:
+In addition to the `$.fn.blockstrap.defaults()` function called prior to the dependencies and modules being included there is another function within __core__ (`$.fn.blockstrap.core.defaults`) that creates skeleton functionality for the following functions if their corresponding modules are not included within the initial configuration:
 
 * __Data Module__: `$.fn.blockstrap.data.find()`
 * __Data Module__: `$.fn.blockstrap.data.save()`
 * __Security Module__: `$.fn.blockstrap.security.loggedin()`
+
+These are common modules used throughout other modules, and the skeleton functions auto-included do nothing more than prevent errors.
 
 ---
 
