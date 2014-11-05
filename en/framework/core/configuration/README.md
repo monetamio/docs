@@ -30,39 +30,47 @@ Here are the current configuration files and some explanations to follow:
 ---------------------------------------------
 #### Default Configuration - `/defaults.json`
 
+___Please note the included comments added to the JSON seen below.___
+
+This would break the application if used in production as comments are not valid within JSON arrays.
+
+Lines 113 onwards are used solely for internal tests and API mapping.
+
 <!--pre-javascript-->
 ```
 {
-    "v": "0.4.0.1",
-    "public": false,
-    "security": false,
-    "role": "admin",
-    "id": "blockstrap",
-    "theme": "default",
-    "less": false,
-    "test": false,
-    "refresh": false,
-    "cascade": true,
-    "html_base": "html/",
-    "data_base": "data/",
-    "core_base": "blockstrap/",
-    "theme_base": "themes/",
-    "dependency_base": "js/dependencies/",
-    "module_base": "js/modules/",
-    "page_base": "index",
-    "slug_base": "dashboard",
-    "api_service": "blockstrap",
-    "base_url": "",
-    "content_id": "main-content",
-    "navigation_id": "navigation",
-    "mobile_nav_id": "mobile-footer",
-    "css": ["less", "font-awesome"],
+    "v": "0.4.0.1", // Used internally to perform updates
+    "public": false, // Defines whether public user-views are required
+    "security": false, // If user views are required, administrator needs to enter security hash
+    "role": "admin", // What role should the appropriate user be given...?
+    "id": "blockstrap", // ID of HTML container used to display the application
+    "theme": "default", // Default theme to be used
+    "less": false, // Should inline LESS.js be used...?
+    "test": false, // Run internal tests...?
+    "refresh": false, // Force refresh of locally stored files
+    "cascade": true, // Perform cascading inclunsion of dependencies and modules
+    "html_base": "html/", // The default location of the HTML templates
+    "data_base": "data/", // The default location of the JSON data arrays
+    "core_base": "blockstrap/", // The default location of core files
+    "theme_base": "themes/", // The default location of theme files
+    "dependency_base": "js/dependencies/", // The default location of dependency files
+    "module_base": "js/modules/", // The default location of module files
+    "page_base": "index", // The file name to use as the default HTML and DATA required for page rendering?
+    "slug_base": "dashboard", // The file containing the inserted content for returning to homepage
+    "api_service": "blockstrap", // The default API service used by the API module
+    "base_url": "", // This gets filled-in by the framework upon initialization
+    "content_id": "main-content", // The ID of the HTML element used to insert new paged content
+    "navigation_id": "navigation", // The ID of the HTML element containing the main navigation
+    "mobile_nav_id": "mobile-footer", // The ID of the HTML element containing the mobile navigation
+    "css": ["less", "font-awesome"], // An array of CSS files to include
     "store": [
+        // An array of setup componets to store publicly
         "app_url", 
         "your_name",
         "your_username"
     ],
     "modules": [
+        // An array of modules to include
         "forms",
         "accounts",
         "contacts",
@@ -77,6 +85,7 @@ Here are the current configuration files and some explanations to follow:
         "currencies"
     ],
     "dependencies": [
+        // An array of dependencies to include 
         "sonic", 
         "crypto",
         "effects", 
@@ -94,6 +103,7 @@ Here are the current configuration files and some explanations to follow:
         "ago"
     ],
     "bootstrap": [
+        // An array of Bootstrap HTML snippets to include
         "lists", 
         "jumbotrons", 
         "panels", 
@@ -103,6 +113,7 @@ Here are the current configuration files and some explanations to follow:
         "bars"
     ],
     "buttons": {
+        // An array of button classes and ID to be assigned functinality
         "classes": [
             "access", 
             "edit", 
@@ -131,6 +142,7 @@ Here are the current configuration files and some explanations to follow:
         ]
     },
     "contacts": [
+        // An array of contacts to auto-install upon setup completion
         {
             "name": "Blockstrap Donations",
             "address": "13uXA8zfLjsnrg69f6FcHVRfwBGobYU3bc",
@@ -139,6 +151,7 @@ Here are the current configuration files and some explanations to follow:
         }
     ],      
     "tests": {
+        // An array of tests to run
         "api": {
             "address": {
                 "request": "1Nz5RqevRodefPyGVB8EpdwSEGS4Ax2f1k",
@@ -252,6 +265,7 @@ Here are the current configuration files and some explanations to follow:
         }
     },
     "cache": {
+        // This array controls the milliseconds certain results are cached
         "api": {
             "address": 60000,
             "timeout": 60000
@@ -260,16 +274,19 @@ Here are the current configuration files and some explanations to follow:
         "accounts": 60000
     },
     "storage": {
+        // This array controls which file types are stored locally to increase speed on return visits
         "dependencies": false,
         "modules": false,
         "less": false,
         "bootstrap": false
     },
     "exchange": {
+        // This array controls the default exachange rate used when dynamic ones are unavilable
         "btc": 500,
         "ltc": 5
     },
     "styles": {
+        // This is ademonstration of how styling can be affected using JS options
         "vars": {
             "content_bg": "#DDD",
             "header_bg": "#475862"
@@ -284,6 +301,7 @@ Here are the current configuration files and some explanations to follow:
         }
     },
     "currencies": {
+        // Configure which currencies your application will support
         "btct": {
             "currency": "Bitcoin Testnet",
             "lib": "bitcointestnet",
@@ -352,9 +370,11 @@ Here are the current configuration files and some explanations to follow:
         }
     },
     "apis": {
+        // The defaults are used when end-points are the same for each currency
         "defaults": {
             "blockstrap": {
                 "functions": {
+                    // TO represents the end-points you want to call
                     "to": {
                         "address": "addressTransactions/",
                         "addresses": "addresses/",
@@ -366,6 +386,7 @@ Here are the current configuration files and some explanations to follow:
                         "relay_param": "",
                         "unspents": "addressUnspents/$call?showtxnio=1"
                     },
+                    // FROM represents what to do with the data returned
                     "from": {
                         "address": {
                             "key": "address",
@@ -1065,7 +1086,7 @@ Here are the current configuration files and some explanations to follow:
 }
 ```
 
-There is a lot to digest above, which is why the file is called `defaults` as opposed to config, or options. As well as the base options, arrays of dependencies and modules, it also contains the mapping of four different API services available to use, as well as including test semantics and results. It is the API mapping and tests that talk up the <strong>vast</strong> majority of the defaults configuration file. Much of this should be abstracted prior to reaching version 1.0. In the meantime, it shows you how you can hook-up the framwork to any web-based API service out there, including your own private / proprietary ones.
+There is a lot to digest above, which is why the file is called `defaults` as opposed to config, or options. As well as the base options, arrays of dependencies and modules, andother functionality such as caching options - it also contains the mapping of four different API services available to use, as well as including test semantics and results. It is the API mapping and tests that take-up the <strong>vast</strong> majority of the defaults configuration file. Much of this should be abstracted prior to reaching version 1.0. In the meantime, it shows you how you can hook-up the framwork to any web-based API service out there, including your own private / proprietary ones.
 
 ------------------------------------------------
 #### Theme Configuration - `/themes/config.json`
@@ -1076,6 +1097,8 @@ There is a lot to digest above, which is why the file is called `defaults` as op
     "theme": "default"
 }
 ```
+
+It would be at this point that you should start adding your own configuration, this way, you are then able to leave the defaults as they are.
 
 ----------------------------------------------------------------
 #### Default Wallet Configuration - `/themes/default/config.json`
@@ -1089,6 +1112,8 @@ There is a lot to digest above, which is why the file is called `defaults` as op
     ]
 }
 ```
+
+The only thing the default theme needs to do (assuming the default configuration has not been changed) is to activate the markets plugin.
 
 ---------------------------------------------------------------
 #### Prioritizer Configuration - `/themes/priority/config.json`
@@ -1142,6 +1167,8 @@ There is a lot to digest above, which is why the file is called `defaults` as op
     }
 }
 ```
+
+Prioritizer has a few things that need to change. The most important changes are lines 3, 4 and 5 - as 3 activates public user views and 5 is used to confirm who is the administrator. Line 4 deactivates cascading file inclusion. Cascading file inclusion checks two locations for each dependency and module (the core blockstrap folder and the specified theme folder), whereas deactivating this requires you to include the path within the relevant array (as seen in lines 8 to 15 and 16 to 27.
 
 ---
 
