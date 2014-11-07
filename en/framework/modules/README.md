@@ -62,7 +62,7 @@ When including a `theme` module within your theme you are required to add a `new
 (jQuery);
 ```
 
-You may however notice that the __priority theme__ auto-includes filters and button actions as seen in `themes/priority/js/modules/theme.js`:
+Please note that the __priority theme__ auto-includes filters and button actions as seen in `themes/priority/js/modules/theme.js`:
 
 <!--pre-javascript-->
 ```
@@ -88,7 +88,7 @@ You may however notice that the __priority theme__ auto-includes filters and but
     // ADD AS MANY AS YOU LIKE
     theme.buttons.test = function()
     {
-    
+        alert('Button Clicked');
     }
     
     // MERGE THE NEW FUNCTIONS WITH CORE
@@ -97,7 +97,22 @@ You may however notice that the __priority theme__ auto-includes filters and but
 (jQuery);
 ```
 
-You make pick and choose which modules to include within your theme or easily write and include your own. Please note that some modules may try to utilize other modules and at the moment there is __very limited support for missing modules__ and no module dependency management.
+This is because all filters and buttons set correctly within theme modules autommatically get assigned.
+
+You make pick and choose which modules to include within your theme or easily write and include your own with [configuration](../core/configuration/) as follows:
+
+<!--pre-javascript-->
+```
+{
+    "modules": [
+        "my_new_module"
+    ]
+}
+```
+
+Please note that some modules may try to utilize other modules and at the moment there is __very limited support for missing modules__.
+
+In addition, there is currently no module dependency management.
 
 
 --------------------------------------------------------------------------------

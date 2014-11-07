@@ -396,7 +396,17 @@ SNIPPETS
 #main-content .snippet-menu pre a:hover {
     color: #FFFF99;
 }
-
+#main-content a code {
+    border-bottom: 1px solid #00a4e5;
+    border-radius: 0;
+}
+#main-content a:hover,
+#main-content a:hover code {
+    background: #FFF;
+    text-decoration: none;
+    border-bottom: 1px solid #FFF;
+    color: #757575;
+}
 /*
 
 RESPONSIVENESS
