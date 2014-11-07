@@ -8,9 +8,7 @@ Hooks allow you to insert new events into the core processes without needing to 
 1. Related Articles
 2. [Return to Extending](../../extending/)
 3. [Themes](../themes/)
-4. [Plugins](../plugins/)
-5. [Buttons](../buttons/)
-6. [Filters](../filters/)
-7. [Hooks](../hooks/)
-8. [Snippets](../snippets/)
-9. [Table of Contents](../../../)
+4. [Buttons](../buttons/)
+5. [Filters](../filters/)
+6. [Hooks](../hooks/)
+7. [Table of Contents](../../../)
