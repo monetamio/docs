@@ -95,7 +95,7 @@ This function attempts to call all the actions added the relevant `hook`.
 
 #### `bs.boot`(bootstrap, key, html, index, callback) <a name="bs_boot" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
-This function loads each select Bootstrap component into `$.fn.blockstrap.snippets`. Once there, you could example get the relevant HTML Mustache template for lists by calling `$.fn.blockstrp.snippets['lists']`, which would provide:
+This function loads each select Bootstrap component into `$.fn.blockstrap.snippets`. Once there, you could for example then get the relevant HTML Mustache template for lists by simply calling `$.fn.blockstrp.snippets['lists']`, which would contain the following HTML:
 
 <!--pre-html-->
 ```

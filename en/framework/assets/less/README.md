@@ -35,7 +35,9 @@ This would compile to:
 }
 ```
 
-The `/blockstrap/js/less.js` file is only ever included if `less: true` is set within the configuration files or plugin options.
+The `/blockstrap/js/less.js` and `/themes/<active-theme>/less/blockstrap.less` files are only ever included if `less: true` is set within the [configuration](../../core/configuration/).
+
+More information is available for [`$.fn.blockstrap.core.less`](../../core/core-functions/#bs_less).
 
 ---
 

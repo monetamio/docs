@@ -3,7 +3,7 @@
 Blockstrap can be extended in countless ways, but two preferred patterns include:
 
 * [Themes](themes/)
-* [Plugins](plugins/)
+* [Plugins](../../plugins/)
 
 In addition, modules can be added via [configuration](../core/configuration/) settings.
 
