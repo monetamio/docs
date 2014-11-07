@@ -3,9 +3,9 @@ Blockstrap Functions <a name="docs_home"></a>
 
 ### Blockstrap Functions & Variables
 
-This is often called by first setting `$bs = blockstrap_functions;`.
+These functions are not attached to any modules and are in most cases used prior to the initialization of the [core functions](../core-functions/). 
 
-You can then use the following functions anywhere:
+They are often called by first setting `$bs = blockstrap_functions;` - where you can then use the following functions anywhere:
 
 * [`$bs.array_length`(obj)](#bs_array_length)
 * [`$bs.exists`(url)](#bs_exists)
@@ -22,11 +22,15 @@ You can then use the following functions anywhere:
 
 #### `$bs.array_length`(obj) <a name="bs_array_length" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
+This function takes and array or an object and returns the number of first-level items it contains.
+
 <small><a href="#docs_home">- back to top</a></small>
 
 --------------------------------------------------------------------------------
 
 #### `$bs.exists`(url) <a name="bs_exists" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+
+This function checks to see whether the `url` exists or not.
 
 <small><a href="#docs_home">- back to top</a></small>
 
@@ -34,11 +38,15 @@ You can then use the following functions anywhere:
 
 #### `$bs.include`(blockstrap, start, files, callback, dependency) <a name="bs_include" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
+This function is used to include multiple `files` and then perform the necessary `callback` function upon completion.
+
 <small><a href="#docs_home">- back to top</a></small>
 
 --------------------------------------------------------------------------------
 
 #### `$bs.initialize`() <a name="bs_initialize" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+
+This function is used to initiate core upon first completing the necessary prerequisites.
 
 <small><a href="#docs_home">- back to top</a></small>
 
@@ -46,11 +54,15 @@ You can then use the following functions anywhere:
 
 #### `$bs.js`(id, src, callback) <a name="bs_js" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
+This function is used to add a JavaScript file to the header of the DOM.
+
 <small><a href="#docs_home">- back to top</a></small>
 
 --------------------------------------------------------------------------------
 
 #### `$bs.json`(string) <a name="bs_json" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+
+This function is check whether or not a string is a JSON array.
 
 <small><a href="#docs_home">- back to top</a></small>
 
@@ -58,11 +70,15 @@ You can then use the following functions anywhere:
 
 #### `$bs.slug`(slug) <a name="bs_slug" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
+This function is used to convert a string into something more sensible for URL structures.
+
 <small><a href="#docs_home">- back to top</a></small>
 
 --------------------------------------------------------------------------------
 
 #### `$bs.unslug`(slug) <a name="bs_unslug" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+
+This function is used in an attempt to convert a slug back to a more sensible text string.
 
 <small><a href="#docs_home">- back to top</a></small>
 
@@ -70,11 +86,15 @@ You can then use the following functions anywhere:
 
 #### `$bs.update`(version, callback) <a name="bs_update" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
+This function is used to check the version numbers in confguration against those stored locally to determine if an update is required.
+
 <small><a href="#docs_home">- back to top</a></small>
 
 --------------------------------------------------------------------------------
 
 #### `$bs.vars`(variable) <a name="bs_vars" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+
+This function is used for two things. If no `variable` is provided it will return the variables in the current `window.location` as an array of objects. If a `variable` is provided it will return the value of that variable should it exist within the current `window.location` else it will return false.
 
 <small><a href="#docs_home">- back to top</a></small>
 
