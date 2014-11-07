@@ -8,7 +8,7 @@ This is often called by first setting `var bs = $.fn.blockstrap;`.
 You can then use the following functions once core has been fully initialized:
 
 * [`bs.ago`(time)](#bs_ago)
-* [`bs.add_actions`(hook, key, bs_module, bs_function, vars)](#bs_add_actions)
+* [`bs.add_action`(hook, key, bs_module, bs_function, vars)](#bs_add_action)
 * [`bs.apply_actions`(hook)](#bs_apply_actions)
 * [`bs.boot`(bootstrap, key, html, index, callback)](#bs_boot)
 * [`bs.bootstrap`(index, bootstrap, callback)](#bs_bootstrap)
@@ -54,7 +54,7 @@ This function takes a timestamp (in seconds) and converts it into a written phra
 
 --------------------------------------------------------------------------------
 
-#### `bs.add_actions`(hook, key, bs_module, bs_function, vars) <a name="bs_add_actions" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+#### `bs.add_action`(hook, key, bs_module, bs_function, vars) <a name="bs_add_action" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
 This function allows you to add custom functionality into critical core processes without needing to edit core files. It works in a way very similar to the add and apply_actions functions found in WordPress. The `hook` variable defines which event you would like to tie your action to. The current hooks available within core include:
 
@@ -70,7 +70,7 @@ An example of this can be seen in `/plugins/markets/markets.js` as follows:
 <!--pre-javascript-->
 ```
 var conditions = 'something-important-to-pass-on';
-$.fn.blockstrap.core.add_actions(
+$.fn.blockstrap.core.add_action(
     'init', 
     'market_updates',
     'plugins.markets', 
