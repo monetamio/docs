@@ -9,8 +9,11 @@ The API Module features the following functions:
 * [`$.fn.blockstrap.api.addresses`(hashes, currency, callback)](#api_addresses)
 * [`$.fn.blockstrap.api.balance`(hash, currency, callback)](#api_balance)
 * [`$.fn.blockstrap.api.block`(height, currency, callback)](#api_block)
-* [`$.fn.blockstrap.api.request`(url, callback, type, data)](#api_request)
+* [`$.fn.blockstrap.api.map`(currency)](#api_map)
+* [`$.fn.blockstrap.api.market`(currency, stat, callback)](#api_market)
+* [`$.fn.blockstrap.api.request`(url, callback, type, data, currency, call, username, password)](#api_request)
 * [`$.fn.blockstrap.api.relay`(hash, currency, callback)](#api_relay)
+* [`$.fn.blockstrap.api.results`(defaults, results, currency, request, callback)](#api_results)
 * [`$.fn.blockstrap.api.transaction`(txid, currency, callback)](#api_transaction)
 * [`$.fn.blockstrap.api.transactions`(address, currency, callback)](#api_transactions)
 * [`$.fn.blockstrap.api.unspents`(address, currency, callback, confirms)](#api_unspents)
@@ -42,7 +45,7 @@ Example usage of this function could look like:
 
 <!--pre-javascript-->
 ```
-var api = $.fn.blockstrap.prototype.api;
+var api = $.fn.blockstrap.modules.api;
 api.address('1121cQLqCsDsLPAkJW5ddTCREZ7Bp4ufrk', 'btc', function(results)
 {
     // Your callback
@@ -89,7 +92,7 @@ Example usage of this function could look like:
 
 <!--pre-javascript-->
 ```
-var api = $.fn.blockstrap.prototype.api;
+var api = $.fn.blockstrap.modules.api;
 api.addresses(
     ['1121cQLqCsDsLPAkJW5ddTCREZ7Bp4ufrk, 12higDjoCCNXSA95xZMWUdPvXNmkAduhWv'], 
     'btc', function(results)
@@ -129,19 +132,11 @@ Which should provide the following results:
 
 This function uses the selected API to get the balance of an address.
 
-The information it is able to map (with the corresponding defaults) includes:
-
-```
-{
-    NOT MAPPED YET
-}
-```
-
 Example usage of this function could look like:
 
 <!--pre-javascript-->
 ```
-var api = $.fn.blockstrap.prototype.api;
+var api = $.fn.blockstrap.modules.api;
 api.balance('1121cQLqCsDsLPAkJW5ddTCREZ7Bp4ufrk', 'btc', function(results)
 {
     // Your callback
@@ -149,13 +144,8 @@ api.balance('1121cQLqCsDsLPAkJW5ddTCREZ7Bp4ufrk', 'btc', function(results)
 });
 ```
 
-Which should provide the following results:
+Which should provide the results as an integer.
 
-```
-{
-    0
-}
-```
 <a href="#docs_home"><small>- back to top</small></a>
 
 --------------------------------------------------------------------------------
@@ -182,7 +172,7 @@ Example usage of this function could look like:
 
 <!--pre-javascript-->
 ```
-var api = $.fn.blockstrap.prototype.api;
+var api = $.fn.blockstrap.modules.api;
 api.block('15968', 'btc', function(results)
 {
     // Your callback
@@ -207,9 +197,39 @@ Which should provide the following results:
 
 --------------------------------------------------------------------------------
 
-#### `api.request`(url, callback) <a name="api_request" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+#### `api.map`(currency) <a name="api_map" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
-This function is used internally by all other functions within this class to route requests and should not be directly used.
+This function is used internally to share API end-points.
+
+<a href="#docs_home"><small>- back to top</small></a>
+
+--------------------------------------------------------------------------------
+
+#### `api.market`(currency, stat, callback) <a name="api_market" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+
+This function is used to return the current market conditions of the defined `currency`. By default it will return the entire object as follows:
+
+<!--pre-javascript-->
+```
+{
+    btc_to_usd: 0,
+    daily_txs: 0,
+    daily_sent: 0,
+    hash_rate: 0,
+    btc_discovered: 0,
+    market_cap: 0
+}
+```
+
+If a valid `stat` is defined, it will instead return the results of that stat.
+
+<a href="#docs_home"><small>- back to top</small></a>
+
+--------------------------------------------------------------------------------
+
+#### `api.request`(url, callback, type, data, currency, call, username, password) <a name="api_request" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+
+This function is used internally by other functions within this class to route requests and should not be directly used.
 
 <a href="#docs_home"><small>- back to top</small></a>
 
@@ -233,7 +253,7 @@ Example usage of this function could look like:
 
 <!--pre-javascript-->
 ```
-var api = $.fn.blockstrap.prototype.api;
+var api = $.fn.blockstrap.modules.api;
 api.relay('__RAW_TX__', 'btc', function(results)
 {
     // Your callback
@@ -250,6 +270,14 @@ Which should provide the following results:
     txid: "00000000201016a83272835468d457d15965d57f57c0da5944dc94ea9389f360"
 }
 ```
+<a href="#docs_home"><small>- back to top</small></a>
+
+--------------------------------------------------------------------------------
+
+#### `api.results`(defaults, results, currency, request, callback) <a name="api_results" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+
+This function is used internally by other functions within this class to format requested results and should not be directly used.
+
 <a href="#docs_home"><small>- back to top</small></a>
 
 --------------------------------------------------------------------------------
@@ -279,7 +307,7 @@ Example usage of this function could look like:
 
 <!--pre-javascript-->
 ```
-var api = $.fn.blockstrap.prototype.api;
+var api = $.fn.blockstrap.modules.api;
 api.transaction(
     '06032a172f88ba823785f87341eab26ee7a2eb2de9d2f105220d6580e3affc16', 
     'btc', function(results)
@@ -335,7 +363,7 @@ Example usage of this function could look like:
 
 <!--pre-javascript-->
 ```
-var api = $.fn.blockstrap.prototype.api;
+var api = $.fn.blockstrap.modules.api;
 api.transactions('1121cQLqCsDsLPAkJW5ddTCREZ7Bp4ufrk', 'btc', function(results)
 {
     // Your callback
@@ -393,20 +421,12 @@ Example usage of this function could look like:
 
 <!--pre-javascript-->
 ```
-var api = $.fn.blockstrap.prototype.api;
+var api = $.fn.blockstrap.modules.api;
 api.unspents('1121cQLqCsDsLPAkJW5ddTCREZ7Bp4ufrk', 'btc', function(results)
 {
     // Your callback
     console.log(results)
 });
-```
-
-Which should provide the following results:
-
-```
-{
-    TO BE TESTED
-}
 ```
 <a href="#docs_home"><small>- back to top</small></a>
 
@@ -414,7 +434,7 @@ Which should provide the following results:
 
 #### `api.url`(action, key, currency) <a name="api_url" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
-This function is used internally by all other functions within this class to help construct URLs prior to API requests and should not be directly used.
+This function is used internally by other functions within this class to help construct URLs prior to API requests and should not be directly used.
 
 <a href="#docs_home"><small>- back to top</small></a>
 
@@ -426,67 +446,108 @@ Blockstrap does not lock you in to a specific API provider. We provide functiona
 
 <!--pre-javascript-->
 ```
-var map = {
-    ends: {
-        btc: 'https://mainnet.helloblock.io/v1/'
+{
+    "currencies": {
+        "btc": {
+            "currency": "Bitcoin",
+            "lib": "bitcoin",
+            "apis": {
+                "helloblock": "https://mainnet.helloblock.io/v1/"
+            },
+            "fee": 0.0001
+        }
     },
-    to: {
-        address: 'addresses/',
-        addresses: 'addresses?addresses=',
-        transaction: 'transactions/',
-        transactions: 'addresses/$call/transactions?limit=100',
-        block: 'blocks/'
-    },
-    from: {
-        address: {
-            key: 'address',
-            address: 'address',
-            hash: 'hash160',
-            tx_count: 'confirmedTxsCount',
-            received: 'confirmedReceivedValue',
-            balance: 'confirmedBalance'
-        },
-        addresses: {
-            key: 'addresses',
-            address: 'address',
-            hash: 'hash160',
-            tx_count: 'confirmedTxsCount',
-            received: 'confirmedReceivedValue',
-            balance: 'confirmedBalance'
-        },
-        transaction: {
-            key: 'transaction',
-            txid: 'txHash',
-            size: 'size',
-            block: 'blockHeight',
-            time: 'blockTime',
-            input: 'totalInputsValue',
-            output: 'totalOutputsValue',
-            fees: 'fees'
-        },
-        transactions: {
-            key: 'transactions',
-            txid: 'txHash',
-            size: 'size',
-            block: 'blockHeight',
-            time: 'blockTime',
-            input: 'totalInputsValue',
-            output: 'totalOutputsValue',
-            fees: 'fees'
-        },
-        block: {
-            key: 'block',
-            height: 'blockHeight',
-            hash: 'blockHash',
-            prev: 'prevBlockHash',
-            tx_count: 'txsCount',
-            time: 'blockTime'
+    "apis": {
+        "btc": {
+            "helloblock": {
+                "functions": {
+                    "to": {
+                        "address": "addresses/",
+                        "addresses": "addresses?addresses=",
+                        "transaction": "transactions/",
+                        "transactions": "addresses/$call/transactions?limit=100",
+                        "block": "blocks/",
+                        "relay": "transactions/",
+                        "relay_param": "rawTxHex",
+                        "unspents": "addresses/$call/unspents?limit=100"
+                    },
+                    "from": {
+                        "address": {
+                            "key": "address",
+                            "address": "address",
+                            "hash": "hash160",
+                            "tx_count": "txsCount",
+                            "received": "confirmedReceivedValue",
+                            "balance": "balance"
+                        },
+                        "addresses": {
+                            "key": "addresses",
+                            "delimiter": "&addresses=",
+                            "address": "address",
+                            "hash": "hash160",
+                            "tx_count": "txsCount",
+                            "received": "confirmedReceivedValue",
+                            "balance": "balance"
+                        },
+                        "transaction": {
+                            "key": "transaction",
+                            "txid": "txHash",
+                            "size": "size",
+                            "block": "blockHeight",
+                            "time": "blockTime",
+                            "input": "totalInputsValue",
+                            "output": "totalOutputsValue",
+                            "value": "estimatedTxValue",
+                            "fees": "fees"
+                        },
+                        "transactions": {
+                            "key": "transactions",
+                            "txid": "txHash",
+                            "size": "size",
+                            "block": "blockHeight",
+                            "time": "blockTime",
+                            "input": "totalInputsValue",
+                            "inputs": "inputs",
+                            "output": "totalOutputsValue",
+                            "outputs": "outputs",
+                            "value": "estimatedTxValue",
+                            "fees": "fees"
+                        },
+                        "block": {
+                            "key": "block",
+                            "height": "blockHeight",
+                            "hash": "blockHash",
+                            "prev": "prevBlockHash",
+                            "tx_count": "txsCount",
+                            "time": "blockTime"
+                        },
+                        "relay": {
+                            "txid": "txHash",
+                            "inner": "transaction"
+                        },
+                        "unspents": {
+                            "key": "unspents",
+                            "confirmations": "confirmations",
+                            "txid": "txHash",
+                            "index": "index",
+                            "value": "value",
+                            "script": "scriptPubKey"
+                        }
+                    }
+                }
+            }
         }
     }
 }
 ```
 <a href="#docs_home"><small>- back to top</small></a>
 
+Please note the we currently support the following APIs (from default configuration):
+
+* [Blockchains.io](http://blockchains.io) (6 Chains)
+* [SoChain.io](http://chain.so) (6 Chains)
+* [Blockr.io](http://blockr.io) (4 Chains)
+* [HelloBlock.io](https://helloblock.io/) (BTC only)
 
 ---
 
