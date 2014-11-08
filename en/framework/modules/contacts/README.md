@@ -12,11 +12,15 @@ The Contacts Module features the following functions:
 
 #### `contacts.get`() <a name="contacts_get" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
+This function returns an array containing all the contact objects available.
+
 <a href="#docs_home"><small>- back to top</small></a>
 
 --------------------------------------------------------------------------------
 
 #### `contacts.new`(name, address, currency, fields, callback) <a name="contacts_new" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+
+This function will take the required `name`, `address`, `currency` and `fields` and create a new contact, then perform the `callback` function upon completion.
 
 <a href="#docs_home"><small>- back to top</small></a>
 
