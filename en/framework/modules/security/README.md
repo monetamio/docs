@@ -14,11 +14,27 @@ The Security Module features the following functions:
 
 #### `security.credentials`(username, password, callback) <a name="security_credentials" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
+This function will create and store a `nw_blockstrap_login` object containing the following information:
+
+<!--pre-javascript-->
+```
+{
+    username: blockstrap_functions.slug(username),
+    password: CryptoJS.SHA3(salt+password, { outputLength: 512 }).toString(),
+    ts: now,
+    logged_in: false
+}
+```
+
+Upon successful completion it will perform the provided `callback` function.
+
 <a href="#docs_home"><small>- back to top</small></a>
 
 --------------------------------------------------------------------------------
 
 #### `security.logged_in`() <a name="security_logged_in" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+
+This functio will return a boolean value based upon whether the current user is logged-in or not.
 
 <a href="#docs_home"><small>- back to top</small></a>
 
@@ -26,11 +42,15 @@ The Security Module features the following functions:
 
 #### `security.login`(username, password, callback) <a name="security_login" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
+This function will attempt to log-in the current user based on the provided `username` and `password` andwill perform the provded `callback` function if successful.
+
 <a href="#docs_home"><small>- back to top</small></a>
 
 --------------------------------------------------------------------------------
 
 #### `security.logout`() <a name="security_logout" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+
+This functon will log-out the current user and then reload the page.
 
 <a href="#docs_home"><small>- back to top</small></a>
 
