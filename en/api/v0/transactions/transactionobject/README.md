@@ -1,6 +1,6 @@
 ## Transaction Object
 
-    GET <API_ENDPOINT>/v0/<CHAIN>/transaction/<TXN_HASH>
+    GET <API_ENDPOINT>/v0/<CHAIN>/transaction/id/<TXN_HASH>
 
 Transaction objects are returned by multiple methods, in varying levels of detail. The API will give you
 less detail by default, and you can add URL params to increase the detail level.
@@ -17,9 +17,9 @@ Note Transaction return by Address functions have a special set of extra info to
 relationship between the Transaction and the Address. (see below for the extra elements)
 
 ### Examples
-* [BTC Block with minimal Transaction information](https://api.blockstrap.com/v0/btc/blockLatest?prettyprint=1)
-* [BTC Transaction with medium information](https://api.blockstrap.com/v0/btc/transaction/ABD2D6C1AB01F1CA22137AC67F73ABC72D006A1519F313522FDD759F71347764?prettyprint=1)
-* [BTC Transaction with maximum information](https://api.blockstrap.com/v0/btc/transaction/ABD2D6C1AB01F1CA22137AC67F73ABC72D006A1519F313522FDD759F71347764?showtxnio=1&prettyprint=1)
+* [BTC Block with minimal Transaction information](https://api.blockstrap.com/v0/btc/block/latest?prettyprint=1)
+* [BTC Transaction with medium information](https://api.blockstrap.com/v0/btc/transaction/id/ABD2D6C1AB01F1CA22137AC67F73ABC72D006A1519F313522FDD759F71347764?prettyprint=1)
+* [BTC Transaction with maximum information](https://api.blockstrap.com/v0/btc/transaction/id/ABD2D6C1AB01F1CA22137AC67F73ABC72D006A1519F313522FDD759F71347764?showtxnio=1&prettyprint=1)
 
 
 Example Output
@@ -153,13 +153,13 @@ When a Transaction object is returned as part of an Address method the following
 * `tx_address_ledger_disp`: String, A 'display friendly' representation of the how the `tx_address_value` (in full coins) has affected the balance of the Address
 
 #### Also see
-* [Transaction details and Pagination](../../notes/detailAndPagination/)
-* [Values and Currency](../../notes/valuesAndCurrencies/) How we handle values and currencies
+* [Transaction details and Pagination](../../notes/detail-and-pagination/)
+* [Values and Currency](../../notes/values-and-currencies/) How we handle values and currencies
 * [Request object](../../notes/requestobject/)
 * [Supported Chains](../../notes/chains/)
 
 1. [Return to API](../../../)
-1. [Transaction](../transaction/)
-1. [Transaction Relay](../transactionRelay/)
-1. [Transaction Decode](../transactionDecode/)
+1. [Transaction](../transaction-id/)
+1. [Transaction Relay](../transaction-relay/)
+1. [Transaction Decode](../transaction-decode/)
 1. [Table of Contents](../../../../../)

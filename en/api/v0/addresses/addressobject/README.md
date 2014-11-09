@@ -2,7 +2,7 @@
 
 Represents an Address in the blockchain.
 
-Example Object (from [here](https://api.blockstrap.com/v0/btc/address/1GPCsaSYwH6jcUf3BmgqXD6G5q1ZxJ3gUK?prettyprint=1))
+Example Object (from [here](https://api.blockstrap.com/v0/btc/address/id/1GPCsaSYwH6jcUf3BmgqXD6G5q1ZxJ3gUK?prettyprint=1))
     "address": {
         "address_hash160": "a8bcf2bb4f5a2555f16c126131c5cf1ffa064326",
         "address": "1GPCsaSYwH6jcUf3BmgqXD6G5q1ZxJ3gUK",
@@ -61,15 +61,15 @@ Example Object (from [here](https://api.blockstrap.com/v0/btc/address/1GPCsaSYwH
 * `balance_confirmations_required`: Integer, The number of confirmations required before a input/output is included in these figures
 
 #### Also see
-* [Values and Currency](../../notes/valuesAndCurrencies/) How we handle values and currencies
+* [Values and Currency](../../notes/values-and-currencies/) How we handle values and currencies
 * [Request object](../../notes/requestobject/)
 * [Supported Chains](../../notes/chains/)
 
 1. [Return to API](../../../)
 1. [Return to Addresses](../)
 1. [Address object](../addressobject/)
-1. [Address](../address/)
-1. [Addresses](../addresses/)
-1. [AddressTransactions](../addressTransactions/)
-1. [AddressUnspents](../addressUnspents/)
-1. [AddressHash160ToAddress](../addressHash160ToAddress/)
+1. [Address](../address-id/)
+1. [Addresses](../address-ids/)
+1. [Address Transactions](../address-transactions/)
+1. [Address Unspents](../address-unspents/)
+1. [Address Hash 160 To Address](../address-from-hash160/)

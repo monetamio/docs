@@ -3,7 +3,7 @@
 
 Represents a Block in the blockchain.
 
-Example Object [taken from here](https://api.blockstrap.com/v0/btc/block/000000000000000015DB0BCB1A6651E9E4910B598C3B027941EACF9764172211?prettyprint=1)
+Example Object [taken from here](https://api.blockstrap.com/v0/btc/block/id/000000000000000015DB0BCB1A6651E9E4910B598C3B027941EACF9764172211?prettyprint=1)
     {
         "id": "000000000000000015DB0BCB1A6651E9E4910B598C3B027941EACF9764172211",
         "height": 326027,
@@ -92,13 +92,13 @@ Example Object [taken from here](https://api.blockstrap.com/v0/btc/block/0000000
 
 
 ### Examples
-* [BTC Latest block](https://api.blockstrap.com/v0/btc/blockLatest?prettyprint=1)
-* [DOGE Latest block](https://api.blockstrap.com/v0/doge/blockLatest?prettyprint=1)
-* [LTC Latest block](https://api.blockstrap.com/v0/ltc/blockLatest?prettyprint=1)
+* [BTC Latest block](https://api.blockstrap.com/v0/btc/block/latest?prettyprint=1)
+* [DOGE Latest 2 blocks](https://api.blockstrap.com/v0/doge/block/latest/2?prettyprint=1)
+* [LTC Latest 5 blocks](https://api.blockstrap.com/v0/ltc/block/latest/5?prettyprint=1)
 
 #### Also see
-* [Transaction details and Pagination](../../notes/detailAndPagination/)
-* [Values and Currency](../../notes/valuesAndCurrencies/) How we handle values and currencies
+* [Transaction details and Pagination](../../notes/detail-and-pagination/)
+* [Values and Currency](../../notes/values-and-currencies/) How we handle values and currencies
 * [Supported Chains](../../notes/chains/)
 * [What are Satoshi-seconds](http://bitcoin.stackexchange.com/a/847)
 
@@ -107,8 +107,7 @@ Example Object [taken from here](https://api.blockstrap.com/v0/btc/block/0000000
 
 1. [Return to API](../../../)
 1. [Return to Blocks](../)
-1. [block](../block/)
-1. [blockHeight](../blockHeight/)
-1. [blockLatest](../blockLatest/)
-1. [blocksLatest](../blocksLatest/)
+1. [block](../block-id/)
+1. [blockHeight](../block-height/)
+1. [blockLatest](../block-latest/)
 1. [Table of Contents](../../../../)

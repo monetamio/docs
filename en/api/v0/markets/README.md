@@ -1,6 +1,6 @@
 ## Blockstrap Markets
 
-This needs details.
+Market functions are currently under development, and will be documentd in due course.
 
 ---
 
