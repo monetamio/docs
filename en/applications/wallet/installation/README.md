@@ -1,6 +1,6 @@
 ## Wallet Installation
 
-This needs details.
+Assuming you have already [downloaded](../../../framework/started/download/) the [framework](../../../framework/), the wallet should load by default.
 
 ---
 
