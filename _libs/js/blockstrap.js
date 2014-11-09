@@ -1,16 +1,16 @@
-var blockchains = {
+var blockstrap = {
     // INITIALIZE
     init: function()
     {
-        blockchains.forms();
-        blockchains.snippets();
+        blockstrap.forms();
+        blockstrap.snippets();
         $('body').on('click', '.ga-track', function(e)
         {
             e.preventDefault();
             var href = $(this).attr('href');
             var action = $(this).attr('data-action');
             var place = $(this).attr('data-place');
-            blockchains.track(e, href, action, place);
+            blockstrap.track(e, href, action, place);
         });
     },
     forms: function()
@@ -59,5 +59,5 @@ var blockchains = {
 
 $(document).ready(function()
 {
-    blockchains.init();
+    blockstrap.init();
 });
