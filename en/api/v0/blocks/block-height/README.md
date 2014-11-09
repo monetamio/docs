@@ -13,7 +13,7 @@ By default, only minimal Transaction information is returned. For additional [Tr
 ?showtxn=1 and showtxnio=1 query parameters.
 
 Note: Because the latest block is most likely at the top of the block chain you
-must be aware of the [gotchas at the top of the blockchain](../../notes/topOfTheChain).
+must be aware of the [gotchas at the top of the blockchain](../../notes/top-of-the-chain).
 
 
 ### Examples
@@ -90,6 +90,6 @@ Example Output
 1. [Return to Blocks](../)
 1. [Block Object](../blockobject/)
 1. [block](../block-id/)
-1. [blockHeight](../block/height/)
-1. [blockLatest](../block/latest/)
+1. [blockHeight](../block-height/)
+1. [blockLatest](../block-latest/)
 1. [Table of Contents](../../../../)

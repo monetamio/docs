@@ -36,7 +36,7 @@ Example Output
 
 
 1. [Return to API](../../../)
-1. [Transaction](../transaction/id/)
+1. [Transaction](../transaction-id/)
 1. [Transaction Relay](../transaction-relay/)
 1. [Transaction Decode](../transaction-decode/)
 1. [Table of Contents](../../../../../)

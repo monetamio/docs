@@ -2,7 +2,7 @@
 
 Block methods return details on Blocks in the blockchain.
 
-* [block](block/) - Gets details on a Block from it's hash
+* [block](block-id/) - Gets details on a Block from it's hash
 * [blockHeight](block-height/) - Gets details of Blocks at a given chain height
 * [blockLatest](block-latest/) - Gets the details of the most recent Block or Blocks
 

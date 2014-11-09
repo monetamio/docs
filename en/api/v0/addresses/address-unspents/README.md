@@ -1,6 +1,6 @@
 ## addressUnspents
 
-    GET <API_ENDPOINT>/v0/<CHAIN>/address-unspents/<ADDRESS>
+    GET <API_ENDPOINT>/v0/<CHAIN>/address/unspents/<ADDRESS>
 
 Returns a [Address object](../addressobject) and an array of Unspent [Transaction objects](../../transactions/transactionobject/) for the Address specified by the [`<CHAIN>`](../../notes/chains/) and `<ADDRESS>` values.
 

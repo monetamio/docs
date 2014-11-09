@@ -81,7 +81,7 @@ Example Object [taken from here](https://api.blockstrap.com/v0/btc/block/id/0000
 * `satoshi_seconds`: Integer, The number of satoshies multiplied by their age in this Block
 * `total_satoshi_seconds`: Integer, The number of satoshies multiplied by their age in existence ,
 * `destroyed_satoshi_seconds`: Integer, The number of `satoshi_seconds` 'used up' in this Block,
-* `transactions`: *Array* of Transactions. Based on the query showtxn=1 or showtxnio=1 parameters you get different levels of [Transaction detail](../../notes/detailAndPagination/)
+* `transactions`: *Array* of Transactions. Based on the query showtxn=1 or showtxnio=1 parameters you get different levels of [Transaction detail](../../notes/detail-and-pagination/)
 
 
 
