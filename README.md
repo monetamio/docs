@@ -57,7 +57,6 @@ This should provide a complete table of contents for all English documentation.
     * [LESS.css](en/framework/assets/less/)
 * [Extending](en/framework/extending/)
     * [Themes](en/framework/extending/themes/)
-    * [Plugins](en/framework/extending/plugins/)
     * [Buttons](en/framework/extending/buttons/)
     * [Filters](en/framework/extending/filters/)
     * [Hooks](en/framework/extending/hooks/)

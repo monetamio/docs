@@ -334,7 +334,7 @@ This function should (in most cases) be used when developing new applications as
 
 ___This function should not be called directly and is currently quite unstable with frustrating caching complexities!___
 
-Currently, it is called when set within your [core configuration](../../configuration/) files as follows:
+Currently, it is called when set within your [core configuration](../configuration/) files as follows:
 
 <!--pre-javascript-->
 ```
@@ -683,7 +683,7 @@ This function is used to display the results related to [`core.tests`](#bs_tests
 
 This function __should not__ be called directly, as it is automatically called if [configured](../configuration/) to do so with `tests: true`.
 
-These tests are strictly used in conjunction with the [API Module](../modules/api/) with one example showing requirements as follows:
+These tests are strictly used in conjunction with the [API Module](../../modules/api/) with one example showing requirements as follows:
 
 <!--pre-javascript-->
 ```
