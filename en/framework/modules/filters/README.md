@@ -14,6 +14,7 @@ The Filters Module features the following functions:
 * [`$.fn.blockstrap.filters.contacts`(blockstrap, data)](#filters_contacts)
 * [`$.fn.blockstrap.filters.get`(blockstrap, data)](#filters_get)
 * [`$.fn.blockstrap.filters.got`(blockstrap, data)](#filters_got)
+* [`$.fn.blockstrap.filters.last`(blockstrap, data)](#filters_last)
 * [`$.fn.blockstrap.filters.plugin`(blockstrap, data)](#filters_plugin)
 * [`$.fn.blockstrap.filters.setup`(blockstrap, data)](#filters_setup)
 * [`$.fn.blockstrap.filters.total`(blockstrap, data)](#filters_total)
@@ -76,6 +77,18 @@ This filter uses [`data.find`](../data/#data_find) to return the value defined b
 #### `filters.got`(blockstrap, data) <a name="filters_got" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
 This filter uses [`data.find`](../data/#data_find) to return a boolean based upon having value defined by `data.collection` and `data.key`.
+
+<a href="#docs_home"><small>- back to top</small></a>
+
+--------------------------------------------------------------------------------
+
+#### `filters.last`(blockstrap, data) <a name="filters_last" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+
+This filter returns a text string containing information pertaining to when the last transaction made by any accounts took place. The following `data` atrributes can be used to modify the results as follows:
+
+* `data.html` (used as the HTML template to be rendered by Mustache)
+* `data.alternative` (the text to be shown if there are no transactions)
+* `data.type` (this __must__ currently be set to `tx` in order for the filter to function)
 
 <a href="#docs_home"><small>- back to top</small></a>
 
