@@ -489,7 +489,7 @@ __Howerver__, there is one use it has in the form of the available `action` vari
 
 #### `bs.nav`(slug) <a name="bs_nav" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
-This function should be called when page content changes or loads and will add the `active` CSS class to the [configured](../configuration/) `navigation_id` and `mobile_nav_id` elements.
+This function should be called when page content changes or loads and will add the `active` CSS class to the [configured](../configuration/) `navigation_id` and `mobile_nav_id` elements. If the `slug` equals `$.fn.blockstrap.settings.page_base` the slug will be converted to `$.fn.blockstrap.settings.slug_base`.
 
 <small><a href="#docs_home">- back to top</a></small>
 
