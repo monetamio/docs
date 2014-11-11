@@ -9,6 +9,7 @@ They are often called by first setting `$bs = blockstrap_functions;` - where you
 
 * [`$bs.array_length`(obj)](#bs_array_length)
 * [`$bs.exists`(url)](#bs_exists)
+* [`$bs.get_css`(attributes)](#bs_get_css)
 * [`$bs.include`(blockstrap, start, files, callback, dependency)](#bs_include)
 * [`$bs.initialize`()](#bs_initialize)
 * [`$bs.js`(id, src, callback)](#bs_js)
@@ -28,9 +29,17 @@ This function takes and array or an object and returns the number of first-level
 
 --------------------------------------------------------------------------------
 
-#### `$bs.exists`(url) <a name="bs_exists" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+#### `$bs.exists`(attributes) <a name="bs_exists" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
 This function checks to see whether the `url` exists or not.
+
+<small><a href="#docs_home">- back to top</a></small>
+
+--------------------------------------------------------------------------------
+
+#### `$bs.get_css`(attributes) <a name="bs_get_css" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+
+This function emulates `jQuery.getScript()` but is used for including CSS files. It is based upon [Intesso's getCSS](https://github.com/intesso/jquery-getCSS).
 
 <small><a href="#docs_home">- back to top</a></small>
 
