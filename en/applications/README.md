@@ -6,9 +6,9 @@ ___We do not recommend using them as a means of storing your life savings and do
 
 With that said, feel free to jump straight-in and play around with the following example applications:
 
-* [Wallet](wallet/) - Framework Theme | [__DEMO__](http://demo.blockstrap.com/wallet/v0.4.0.1/) |
+* [Wallet](wallet/) - Framework Theme | [__DEMO__](http://demo.blockstrap.com/wallet/v0.4/) |
 * [Explorer](explorer/) - Standalone PHP / API Application | [__DEMO__](http://blockchains.io) |
-* [Prioritizer](prioritizer/) - Framework Theme | [__DEMO__](http://demo.blockstrap.com/priority/v0.1.0.1/) |
+* [Prioritizer](prioritizer/) - Framework Theme | [__DEMO__](http://demo.blockstrap.com/priority/v0.1/) |
 
 ---
 

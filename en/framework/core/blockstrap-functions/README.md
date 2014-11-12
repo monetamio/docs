@@ -8,6 +8,7 @@ These functions are not attached to any modules and are in most cases used prior
 They are often called by first setting `$bs = blockstrap_functions;` - where you can then use the following functions anywhere:
 
 * [`$bs.array_length`(obj)](#bs_array_length)
+* [`$bs.check`(options, callback)](#bs_check)
 * [`$bs.exists`(url)](#bs_exists)
 * [`$bs.get_css`(attributes)](#bs_get_css)
 * [`$bs.include`(blockstrap, start, files, callback, dependency)](#bs_include)
@@ -24,6 +25,14 @@ They are often called by first setting `$bs = blockstrap_functions;` - where you
 #### `$bs.array_length`(obj) <a name="bs_array_length" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
 This function takes and array or an object and returns the number of first-level items it contains.
+
+<small><a href="#docs_home">- back to top</a></small>
+
+--------------------------------------------------------------------------------
+
+#### `$bs.check`(options, callback) <a name="bs_check" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+
+This function is called prior the [Plugin Construct](../construct/) and is designed to ensure that the current device has the [minimum requirements](../started/requirements/). The `options` are those obtained from `defaults.json` but is currently not used. In fact, at the moment, the only check that is performed by this function is to ensure that localStorage is functioning normally.
 
 <small><a href="#docs_home">- back to top</a></small>
 

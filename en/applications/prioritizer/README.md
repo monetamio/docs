@@ -8,7 +8,7 @@ Prioritizer essentially transforms a list of issues into a collection of address
 
 For more information relevant to this particular theme / application, please see the followng:
 
-* [Live Demo](http://demo.blockstrap.com/priority/v0.1.0.1/)
+* [Live Demo](http://demo.blockstrap.com/priority/v0.1/)
 * [Installing Prioritizer](installation/)
 * [Framework Security](../wallet/security/)
 * [Downloads](../../downloads/)
