@@ -49,6 +49,7 @@ Does anyone care?
 
 1. Related Articles
 2. [Return to Getting Started](../../started/)
-3. [Download](../download/)
-4. [Security Q&A](../security/)
-5. [Table of Contents](../../../)
+3. [Minimum Requirements](../requirements/)
+4. [Download](../download/)
+5. [Security Q&A](../security/)
+6. [Table of Contents](../../../)

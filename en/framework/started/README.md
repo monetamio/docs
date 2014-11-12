@@ -78,6 +78,7 @@ Continue learning more by selecting something from below:
 --------------------------------------------------------------------------------
 
 1. Related Articles
-2. [Download](download/)
-3. [Security Q&A](security/)
-4. [Table of Contents](../../)
+2. [Minimum Requirements](requirements/)
+3. [Download](download/)
+4. [Security Q&A](security/)
+5. [Table of Contents](../../)
