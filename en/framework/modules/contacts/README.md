@@ -5,14 +5,16 @@ Contacts Module <a name="docs_home"></a>
 
 The Contacts Module features the following functions:
 
-* [`$.fn.blockstrap.contacts.get`()](#contacts_get)
+* [`$.fn.blockstrap.contacts.get`(id)](#contacts_get)
 * [`$.fn.blockstrap.contacts.new`(name, address, currency, fields, callback)](#contacts_new)
 
 --------------------------------------------------------------------------------
 
-#### `contacts.get`() <a name="contacts_get" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+#### `contacts.get`(id) <a name="contacts_get" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
-This function returns an array containing all the contact objects available.
+This function will return a contact object based upon the provided `id`. 
+
+If the contact `id` is not provided it will instead return an array containing all of the contact objects.
 
 <a href="#docs_home"><small>- back to top</small></a>
 

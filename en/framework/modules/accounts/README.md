@@ -48,9 +48,9 @@ This function checks all available accounts to find the total number of accounts
 
 #### `accounts.get`(id) <a name="accounts_get" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
-This function will return an account object based upon the provided `account_id`. 
+This function will return an account object based upon the provided `id`. 
 
-If the `account_id` is not provided it will instead return an array containing all of the account objects.
+If the account `id` is not provided it will instead return an array containing all of the account objects.
 
 <a href="#docs_home"><small>- back to top</small></a>
 
