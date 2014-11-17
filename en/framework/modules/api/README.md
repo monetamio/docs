@@ -5,25 +5,25 @@ API Module <a name="docs_home"></a>
 
 The API Module features the following functions:
 
-* [`$.fn.blockstrap.api.address`(hash, currency, callback)](#api_address)
-* [`$.fn.blockstrap.api.addresses`(hashes, currency, callback)](#api_addresses)
-* [`$.fn.blockstrap.api.balance`(hash, currency, callback)](#api_balance)
-* [`$.fn.blockstrap.api.block`(height, currency, callback)](#api_block)
+* [`$.fn.blockstrap.api.address`(hash, currency, callback, service, return_raw)](#api_address)
+* [`$.fn.blockstrap.api.addresses`(hashes, currency, callback, service)](#api_addresses)
+* [`$.fn.blockstrap.api.balance`(hash, currency, callback, service)](#api_balance)
+* [`$.fn.blockstrap.api.block`(height, currency, callback, service, return_raw)](#api_block)
 * [`$.fn.blockstrap.api.map`(currency)](#api_map)
-* [`$.fn.blockstrap.api.market`(currency, stat, callback)](#api_market)
+* [`$.fn.blockstrap.api.market`(currency, stat, callback, service, return_raw)](#api_market)
 * [`$.fn.blockstrap.api.request`(url, callback, type, data, currency, call, username, password)](#api_request)
-* [`$.fn.blockstrap.api.relay`(hash, currency, callback)](#api_relay)
+* [`$.fn.blockstrap.api.relay`(hash, currency, callback, service, return_raw)](#api_relay)
 * [`$.fn.blockstrap.api.results`(defaults, results, currency, request, callback)](#api_results)
-* [`$.fn.blockstrap.api.transaction`(txid, currency, callback)](#api_transaction)
-* [`$.fn.blockstrap.api.transactions`(address, currency, callback)](#api_transactions)
-* [`$.fn.blockstrap.api.unspents`(address, currency, callback, confirms)](#api_unspents)
+* [`$.fn.blockstrap.api.transaction`(txid, currency, callback, service, return_raw)](#api_transaction)
+* [`$.fn.blockstrap.api.transactions`(address, currency, callback, service, return_raw)](#api_transactions)
+* [`$.fn.blockstrap.api.unspents`(address, currency, callback, confirms, service, return_raw)](#api_unspents)
 * [`$.fn.blockstrap.api.url`(action, key, currency)](#api_url)
 
 You may also want to learn about [API Mapping](#api_mapping).
 
 --------------------------------------------------------------------------------
 
-#### `api.address`(hash, currency, callback) <a name="api_address" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+#### `api.address`(hash, currency, callback, service, return_raw) <a name="api_address" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
 This function uses the selected API to get information pertaining to an address.
 
@@ -66,11 +66,16 @@ Which should provide the following results:
     tx_count: 2
 }
 ```
+
+The `service` variable allows you to override the default API service for individual calls by providing one listed in configuration.
+
+If `return_raw` is set to true, the raw results will be returned through `callback` __instead__ of passing through `api.results`.
+
 <a href="#docs_home"><small>- back to top</small></a>
 
 --------------------------------------------------------------------------------
 
-#### `api.addresses`(hashes, currency, callback) <a name="api_addresses" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+#### `api.addresses`(hashes, currency, callback, service) <a name="api_addresses" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
 This function uses the selected API to get information pertaining to multiple addresses.
 
@@ -124,11 +129,14 @@ Which should provide the following results:
     tx_count: 75
 }
 ```
+
+The `service` variable allows you to override the default API service for individual calls by providing one listed in configuration.
+
 <a href="#docs_home"><small>- back to top</small></a>
 
 --------------------------------------------------------------------------------
 
-#### `api.balance`(hash, currency, callback) <a name="api_balance" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+#### `api.balance`(hash, currency, callback, service) <a name="api_balance" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
 This function uses the selected API to get the balance of an address.
 
@@ -146,11 +154,13 @@ api.balance('1121cQLqCsDsLPAkJW5ddTCREZ7Bp4ufrk', 'btc', function(results)
 
 Which should provide the results as an integer.
 
+The `service` variable allows you to override the default API service for individual calls by providing one listed in configuration.
+
 <a href="#docs_home"><small>- back to top</small></a>
 
 --------------------------------------------------------------------------------
 
-#### `api.block`(height, currency, callback) <a name="api_block" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+#### `api.block`(height, currency, callback, service, return_raw) <a name="api_block" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
 This function uses the selected API to get information pertaining to a block.
 
@@ -193,6 +203,11 @@ Which should provide the following results:
     tx_count: 2
 }
 ```
+
+The `service` variable allows you to override the default API service for individual calls by providing one listed in configuration.
+
+If `return_raw` is set to true, the raw results will be returned through `callback` __instead__ of passing through `api.results`.
+
 <a href="#docs_home"><small>- back to top</small></a>
 
 --------------------------------------------------------------------------------
@@ -205,7 +220,7 @@ This function is used internally to share API end-points.
 
 --------------------------------------------------------------------------------
 
-#### `api.market`(currency, stat, callback) <a name="api_market" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+#### `api.market`(currency, stat, callback, service, return_raw) <a name="api_market" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
 This function is used to return the current market conditions of the defined `currency`. By default it will return the entire object as follows:
 
@@ -223,6 +238,10 @@ This function is used to return the current market conditions of the defined `cu
 
 If a valid `stat` is defined, it will instead return the results of that stat.
 
+The `service` variable allows you to override the default API service for individual calls by providing one listed in configuration.
+
+If `return_raw` is set to true, the raw results will be returned through `callback` __instead__ of passing through `api.results`.
+
 <a href="#docs_home"><small>- back to top</small></a>
 
 --------------------------------------------------------------------------------
@@ -235,7 +254,7 @@ This function is used internally by other functions within this class to route r
 
 --------------------------------------------------------------------------------
 
-#### `api.relay`(hash, currency, callback) <a name="api_relay" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+#### `api.relay`(hash, currency, callback, service, return_raw) <a name="api_relay" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
 This function uses the selected API to relay a raw transaction.
 
@@ -270,6 +289,11 @@ Which should provide the following results:
     txid: "00000000201016a83272835468d457d15965d57f57c0da5944dc94ea9389f360"
 }
 ```
+
+The `service` variable allows you to override the default API service for individual calls by providing one listed in configuration.
+
+If `return_raw` is set to true, the raw results will be returned through `callback` __instead__ of passing through `api.results`.
+
 <a href="#docs_home"><small>- back to top</small></a>
 
 --------------------------------------------------------------------------------
@@ -282,7 +306,7 @@ This function is used internally by other functions within this class to format 
 
 --------------------------------------------------------------------------------
 
-#### `api.transaction`(txid, currency, callback) <a name="api_transaction" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+#### `api.transaction`(txid, currency, callback, service, return_raw) <a name="api_transaction" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
 This function uses the selected API to get information pertaining to a transaction.
 
@@ -334,11 +358,16 @@ Which should provide the following results:
     url: "#transaction?txid=06032a172f88ba823785f87341eab26ee7a2eb2de9d2f105220d6580e3affc16"
 }
 ```
+
+The `service` variable allows you to override the default API service for individual calls by providing one listed in configuration.
+
+If `return_raw` is set to true, the raw results will be returned through `callback` __instead__ of passing through `api.results`.
+
 <a href="#docs_home"><small>- back to top</small></a>
 
 --------------------------------------------------------------------------------
 
-#### `api.transactions`(address, currency, callback) <a name="api_transactions" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+#### `api.transactions`(address, currency, callback, service, return_raw) <a name="api_transactions" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
 This function uses the selected API to get information pertaining to all the transactions of a single address.
 
@@ -397,11 +426,16 @@ Which should provide the following results:
     url: "#transaction?txid=7f065b4a2a7f5393a5d1b74e8f340ac961d21bb7e8b77a59c9db580eeaf78d03"
 }
 ```
+
+The `service` variable allows you to override the default API service for individual calls by providing one listed in configuration.
+
+If `return_raw` is set to true, the raw results will be returned through `callback` __instead__ of passing through `api.results`.
+
 <a href="#docs_home"><small>- back to top</small></a>
 
 --------------------------------------------------------------------------------
 
-#### `api.unspents`(address, currency, callback, confirms) <a name="api_unspents" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+#### `api.unspents`(address, currency, callback, confirms, service, return_raw) <a name="api_unspents" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
 This function uses the selected API to check an address for unspent inputs.
 
@@ -428,6 +462,11 @@ api.unspents('1121cQLqCsDsLPAkJW5ddTCREZ7Bp4ufrk', 'btc', function(results)
     console.log(results)
 });
 ```
+
+The `service` variable allows you to override the default API service for individual calls by providing one listed in configuration.
+
+If `return_raw` is set to true, the raw results will be returned through `callback` __instead__ of passing through `api.results`.
+
 <a href="#docs_home"><small>- back to top</small></a>
 
 --------------------------------------------------------------------------------
@@ -452,9 +491,16 @@ Blockstrap does not lock you in to a specific API provider. We provide functiona
             "currency": "Bitcoin",
             "lib": "bitcoin",
             "apis": {
+                "blockstrap": "http://api.blockstrap.com/v0/btc/", 
                 "helloblock": "https://mainnet.helloblock.io/v1/"
             },
             "fee": 0.0001
+        },
+        "multi": {
+            "priate": true,
+            "apis": {
+                "blockstrap": "http://api.blockstrap.com/v0/multi/"
+            }
         }
     },
     "apis": {
@@ -542,12 +588,14 @@ Blockstrap does not lock you in to a specific API provider. We provide functiona
 ```
 <a href="#docs_home"><small>- back to top</small></a>
 
+As you can see from line 14 above it is also possible to include currencies that can be used privately, and __DO NOT__ show up in drop-down selections.
+
 Please note the we currently support the following APIs (from default configuration):
 
-* [Blockchains.io](http://blockchains.io) (6 Chains)
-* [SoChain.io](http://chain.so) (6 Chains)
-* [Blockr.io](http://blockr.io) (4 Chains)
-* [HelloBlock.io](https://helloblock.io/) (BTC only)
+* [Blockchains.io](http://blockchains.io) (6 Chains): select __`blockstrap`__ as service choice
+* [SoChain.io](http://chain.so) (6 Chains): select __`sochain`__ as service choice
+* [Blockr.io](http://blockr.io) (4 Chains): select __`blockr`__ as service choice
+* [HelloBlock.io](https://helloblock.io/) (BTC only): select __`helloblock`__ as service choice
 
 ---
 
