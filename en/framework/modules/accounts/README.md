@@ -17,7 +17,7 @@ The Accounts Module features the following functions:
 * [`$.fn.blockstrap.accounts.tx`(txid, account_id)](#accounts_tx)
 * [`$.fn.blockstrap.accounts.txs`(account_id)](#accounts_txs)
 * [`$.fn.blockstrap.accounts.update`(account, callback, force_refresh)](#accounts_update)
-* [`$.fn.blockstrap.accounts.updates`(index, callback)](#accounts_updates)
+* [`$.fn.blockstrap.accounts.updates`(index, callback, old_txs, old_tx_count)](#accounts_updates)
 * [`$.fn.blockstrap.accounts.verify`(account, fields, callback, password)](#accounts_verify)
 
 --------------------------------------------------------------------------------
@@ -126,7 +126,7 @@ This function will make an API call to check the TX count for the provided `acco
 
 --------------------------------------------------------------------------------
 
-#### `accounts.updates`(index, callback) <a name="accounts_updates" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+#### `accounts.updates`(index, callback, old_txs, old_tx_count) <a name="accounts_updates" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
 This function cycles through all accounts and applies [`accounts.update`](#accounts_update) as required.
 
