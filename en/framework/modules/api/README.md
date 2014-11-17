@@ -497,7 +497,7 @@ Blockstrap does not lock you in to a specific API provider. We provide functiona
             "fee": 0.0001
         },
         "multi": {
-            "priate": true,
+            "private": true,
             "apis": {
                 "blockstrap": "http://api.blockstrap.com/v0/multi/"
             }
@@ -588,7 +588,7 @@ Blockstrap does not lock you in to a specific API provider. We provide functiona
 ```
 <a href="#docs_home"><small>- back to top</small></a>
 
-As you can see from line 14 above it is also possible to include currencies that can be used privately, and __DO NOT__ show up in drop-down selections.
+As you can see from line 13 above it is also possible to include currencies that can be used privately, and __DO NOT__ show up in drop-down selections.
 
 Please note the we currently support the following APIs (from default configuration):
 
