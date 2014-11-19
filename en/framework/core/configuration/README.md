@@ -23,6 +23,14 @@ This is used by an application owner to configure universal settings.
 
 This is used by a theme or application owner to configure things relevant to that theme.
 
+-------------------------
+#### Important Configuration Settings
+
+Some important configuration settings that may go un-noticed / un-used by new developers include:
+
+* __cascade__: set to `true` by default, this tries to load / merge dependencies and modules from core and then from theme simply by adding file names. If set to `false` you will need to provide full paths for the required files but it will only try to load from there.
+* __storage__: this array selects which files are stored within localStorage and re-used upon returning visits. By default, these are all set to false, which is ideal for production. When going live, you may want to set these to `true` in order to increase the speed of page loads.
+
 -----
 
 Here are the current configuration files and some explanations to follow:
