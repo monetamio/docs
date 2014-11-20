@@ -26,13 +26,15 @@ Example Output
     {
         "status": "success",
         "data": {
-            "Blocks": [
+            "blocks": [
                 {
                     "id": "79B2FAF87AE34C36516AC9943C107CAF8002F030FAC9A87FEB971C1B5F5ECCD4",
+                    "size": 188,
                     "height": 1000,
                     "version": 2,
                     "merkel_root": "4B862760EF439DDFA3E3069BEBC74C3E8FD2556A5CE909D2B56C2B7EF364DA24",
                     "time": 1392730635,
+                    "time_display": "2014-02-18T13:37:15+00:00",
                     "nonce": 863699456,
                     "chainwork": "00000000000000000000000000000000000000000000000000000000000000000000467AD95D",
                     "bits": "504365055",

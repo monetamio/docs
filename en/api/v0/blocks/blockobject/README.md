@@ -6,10 +6,12 @@ Represents a Block in the blockchain.
 Example Object [taken from here](https://api.blockstrap.com/v0/btc/block/id/000000000000000015DB0BCB1A6651E9E4910B598C3B027941EACF9764172211?prettyprint=1)
     {
         "id": "000000000000000015DB0BCB1A6651E9E4910B598C3B027941EACF9764172211",
+        "size": "230782",
         "height": 326027,
         "version": 2,
         "merkel_root": "433C2AA35CEE46817162F1F047FE66BCF7E237CECA231F99367C15DAB1EA6D43",
         "time": 1413722064,
+        "time_display": "2014-10-19T12:34:24+00:00",
         "nonce": 1077027239,
         "chainwork": "00000000000000000000000000000000000000000000000000000002368E5F8D5CCF9530B160",
         "bits": "404711795",
@@ -52,10 +54,12 @@ Example Object [taken from here](https://api.blockstrap.com/v0/btc/block/id/0000
 
 ## Elements
 * `id`: String (hex), The id (or 'hash') of the Block
+* `size` : Integer, The size of the Block in bytes
 * `height` : Integer, The height of the Block in the Blockchain
 * `version`: Integer, The encoding version used by the network for this Block
 * `merkel_root`: String (hex), The merkel root used to verify the integrity of the Block data
 * `time`: Integer (Unix epoch), The time the Block claims to have been broadcast to the network
+* `time_display`: String (ISO 8601 date), The time the Block claims to have been broadcast to the network
 * `nonce`: Integer, The nonce added to the Block data to create the magic hash value
 * `chainwork`: String (hex), the amount of work done by the chain so far
 * `bits`: String (number) Don't know what this is.

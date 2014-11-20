@@ -1,16 +1,20 @@
 ## Latest Block
 
-    GET <API_ENDPOINT>/v0/<CHAIN>/block/latest/<INT_COUNT>
+    GET <API_ENDPOINT>/v0/<CHAIN>/block/latest/
+    GET <API_ENDPOINT>/v0/<CHAIN>/block/latest/<INT_COUNT>/
 
 Returns information for the most recent Block processed by the Blockstrap API 
 for the specified [`<CHAIN>`](../../notes/chains/)
 
-Returns a [Block object](../blockobject/). 
+Returns a [Block object](../blockobject/) or array of block objects.
 By default, only minimal Transaction information is returned. For additional [Transaction details](../../notes/detail-and-pagination/) use the
 ?showtxn=1 and showtxnio=1 query parameters.
 
 Note: Because the latest block is most likely at the top of the block chain you
 must be aware of the [gotchas at the top of the blockchain](../../notes/top-of-the-chain/).
+
+Note: if you don't specify an INT_COUNT then you'll get one Block in a `block` element. 
+if you do specify an INT_COUNT (even if it's 1) you'll get an array of Blocks in a `blocks` element.
 
 
 ### Examples
@@ -23,12 +27,14 @@ Example Output
     {
         "status": "success",
         "data": {
-            "Block": {
+            "block": {
                 "id": "2A75A531E41FC27AE94C677F10D1921C691CA07B0D7015A87CD5F842F1D226BA",
+                "size": 227,
                 "height": 157995,
                 "version": 6422530,
                 "merkel_root": "01414FB7FCFE2A7AF0603AC5C75426756CDF8F4622EDDBC2DD09BC9BA46F2B5B",
                 "time": 1407214382,
+                "time_display": "2014-08-05T04:53:02+00:00",
                 "nonce": 820187392,
                 "chainwork": "000000000000000000000000000000000000000000000000000000000000000000542BB5CEA3",
                 "bits": "503847802",
@@ -57,7 +63,6 @@ Example Output
                 "Transactions": [
                     {
                         "id": "01414FB7FCFE2A7AF0603AC5C75426756CDF8F4622EDDBC2DD09BC9BA46F2B5B",
-                        "_can_cache": 0
                     }
                 ]
             },

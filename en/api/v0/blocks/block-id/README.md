@@ -17,12 +17,14 @@ Example Output
     {
         "status": "success",
         "data": {
-            "Block": {
+            "block": {
                 "id": "2A75A531E41FC27AE94C677F10D1921C691CA07B0D7015A87CD5F842F1D226BA",
+                "size": "227",
                 "height": 157995,
                 "version": 6422530,
                 "merkel_root": "01414FB7FCFE2A7AF0603AC5C75426756CDF8F4622EDDBC2DD09BC9BA46F2B5B",
                 "time": 1407214382,
+                "time_display": "2014-08-05T04:53:02+00:00",
                 "nonce": 820187392,
                 "chainwork": "000000000000000000000000000000000000000000000000000000000000000000542BB5CEA3",
                 "bits": "503847802",
