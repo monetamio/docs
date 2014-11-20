@@ -122,7 +122,7 @@ This function opens a modal window that provides instructions on importing devic
 
 #### `buttons.login`(button, e) <a name="buttons_login" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
-This function provides __undocumented__ login functionality.
+This function provides login functionality that utilizes internally stored `your_username` and `your_password` options to confirm if the user should be allowed further access.
 
 <a href="#docs_home"><small>- back to top</small></a>
 
@@ -130,9 +130,7 @@ This function provides __undocumented__ login functionality.
 
 #### `buttons.logout`(button, e) <a name="buttons_logout" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
-This function provides __undocumented__ logout functionality.
-
-However, if no login credentials exist yet, logging-out should provide instructions for creating login credentials.
+This function will logout the current user.
 
 <a href="#docs_home"><small>- back to top</small></a>
 

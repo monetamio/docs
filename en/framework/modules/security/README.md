@@ -5,30 +5,9 @@ Security Module <a name="docs_home"></a>
 
 The Security Module features the following functions:
 
-* [`$.fn.blockstrap.security.credentials`(username, password, callback)](#security_credentials)
 * [`$.fn.blockstrap.security.logged_in`()](#security_logged_in)
 * [`$.fn.blockstrap.security.login`(username, password, callback)](#security_login)
 * [`$.fn.blockstrap.security.logout`()](#security_logout)
-
---------------------------------------------------------------------------------
-
-#### `security.credentials`(username, password, callback) <a name="security_credentials" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
-
-This function will create and store a `nw_blockstrap_login` object containing the following information:
-
-<!--pre-javascript-->
-```
-{
-    username: blockstrap_functions.slug(username),
-    password: CryptoJS.SHA3(salt+password, { outputLength: 512 }).toString(),
-    ts: now,
-    logged_in: false
-}
-```
-
-Upon successful completion it will perform the provided `callback` function.
-
-<a href="#docs_home"><small>- back to top</small></a>
 
 --------------------------------------------------------------------------------
 
