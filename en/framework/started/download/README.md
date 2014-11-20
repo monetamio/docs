@@ -4,7 +4,7 @@ Downloading Blockstrap
 There are [various](http://github.com/blockstrap) distributions of the different Blockstrap components available for review or download.
 
 * [View Source on GitHub](http://github.com/blockstrap/framework/)
-* <a href="https://github.com/blockstrap/framework/archive/master.zip" class="ga-track" data-place="Docs-Framework-Download" data-action="Downloads">Download ZIP via GitHub</a>
+* <a href="https://github.com/blockstrap/framework/archive/v0410.zip" class="ga-track" data-place="Docs-Framework-Download" data-action="Downloads">Download v0.4.1.0 ZIP via GitHub</a>
 
 If you want to run the priority theme, you can either change the [configuration](../../core/configuration/) settings or visit `/priorities.html` instead of `index.html`.
 
