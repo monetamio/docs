@@ -1,7 +1,7 @@
 Blockstrap Change Log
 =====================
 
-This page should contain all the relevant changes made to the entire Blockstrap stack. It is ordered chronologically...
+This page should contain all the relevant changes made to the entire Blockstrap stack. It should be in reverse chronological order...
 
 -----------------
 

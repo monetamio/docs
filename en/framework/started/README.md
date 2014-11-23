@@ -1,6 +1,10 @@
 ## Getting Started
 
-When you [download](download/) Blockstrap and open the `index.html` file from within a browser (or visit the root directory from a server) you should be presented with a rendered user-view of the default [wallet](../../applications/wallet/) application, which is one of several themes included within core. If this is the first time you have used Blockstrap from that domain on that device, you should be asked to setup your device salt - else you would in the case of the default wallet be presented with the wallet itself.
+Before you [download](download/) Blockstrap, you should first check the [minimum requirements](requirements/).
+
+You should then be able open the `index.html` file from within a browser (or visit the root directory from a server), at which point you should then be presented with a rendered user-view of the default [wallet](../../applications/wallet/) application, which is just one of several themes that are included within core.
+
+If this is the first time you have used Blockstrap from that domain on that device, you should be asked to setup your device salt - else you would in the case of the default wallet be presented with the wallet itself. More detailed information on [installing the wallet](../../applications/wallet/installation/) is also available.
 
 --------------
 ### Disclaimer
