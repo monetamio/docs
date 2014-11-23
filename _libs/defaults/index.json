@@ -99,6 +99,11 @@
                     "slug": "plugins/",
                     "css": "",
                     "text": "Plugins"
+                },
+                {
+                    "slug": "changes/",
+                    "css": "",
+                    "text": "Change Log"
                 }
             ]
         },

@@ -14,6 +14,7 @@ This should provide a complete table of contents for all English documentation.
 * [Downloads](en/downloads/)
 * [Plugins](en/plugins/)
     * [Markets](en/plugins/markets/)
+* [Change Log](en/changes/)
 
 #### Applications
 
@@ -30,6 +31,7 @@ This should provide a complete table of contents for all English documentation.
 #### Framework
 
 * [Getting Started](en/framework/started/)
+    * [Minimum Requirements](en/framework/started/requirements/)
     * [Download](en/framework/started/download/)
     * [Security](en/framework/started/security/)
 * [Core](en/framework/core/)
