@@ -24,7 +24,10 @@ class blockstrap_core
     function __construct($php_base)
     {
         if(!$php_base) $php_base = dirname(__FILE__);
-        $this::$ini = parse_ini_file($php_base.'/config.ini', true);
+        if(file_exists($php_base.'/config.ini'))
+        {
+            $this::$ini = parse_ini_file($php_base.'/config.ini', true);
+        }
         include_once($php_base.'/_libs/php/vendors/parsedown.php');
         include_once($php_base.'/_libs/php/vendors/mustache.php');
     }
