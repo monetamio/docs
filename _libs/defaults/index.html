@@ -102,11 +102,11 @@
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', '{{analytics.google}}', 'auto');
+  ga('create', '{{config.analytics.google}}', 'auto');
   ga('send', 'pageview');
     
   var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', '{{analytics.google}}']);
+  _gaq.push(['_setAccount', '{{config.analytics.google}}']);
   _gaq.push(['_trackPageview']);
 
   (function() {

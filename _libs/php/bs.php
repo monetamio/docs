@@ -19,9 +19,12 @@ function var_dumped($results)
 
 class blockstrap_core
 {
+    public static $ini;
+    
     function __construct($php_base)
     {
         if(!$php_base) $php_base = dirname(__FILE__);
+        $this::$ini = parse_ini_file($php_base.'/config.ini', true);
         include_once($php_base.'/_libs/php/vendors/parsedown.php');
         include_once($php_base.'/_libs/php/vendors/mustache.php');
     }
@@ -80,6 +83,7 @@ class blockstrap_core
                 $data['404'] = true;
             }
         }
+        $data['config'] = $this::$ini;
         return $data;
     }
     
