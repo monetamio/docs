@@ -27,7 +27,7 @@ This dependency is used by [`$.fn.blockstrap.core.ago`](../../core/core-function
 -------------------------------------------
 #### `bitcoinjs-lib.js` <a name="dep_btcjs"></a>
 
-This depedency is required for [`$.fn.blockstrap.modules.currencies`](../../modules/currencies/), which is in-turn used by these core modules:
+This depedency is required for [`$.fn.blockstrap.modules.blockchains`](../../modules/blockchains/), which is in-turn used by these core modules:
 
 * [`$.fn.blockstrap.modules.accounts`](../../modules/accounts/)
 * [`$.fn.blockstrap.modules.contacts`](../../modules/contacts/)

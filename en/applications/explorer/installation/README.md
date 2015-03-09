@@ -23,9 +23,9 @@ ltct = LTC Testnet
 dogt = DOGE Testnet
 ```
 
-Please note that the `api > default` setting indicates which currency to show on the homepage.
+Please note that the `api > default` setting indicates which blockchain to show on the homepage.
 
-You can add or remove (supported) currencies via the `chains` list.
+You can add or remove (supported) blockchains via the `chains` list.
 
 __Please note that at this stage, this application will only work using the Blockstrap API and has yet been designed for API-neutrality.__
 

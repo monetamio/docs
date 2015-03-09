@@ -11,7 +11,7 @@ The blockchains currently parsed include:
 * [Dogecoin](dogecoin/)
 * [Testnets](testnets/)
 
-The [`$.fn.blockstrap.currencies`](../framework/modules/currencies/) module utilizes the following magic numbers.
+The [`$.fn.blockstrap.blockchains`](../framework/modules/blockchains/) module utilizes the following magic numbers.
 
 It does this via a modified version of BitcoinJS-Lib with the following `networks.js` settings:
 

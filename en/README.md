@@ -45,7 +45,7 @@ This should provide a complete table of contents for all English documentation.
     * [API](framework/modules/api/)
     * [Buttons](framework/modules/buttons/)
     * [Contacts](framework/modules/contacts/)
-    * [Currencies](framework/modules/currencies/)
+    * [Blockchains](framework/modules/blockchains/)
     * [Data](framework/modules/data/)
     * [Filters](framework/modules/filters/)
     * [Forms](framework/modules/forms/)

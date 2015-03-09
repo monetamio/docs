@@ -5,25 +5,25 @@ API Module <a name="docs_home"></a>
 
 The API Module features the following functions:
 
-* [`$.fn.blockstrap.api.address`(hash, currency, callback, service, return_raw)](#api_address)
-* [`$.fn.blockstrap.api.addresses`(hashes, currency, callback, service)](#api_addresses)
-* [`$.fn.blockstrap.api.balance`(hash, currency, callback, service)](#api_balance)
-* [`$.fn.blockstrap.api.block`(height, currency, callback, service, return_raw)](#api_block)
-* [`$.fn.blockstrap.api.map`(currency)](#api_map)
-* [`$.fn.blockstrap.api.market`(currency, stat, callback, service, return_raw)](#api_market)
-* [`$.fn.blockstrap.api.request`(url, callback, type, data, currency, call, username, password)](#api_request)
-* [`$.fn.blockstrap.api.relay`(hash, currency, callback, service, return_raw)](#api_relay)
-* [`$.fn.blockstrap.api.results`(defaults, results, currency, request, callback)](#api_results)
-* [`$.fn.blockstrap.api.transaction`(txid, currency, callback, service, return_raw)](#api_transaction)
-* [`$.fn.blockstrap.api.transactions`(address, currency, callback, service, return_raw)](#api_transactions)
-* [`$.fn.blockstrap.api.unspents`(address, currency, callback, confirms, service, return_raw)](#api_unspents)
-* [`$.fn.blockstrap.api.url`(action, key, currency)](#api_url)
+* [`$.fn.blockstrap.api.address`(hash, blockchain, callback, service, return_raw)](#api_address)
+* [`$.fn.blockstrap.api.addresses`(hashes, blockchain, callback, service)](#api_addresses)
+* [`$.fn.blockstrap.api.balance`(hash, blockchain, callback, service)](#api_balance)
+* [`$.fn.blockstrap.api.block`(height, blockchain, callback, service, return_raw)](#api_block)
+* [`$.fn.blockstrap.api.map`(blockchain)](#api_map)
+* [`$.fn.blockstrap.api.market`(blockchain, stat, callback, service, return_raw)](#api_market)
+* [`$.fn.blockstrap.api.request`(url, callback, type, data, blockchain, call, username, password)](#api_request)
+* [`$.fn.blockstrap.api.relay`(hash, blockchain, callback, service, return_raw)](#api_relay)
+* [`$.fn.blockstrap.api.results`(defaults, results, blockchain, request, callback)](#api_results)
+* [`$.fn.blockstrap.api.transaction`(txid, blockchain, callback, service, return_raw)](#api_transaction)
+* [`$.fn.blockstrap.api.transactions`(address, blockchain, callback, service, return_raw)](#api_transactions)
+* [`$.fn.blockstrap.api.unspents`(address, blockchain, callback, confirms, service, return_raw)](#api_unspents)
+* [`$.fn.blockstrap.api.url`(action, key, blockchain)](#api_url)
 
 You may also want to learn about [API Mapping](#api_mapping).
 
 --------------------------------------------------------------------------------
 
-#### `api.address`(hash, currency, callback, service, return_raw) <a name="api_address" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+#### `api.address`(hash, blockchain, callback, service, return_raw) <a name="api_address" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
 This function uses the selected API to get information pertaining to an address.
 
@@ -35,7 +35,7 @@ The information it is able to map (with the corresponding defaults) includes:
     address: 'N/A',
     hash: 'N/A',
     tx_count: 0,
-    currency: currency,
+    blockchain: blockchain,
     received: 0,
     balance: 0
 }
@@ -60,7 +60,7 @@ Which should provide the following results:
 {
     address: "1121cQLqCsDsLPAkJW5ddTCREZ7Bp4ufrk",
     balance: 0,
-    currency: "btc",
+    blockchain: "btc",
     hash: "0030ececbad05ffcdff89f3f26e38ca3d735a8de",
     received: 5000000000,
     tx_count: 2
@@ -75,7 +75,7 @@ If `return_raw` is set to true, the raw results will be returned through `callba
 
 --------------------------------------------------------------------------------
 
-#### `api.addresses`(hashes, currency, callback, service) <a name="api_addresses" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+#### `api.addresses`(hashes, blockchain, callback, service) <a name="api_addresses" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
 This function uses the selected API to get information pertaining to multiple addresses.
 
@@ -87,7 +87,7 @@ The information it is able to map (with the corresponding defaults) includes:
     address: 'N/A',
     hash: 'N/A',
     tx_count: 0,
-    currency: currency,
+    blockchain: blockchain,
     received: 0,
     balance: 0
 }
@@ -115,7 +115,7 @@ Which should provide the following results:
 {
     address: "1121cQLqCsDsLPAkJW5ddTCREZ7Bp4ufrk",
     balance: 0,
-    currency: "btc",
+    blockchain: "btc",
     hash: "0030ececbad05ffcdff89f3f26e38ca3d735a8de",
     received: 5000000000,
     tx_count: 2
@@ -123,7 +123,7 @@ Which should provide the following results:
 {
     address: "12higDjoCCNXSA95xZMWUdPvXNmkAduhWv",
     balance: 0,
-    currency: "btc",
+    blockchain: "btc",
     hash: "12ab8dc588ca9d5787dde7eb29569da63c3a238c",
     received: 7762439255612,
     tx_count: 75
@@ -136,7 +136,7 @@ The `service` variable allows you to override the default API service for indivi
 
 --------------------------------------------------------------------------------
 
-#### `api.balance`(hash, currency, callback, service) <a name="api_balance" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+#### `api.balance`(hash, blockchain, callback, service) <a name="api_balance" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
 This function uses the selected API to get the balance of an address.
 
@@ -160,7 +160,7 @@ The `service` variable allows you to override the default API service for indivi
 
 --------------------------------------------------------------------------------
 
-#### `api.block`(height, currency, callback, service, return_raw) <a name="api_block" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+#### `api.block`(height, blockchain, callback, service, return_raw) <a name="api_block" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
 This function uses the selected API to get information pertaining to a block.
 
@@ -169,7 +169,7 @@ The information it is able to map (with the corresponding defaults) includes:
 <!--pre-javascript-->
 ```
 {
-    currency: currency,
+    blockchain: blockchain,
     height: 'N/A',
     hash: 'N/A',
     prev: 'N/A',
@@ -195,7 +195,7 @@ Which should provide the following results:
 <!--pre-javascript-->
 ```
 {
-    currency: "btc",
+    blockchain: "btc",
     hash: "00000000201016a83272835468d457d15965d57f57c0da5944dc94ea9389f360",
     height: 15968,
     prev: "00000000abae6b44fa98526e865a08820f4528eda46cad40445de3690c502ae8",
@@ -212,7 +212,7 @@ If `return_raw` is set to true, the raw results will be returned through `callba
 
 --------------------------------------------------------------------------------
 
-#### `api.map`(currency) <a name="api_map" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+#### `api.map`(blockchain) <a name="api_map" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
 This function is used internally to share API end-points.
 
@@ -220,9 +220,9 @@ This function is used internally to share API end-points.
 
 --------------------------------------------------------------------------------
 
-#### `api.market`(currency, stat, callback, service, return_raw) <a name="api_market" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+#### `api.market`(blockchain, stat, callback, service, return_raw) <a name="api_market" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
-This function is used to return the current market conditions of the defined `currency`. By default it will return the entire object as follows:
+This function is used to return the current market conditions of the defined `blockchain`. By default it will return the entire object as follows:
 
 <!--pre-javascript-->
 ```
@@ -246,7 +246,7 @@ If `return_raw` is set to true, the raw results will be returned through `callba
 
 --------------------------------------------------------------------------------
 
-#### `api.request`(url, callback, type, data, currency, call, username, password) <a name="api_request" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+#### `api.request`(url, callback, type, data, blockchain, call, username, password) <a name="api_request" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
 This function is used internally by other functions within this class to route requests and should not be directly used.
 
@@ -254,7 +254,7 @@ This function is used internally by other functions within this class to route r
 
 --------------------------------------------------------------------------------
 
-#### `api.relay`(hash, currency, callback, service, return_raw) <a name="api_relay" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+#### `api.relay`(hash, blockchain, callback, service, return_raw) <a name="api_relay" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
 This function uses the selected API to relay a raw transaction.
 
@@ -263,7 +263,7 @@ The information it is able to map (with the corresponding defaults) includes:
 <!--pre-javascript-->
 ```
 {
-    currency: currency,
+    blockchain: blockchain,
     txid: 'N/A'
 }
 ```
@@ -285,7 +285,7 @@ Which should provide the following results:
 <!--pre-javascript-->
 ```
 {
-    currency: "btc",
+    blockchain: "btc",
     txid: "00000000201016a83272835468d457d15965d57f57c0da5944dc94ea9389f360"
 }
 ```
@@ -298,7 +298,7 @@ If `return_raw` is set to true, the raw results will be returned through `callba
 
 --------------------------------------------------------------------------------
 
-#### `api.results`(defaults, results, currency, request, callback) <a name="api_results" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+#### `api.results`(defaults, results, blockchain, request, callback) <a name="api_results" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
 This function is used internally by other functions within this class to format requested results and should not be directly used.
 
@@ -306,7 +306,7 @@ This function is used internally by other functions within this class to format 
 
 --------------------------------------------------------------------------------
 
-#### `api.transaction`(txid, currency, callback, service, return_raw) <a name="api_transaction" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+#### `api.transaction`(txid, blockchain, callback, service, return_raw) <a name="api_transaction" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
 This function uses the selected API to get information pertaining to a transaction.
 
@@ -316,7 +316,7 @@ The information it is able to map (with the corresponding defaults) includes:
 ```
 {
     url: '#',
-    currency: currency,
+    blockchain: blockchain,
     txid: 'N/A',
     size: 'N/A',
     block: 'N/A',
@@ -348,7 +348,7 @@ Which should provide the following results:
 ```
 {
     block: 15968,
-    currency: "btc",
+    blockchain: "btc",
     fees: 0,
     input: 300000000000,
     output: 300000000000,
@@ -367,7 +367,7 @@ If `return_raw` is set to true, the raw results will be returned through `callba
 
 --------------------------------------------------------------------------------
 
-#### `api.transactions`(address, currency, callback, service, return_raw) <a name="api_transactions" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+#### `api.transactions`(address, blockchain, callback, service, return_raw) <a name="api_transactions" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
 This function uses the selected API to get information pertaining to all the transactions of a single address.
 
@@ -377,7 +377,7 @@ The information it is able to map (with the corresponding defaults) includes:
 ```
 {
     url: '#',
-    currency: currency,
+    blockchain: blockchain,
     txid: 'N/A',
     size: 'N/A',
     block: 'N/A',
@@ -406,7 +406,7 @@ Which should provide the following results:
 ```
 {
     block: 15968,
-    currency: "btc",
+    blockchain: "btc",
     fees: 0,
     input: 300000000000,
     output: 300000000000,
@@ -416,7 +416,7 @@ Which should provide the following results:
     url: "#transaction?txid=06032a172f88ba823785f87341eab26ee7a2eb2de9d2f105220d6580e3affc16"
 },
     block: 15169,
-    currency: "btc",
+    blockchain: "btc",
     fees: 0,
     input: 0,
     output: 5000000000,
@@ -435,7 +435,7 @@ If `return_raw` is set to true, the raw results will be returned through `callba
 
 --------------------------------------------------------------------------------
 
-#### `api.unspents`(address, currency, callback, confirms, service, return_raw) <a name="api_unspents" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+#### `api.unspents`(address, blockchain, callback, confirms, service, return_raw) <a name="api_unspents" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
 This function uses the selected API to check an address for unspent inputs.
 
@@ -471,7 +471,7 @@ If `return_raw` is set to true, the raw results will be returned through `callba
 
 --------------------------------------------------------------------------------
 
-#### `api.url`(action, key, currency) <a name="api_url" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+#### `api.url`(action, key, blockchain) <a name="api_url" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
 This function is used internally by other functions within this class to help construct URLs prior to API requests and should not be directly used.
 
@@ -486,9 +486,9 @@ Blockstrap does not lock you in to a specific API provider. We provide functiona
 <!--pre-javascript-->
 ```
 {
-    "currencies": {
+    "blockchains": {
         "btc": {
-            "currency": "Bitcoin",
+            "blockchain": "Bitcoin",
             "lib": "bitcoin",
             "apis": {
                 "blockstrap": "http://api.blockstrap.com/v0/btc/", 
@@ -588,7 +588,7 @@ Blockstrap does not lock you in to a specific API provider. We provide functiona
 ```
 <a href="#docs_home"><small>- back to top</small></a>
 
-As you can see from line 13 above it is also possible to include currencies that can be used privately, and __DO NOT__ show up in drop-down selections.
+As you can see from line 13 above it is also possible to include blockchains that can be used privately, and __DO NOT__ show up in drop-down selections.
 
 Please note the we currently support the following APIs (from default configuration):
 
@@ -605,7 +605,7 @@ Please note the we currently support the following APIs (from default configurat
 4. [API](../api/)
 5. [Buttons](../buttons/)
 6. [Contacts](../contacts/)
-7. [Currencies](../currencies/)
+7. [Blockchains](../blockchains/)
 8. [Data](../data/)
 9. [Filters](../filters/)
 10. [Forms](../forms/)

@@ -9,7 +9,7 @@ The Accounts Module features the following functions:
 * [`$.fn.blockstrap.accounts.address`(key, account_id)](#accounts_address)
 * [`$.fn.blockstrap.accounts.balances`()](#accounts_balances)
 * [`$.fn.blockstrap.accounts.get`(id)](#accounts_get)
-* [`$.fn.blockstrap.accounts.new`(currency, name, password, keys, callback)](#accounts_new)
+* [`$.fn.blockstrap.accounts.new`(blockchain, name, password, keys, callback)](#accounts_new)
 * [`$.fn.blockstrap.accounts.poll`(wait, callback)](#accounts_poll)
 * [`$.fn.blockstrap.accounts.prepare`(to, account_id, amount)](#accounts_prepare)
 * [`$.fn.blockstrap.accounts.remove`(collection, key, element, confirm)](#accounts_remove)
@@ -40,7 +40,7 @@ This function will return an account object based upon the `key` variable matchi
 
 #### `accounts.balances`() <a name="accounts_balances" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
-This function checks all available accounts to find the total number of accounts for each currency as well as the total current balance of each account. It does this internally, without any additional API calls so is not necessarily real-time and cannot be used to update accounts.
+This function checks all available accounts to find the total number of accounts for each blockchain as well as the total current balance of each account. It does this internally, without any additional API calls so is not necessarily real-time and cannot be used to update accounts.
 
 <a href="#docs_home"><small>- back to top</small></a>
 
@@ -56,9 +56,9 @@ If the account `id` is not provided it will instead return an array containing a
 
 --------------------------------------------------------------------------------
 
-#### `accounts.new`(currency, name, password, keys, callback) <a name="accounts_new" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+#### `accounts.new`(blockchain, name, password, keys, callback) <a name="accounts_new" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
-This function will take the required `currency`, `name`, `password` and `keys` and create a new account, then perform the `callback` function upon completion.
+This function will take the required `blockchain`, `name`, `password` and `keys` and create a new account, then perform the `callback` function upon completion.
 
 <a href="#docs_home"><small>- back to top</small></a>
 
@@ -148,7 +148,7 @@ This function is used to verify the results provided after submitting the form g
 4. [API](../api/)
 5. [Buttons](../buttons/)
 6. [Contacts](../contacts/)
-7. [Currencies](../currencies/)
+7. [Blockchains](../blockchains/)
 8. [Data](../data/)
 9. [Filters](../filters/)
 10. [Forms](../forms/)

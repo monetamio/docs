@@ -54,11 +54,11 @@ var replacements = [
     tx.size + ' (Bytes)',
     tx.time,
     tx.block,
-    parseInt(tx.input) / 100000000 + ' ' + tx_currency,
-    parseInt(tx.output) / 100000000 + ' ' + tx_currency,
-    parseInt(tx.fees) / 100000000 + ' ' + tx_currency,
+    parseInt(tx.input) / 100000000 + ' ' + tx_blockchain,
+    parseInt(tx.output) / 100000000 + ' ' + tx_blockchain,
+    parseInt(tx.fees) / 100000000 + ' ' + tx_blockchain,
     account.tx_count,
-    parseInt(account.balance) / 100000000 + ' ' + add_currency
+    parseInt(account.balance) / 100000000 + ' ' + add_blockchain
 ];
 ```
 
@@ -113,7 +113,7 @@ If the `refresh` is not set or the current `slug` is not the homepage, the appli
 4. [API](../api/)
 5. [Buttons](../buttons/)
 6. [Contacts](../contacts/)
-7. [Currencies](../currencies/)
+7. [Blockchains](../blockchains/)
 8. [Data](../data/)
 9. [Filters](../filters/)
 10. [Forms](../forms/)

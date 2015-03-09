@@ -7,7 +7,7 @@ The Blockstrap Framework is a component of the Blockstrap Stack. It provides a f
 * [Blockr.io](http://blockr.io) (4 Chains)
 * [HelloBlock.io](https://helloblock.io/) (BTC only)
 
-However, please note that the default [wallet]() application included with [core]() allows you to choose which API to use, it does not provide different lists of supported currencies based on the support of that API. By default, it shows support for six blockchains, but only two of the supported API services provide support for all six chains. Those blockchains supported by [Blockchains.io](http://blockchains.io) and [SoChain](http://chain.so) are:
+However, please note that the default [wallet]() application included with [core]() allows you to choose which API to use, it does not provide different lists of supported blockchains based on the support of that API. By default, it shows support for six blockchains, but only two of the supported API services provide support for all six chains. Those blockchains supported by [Blockchains.io](http://blockchains.io) and [SoChain](http://chain.so) are:
 
 * [Bitcoin](http://blockchains.io/btc/blocks/)
 * [Litecoin](http://blockchains.io/ltc/blocks/)
@@ -24,7 +24,7 @@ These [modules](modules/) include:
 * [API](modules/api/)
 * [Buttons](modules/buttons/)
 * [Contacts](modules/contacts/)
-* [Currencies](modules/currencies/)
+* [Blockchains](modules/blockchains/)
 * [Data](modules/data/)
 * [Filters](modules/filters/)
 * [Forms](modules/forms/)

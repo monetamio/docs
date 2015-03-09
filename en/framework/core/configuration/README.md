@@ -90,7 +90,7 @@ Lines 113 onwards are used solely for internal tests and API mapping.
         "styles", 
         "templates",
         "filters",
-        "currencies"
+        "blockchains"
     ],
     "dependencies": [
         // An array of dependencies to include 
@@ -154,7 +154,7 @@ Lines 113 onwards are used solely for internal tests and API mapping.
         {
             "name": "Blockstrap Donations",
             "address": "13uXA8zfLjsnrg69f6FcHVRfwBGobYU3bc",
-            "currency": "btc",
+            "blockchain": "btc",
             "contact_email": "info@neroware.io"
         }
     ],      
@@ -166,7 +166,7 @@ Lines 113 onwards are used solely for internal tests and API mapping.
                 "results": {
                     "address": "1Nz5RqevRodefPyGVB8EpdwSEGS4Ax2f1k",
                     "balance": 10019000,
-                    "currency": "btc",
+                    "blockchain": "btc",
                     "hash": "f1260c3cd86ecc03ce460c303ec0e8006e32273d",
                     "received": 10019000,
                     "tx_count": 2
@@ -181,7 +181,7 @@ Lines 113 onwards are used solely for internal tests and API mapping.
                     {
                         "address": "1121cQLqCsDsLPAkJW5ddTCREZ7Bp4ufrk",
                         "balance": 0,
-                        "currency": "btc",
+                        "blockchain": "btc",
                         "hash": "0030ececbad05ffcdff89f3f26e38ca3d735a8de",
                         "received": 5000000000,
                         "tx_count": 2
@@ -189,7 +189,7 @@ Lines 113 onwards are used solely for internal tests and API mapping.
                     {
                         "address": "12higDjoCCNXSA95xZMWUdPvXNmkAduhWv",
                         "balance": 1,
-                        "currency": "btc",
+                        "blockchain": "btc",
                         "hash": "12ab8dc588ca9d5787dde7eb29569da63c3a238c",
                         "received": 7764439255613,
                         "tx_count": 78
@@ -199,7 +199,7 @@ Lines 113 onwards are used solely for internal tests and API mapping.
             "block": {
                 "request": "15968",
                 "results": {
-                    "currency": "btc",
+                    "blockchain": "btc",
                     "hash": "00000000201016a83272835468d457d15965d57f57c0da5944dc94ea9389f360",
                     "height": 15968,
                     "next": "0000000037d7c9885177df7af395d2e99b176a9372a03b855abdf2c9adac90b1",
@@ -216,7 +216,7 @@ Lines 113 onwards are used solely for internal tests and API mapping.
                 "request": "06032a172f88ba823785f87341eab26ee7a2eb2de9d2f105220d6580e3affc16",
                 "results": {
                     "block": 15968,
-                    "currency": "btc",
+                    "blockchain": "btc",
                     "fees": 0,
                     "input": 300000000000,
                     "output": 300000000000,
@@ -231,7 +231,7 @@ Lines 113 onwards are used solely for internal tests and API mapping.
                 "results": [
                     {
                         "block": 317958,
-                        "currency": "btc",
+                        "blockchain": "btc",
                         "fees": 10000,
                         "input": 1030000,
                         "output": 1020000,
@@ -242,7 +242,7 @@ Lines 113 onwards are used solely for internal tests and API mapping.
                     },
                     {
                         "block": 317957,
-                        "currency": "btc",
+                        "blockchain": "btc",
                         "fees": 0,
                         "input": 25000000,
                         "output": 25000000,
@@ -308,10 +308,10 @@ Lines 113 onwards are used solely for internal tests and API mapping.
             "header_bg": "background"
         }
     },
-    "currencies": {
-        // Configure which currencies your application will support
+    "blockchains": {
+        // Configure which blockchains your application will support
         "btct": {
-            "currency": "Bitcoin Testnet",
+            "blockchain": "Bitcoin Testnet",
             "lib": "bitcointestnet",
             "apis": {
                 "helloblock": "https://mainnet.helloblock.io/v1/",
@@ -322,7 +322,7 @@ Lines 113 onwards are used solely for internal tests and API mapping.
             "fee": 0.0001
         },
         "ltct": {
-            "currency": "Litecoin Testnet",
+            "blockchain": "Litecoin Testnet",
             "lib": "litecointestnet",
             "apis": {
                 "helloblock": "https://mainnet.helloblock.io/v1/",
@@ -333,7 +333,7 @@ Lines 113 onwards are used solely for internal tests and API mapping.
             "fee": 0.0001
         },
         "doget": {
-            "currency": "Dogecoin Testnet",
+            "blockchain": "Dogecoin Testnet",
             "lib": "dogecointestnet",
             "apis": {
                 "helloblock": "https://mainnet.helloblock.io/v1/",
@@ -344,7 +344,7 @@ Lines 113 onwards are used solely for internal tests and API mapping.
             "fee": 0.0001
         },
         "btc": {
-            "currency": "Bitcoin",
+            "blockchain": "Bitcoin",
             "lib": "bitcoin",
             "apis": {
                 "helloblock": "https://mainnet.helloblock.io/v1/",
@@ -355,7 +355,7 @@ Lines 113 onwards are used solely for internal tests and API mapping.
             "fee": 0.0001
         },
         "ltc": {
-            "currency": "Litecoin",
+            "blockchain": "Litecoin",
             "lib": "litecoin",
             "apis": {
                 "helloblock": "https://mainnet.helloblock.io/v1/",
@@ -366,7 +366,7 @@ Lines 113 onwards are used solely for internal tests and API mapping.
             "fee": 0.0001
         },
         "doge": {
-            "currency": "Dogecoin",
+            "blockchain": "Dogecoin",
             "lib": "dogecoin",
             "apis": {
                 "helloblock": "https://mainnet.helloblock.io/v1/",
@@ -378,7 +378,7 @@ Lines 113 onwards are used solely for internal tests and API mapping.
         }
     },
     "apis": {
-        // The defaults are used when end-points are the same for each currency
+        // The defaults are used when end-points are the same for each blockchain
         "defaults": {
             "blockstrap": {
                 "functions": {
@@ -1139,7 +1139,7 @@ The only thing the default theme needs to do (assuming the default configuration
         "blockstrap/js/modules/data",
         "blockstrap/js/modules/api",
         "blockstrap/js/modules/templates",
-        "blockstrap/js/modules/currencies",
+        "blockstrap/js/modules/blockchains",
         "blockstrap/js/modules/security",
         "themes/priority/js/modules/theme"
     ],

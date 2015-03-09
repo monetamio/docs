@@ -695,7 +695,7 @@ These tests are strictly used in conjunction with the [API Module](../../modules
                 "results": {
                     "address": "1Nz5RqevRodefPyGVB8EpdwSEGS4Ax2f1k",
                     "balance": 10019000,
-                    "currency": "btc",
+                    "blockchain": "btc",
                     "hash": "f1260c3cd86ecc03ce460c303ec0e8006e32273d",
                     "received": 10019000,
                     "tx_count": 2

@@ -11,11 +11,11 @@ When first creating a new ___Bitcoin___ account called ___My Wallet___, informat
 {
     id: "my_wallet",
     name: "My Wallet",
-    currency: {
+    blockchain: {
         type: "Bitcoin",
         code: "btc"
     },
-    keys: ["wallet_currency", "wallet_name", "wallet_password"],
+    keys: ["wallet_blockchain", "wallet_name", "wallet_password"],
     address: "1AVYBJcRuYPRSXBqqd1nj8nSpCyxYKUezV",
     tx_count: 0,
     balance: 0,
@@ -27,7 +27,7 @@ When first creating a new ___Bitcoin___ account called ___My Wallet___, informat
 
 Please note that the `id` field is auto-generated from the `name`.
 
-The `currency` selection is a parameter of the function and should only allow those supported via configuration.
+The `blockchain` selection is a parameter of the function and should only allow those supported via configuration.
 
 The `keys` field is an array of the components used to generate the key-pair. A salted hash of each of these and their hidden values are added to the hash of the next. We store what was used so we know what to ask for when needed.
 
@@ -45,20 +45,20 @@ If the new transaction account is higher than the currently saved count, it will
 ```
 {
     "id": "my_wallet",
-    "currency": {
+    "blockchain": {
         "type": "Bitcoin",
         "code": "btc"
     },
     "name": "My First Wallet",
     "password": "39e7a72e09cd4191a17a099caf8a010e02210892dca234f7e15d0db368591b528c09d17605dca4d6a200c83005a64b0e30c36dcee6bdae326d941794866404f1",
-    "keys": ["wallet_currency", "wallet_name", "wallet_password"],
+    "keys": ["wallet_blockchain", "wallet_name", "wallet_password"],
     "address": "1AVYBJcRuYPRSXBqqd1nj8nSpCyxYKUezV",
     "tx_count": 7,
     "balance": 260000,
     "ts": 1411946986223,
     "txs": {
         "txid_51bda8d2268beae1b5e8d60850df9d6ef3ff3d012413e81f48d50cc34a98deee": {
-            "currency": "btc",
+            "blockchain": "btc",
             "txid": "51bda8d2268beae1b5e8d60850df9d6ef3ff3d012413e81f48d50cc34a98deee",
             "size": 226,
             "block": 322972,
@@ -69,7 +69,7 @@ If the new transaction account is higher than the currently saved count, it will
             "fees": 10000
         },
         "txid_2f231b7f41cee3f40b4a4de30d52b9ef28028529fd10986f2666cc8641dbbfab": {
-            "currency": "btc",
+            "blockchain": "btc",
             "txid": "2f231b7f41cee3f40b4a4de30d52b9ef28028529fd10986f2666cc8641dbbfab",
             "size": 373,
             "block": 322972,
@@ -80,7 +80,7 @@ If the new transaction account is higher than the currently saved count, it will
             "fees": 10000
         },
         "txid_baff4c9adb96029216b0d88259491b502d9ec63bff23a70feaa99aa28a5487ff": {
-            "currency": "btc",
+            "blockchain": "btc",
             "txid": "baff4c9adb96029216b0d88259491b502d9ec63bff23a70feaa99aa28a5487ff",
             "size": 226,
             "block": 322976,

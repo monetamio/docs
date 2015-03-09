@@ -58,7 +58,7 @@ Each `form-group` container within the form is then checked and used towards the
 
 The minimum required inputs include:
 
-* `<input id="wallet_currency" />`
+* `<input id="wallet_blockchain" />`
 * `<input id="wallet_name" />`
 * `<input id="wallet_password" />`
 
@@ -80,7 +80,7 @@ The minimum required inputs include:
 
 * `<input id="contact_name" />`
 * `<input id="contact_address" />`
-* `<input id="contact_currency" />`
+* `<input id="contact_blockchain" />`
 
 Without these, it will not be able to call the required [`$.fn.blockstrap.contacts.new`](../contacts/#contacts_new) function.
 
@@ -277,7 +277,7 @@ This function is used to process information prior to sending a payment and uses
 
 * data-form-id
 * data-account-id
-* data-to-currency
+* data-to-blockchain
 * data-to-address
 * data-to-amount
 
@@ -286,7 +286,7 @@ The `data-form-id` is used to define which form within the DOM to use to find th
 The critical functions is must parse include:
 
 * [`$.fn.blockstrap.accounts.verify`](../accounts/#accounts_verify)
-* [`$.fn.blockstrap.currencies.send`](../currencies/#currencies_send)
+* [`$.fn.blockstrap.blockchains.send`](../blockchains/#blockchains_send)
 
 <a href="#docs_home"><small>- back to top</small></a>
 
@@ -319,7 +319,7 @@ This function is used to toggle UI elements within the ocntact creation modal wi
 4. [API](../api/)
 5. [Buttons](../buttons/)
 6. [Contacts](../contacts/)
-7. [Currencies](../currencies/)
+7. [Blockchains](../blockchains/)
 8. [Data](../data/)
 9. [Filters](../filters/)
 10. [Forms](../forms/)

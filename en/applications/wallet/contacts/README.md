@@ -11,10 +11,10 @@ When first creating a new contacts called ___Blockstrap Donations___, informatio
 {
     id: "blockstrap_donations",
     name: "Blockstrap Donations",
-    currencies: [
+    blockchains: [
         {
             code: "btc",
-            currency: "Bitcoin",
+            blockchain: "Bitcoin",
             addresses: [
                 {
                     key: "13uXA8zfLjsnrg69f6FcHVRfwBGobYU3bc"
@@ -33,7 +33,7 @@ When first creating a new contacts called ___Blockstrap Donations___, informatio
 
 Please note that the `id` field is auto-generated base dupon the `name`.
 
-The `currency` selection is a parameter of the function and should only allow those supported via configuration. Verified `addresses` can be added to each currency. Although the Blockstrap data structure is set-up for multiple addresses within multiple currencies, the current UX implementation with the default wallet only allows each contact to use a single currency / address.
+The `blockchain` selection is a parameter of the function and should only allow those supported via configuration. Verified `addresses` can be added to each blockchain. Although the Blockstrap data structure is set-up for multiple addresses within multiple blockchains, the current UX implementation with the default wallet only allows each contact to use a single blockchain / address.
 
 The `data` field allows you to assign arbitary information to contacts, such as email addresses.
 

@@ -41,7 +41,7 @@ This functon will log-out the current user and then reload the page.
 4. [API](../api/)
 5. [Buttons](../buttons/)
 6. [Contacts](../contacts/)
-7. [Currencies](../currencies/)
+7. [Blockchains](../blockchains/)
 8. [Data](../data/)
 9. [Filters](../filters/)
 10. [Forms](../forms/)
