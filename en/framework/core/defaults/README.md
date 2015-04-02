@@ -13,6 +13,8 @@ As well as the following modules:
 * __modules/templates.js__
 * __modules/theme.js__
 
+__The only way to prevent this is to set `install` to `false` in configuration__, at which point, a failure to manually include the required modules listed above will almost certainly result in all kinds of nasty errors.
+
 In addition to the `$.fn.blockstrap.defaults()` function called prior to the dependencies and modules being included there is another function within __core__ (`$.fn.blockstrap.core.defaults`) that creates skeleton functionality for the following functions if their corresponding modules are not included within the initial configuration:
 
 * __Data Module__: `$.fn.blockstrap.data.find()`

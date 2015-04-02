@@ -22,8 +22,10 @@ __Secret Configuration__ is used to override all other configuration and should 
 
 Some important configuration settings that may go un-noticed / un-used by new developers include:
 
+* __key__: not included in configuration by default, adding it and providing a valid API Key will allow you to use APIs that require or utilize API Keys.
+* __install__: if this is set to `false` the modules and dependencies will not be auto-loaded and cache settings ignored.
 * __cascade__: set to `true` by default, this tries to load / merge dependencies and modules from core and then from theme simply by adding file names. If set to `false` you will need to provide full paths for the required files but it will only try to load from there.
-* __cache__: this array selects which files are stored within localStorage and re-used upon returning visits. By default, these are all set to false, which is ideal for production. When going live, you may want to set these to `true` in order to increase the speed of page loads.
+* __cache__: this array selects which files are stored within localStorage and re-used upon returning visits. By default, these are all set to false, which is ideal for production. When going live, you may want to set these to `true` in order to increase the speed of page loads as follows:
 
 <!--pre-javascript-->
 ```
@@ -46,6 +48,8 @@ Some important configuration settings that may go un-noticed / un-used by new de
     "html": true
 }
 ```
+
+The settings listed above that have numbers in-place of boolean values represent the functions that can have specific lifespans applied to their caching, with each one set to 60 seconds by default. With all of these options set to `true` as listed above, no external files will ever need to be externally loaded once installed for the first time.
 
 -----
 
@@ -295,14 +299,17 @@ Lines 113 onwards are used solely for internal tests and API mapping.
             "timeout": 60000
         },
         "pages": 60000,
-        "accounts": 60000
-    },
-    "storage": {
-        // This array controls which file types are stored locally to increase speed on return visits
-        "dependencies": false,
-        "modules": false,
-        "less": false,
-        "bootstrap": false
+        "accounts": 60000,
+        // It also controls which file types are stored locally to increase speed on return visits
+        "dependencies": true,
+        "modules": true,
+        "less": true,
+        "bootstrap": true,
+        "plugins": true,
+        "css": true,
+        "config": true,
+        "json": true,
+        "html": true
     },
     "exchange": {
         // This array controls the default exachange rate used when dynamic ones are unavilable
@@ -1193,6 +1200,16 @@ The only thing the default theme needs to do (assuming the default configuration
 ```
 
 Prioritizer has a few things that need to change. The most important changes are lines 3, 4 and 5 - as 3 activates public user views and 5 is used to confirm who is the administrator. Line 4 deactivates cascading file inclusion. Cascading file inclusion checks two locations for each dependency and module (the core blockstrap folder and the specified theme folder), whereas deactivating this requires you to include the path within the relevant array (as seen in lines 8 to 15 and 16 to 27.
+
+----------------------------------------------------------------
+#### Secret Configuration - `/secret.json`
+
+<!--pre-javascript-->
+```
+{
+    "key": "MY_SECRET_API_KEY_GOES_HERE"
+}
+```
 
 ---
 
