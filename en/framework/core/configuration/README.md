@@ -5,23 +5,17 @@ Each blockstrap application that is powered by core is constructed from three co
 * __Default Configuration__ (`/defaults.json`) - _must be located in the root folder_
 * __Custom Configuration__ (`/themes/config.json`) - _assuming `themes` is set by `defaults`_
 * __Theme Configuration__ (`/themes/default/config.json`) - _assuming the `default` theme is being used_
+* __Secret Configuration__ (`/secret.json`) - _ignored by git repo_
 
 If these files are not found in these locations, or in the locations set by each of the corresponding configuration files, blockstrap may fail to function properly. All options can also be provided via regular jQuery plugin initialization options (where they will only override the default configuration) or via HTML5 data attributes where they will also override custom configuration. At either previous configuration point, skipping all other configuration files is also possible by setting `skip_config: true`.
 
---------------------------
-#### Default Configuration
+__Default Configuration__ is used to set all the defaults for all of the available options that can be configured.
 
-This is used to set all the defaults for all of the available options that can be configured.
+__Custom Configuration__ is used by an application owner to configure universal settings.
 
--------------------------
-#### Custom Configuration
+__Theme Configuration__ is used by a theme or application owner to configure things relevant to that theme.
 
-This is used by an application owner to configure universal settings.
-
--------------------------
-#### Theme Configuration
-
-This is used by a theme or application owner to configure things relevant to that theme.
+__Secret Configuration__ is used to override all other configuration and should not be included in repositories.
 
 -------------------------
 #### Important Configuration Settings
@@ -29,7 +23,29 @@ This is used by a theme or application owner to configure things relevant to tha
 Some important configuration settings that may go un-noticed / un-used by new developers include:
 
 * __cascade__: set to `true` by default, this tries to load / merge dependencies and modules from core and then from theme simply by adding file names. If set to `false` you will need to provide full paths for the required files but it will only try to load from there.
-* __storage__: this array selects which files are stored within localStorage and re-used upon returning visits. By default, these are all set to false, which is ideal for production. When going live, you may want to set these to `true` in order to increase the speed of page loads.
+* __cache__: this array selects which files are stored within localStorage and re-used upon returning visits. By default, these are all set to false, which is ideal for production. When going live, you may want to set these to `true` in order to increase the speed of page loads.
+
+<!--pre-javascript-->
+```
+"cache": {
+    "api": {
+        "address": 60000,
+        "timeout": 60000,
+        "markets": 60000
+    },
+    "pages": 60000,
+    "accounts": 60000,
+    "dependencies": true,
+    "modules": true,
+    "less": true,
+    "bootstrap": true,
+    "plugins": true,
+    "css": true,
+    "config": true,
+    "json": true,
+    "html": true
+}
+```
 
 -----
 

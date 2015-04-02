@@ -83,6 +83,30 @@ markets.filter = function(data)
 
 As seen on line 20 above, the function uses the `$.fn.blockstrap.snippets` functionality in combination with Mustache templating to merge the data with an appropriate and pre-defined HTML structure that could be easily changed as required.
 
+By default, the plugin will cache results for 60 seconds. This could be altered to two minutes (for example) by editing the `cache` settings in [configuration](../../framework/core/configuration/) to 120000, as seen on line 5 below:
+
+<!--pre-javascript-->
+```
+"cache": {
+    "api": {
+        "address": 60000,
+        "timeout": 60000,
+        "markets": 120000
+    },
+    "pages": 60000,
+    "accounts": 60000,
+    "dependencies": true,
+    "modules": true,
+    "less": true,
+    "bootstrap": true,
+    "plugins": true,
+    "css": true,
+    "config": true,
+    "json": true,
+    "html": true
+}
+```
+
 
 --------------------------------------------------------------------------------
 
