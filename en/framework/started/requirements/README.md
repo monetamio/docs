@@ -1,7 +1,9 @@
-Minimum Requirements
-====================
+Minimum System Requirements
+===========================
 
-* Support / Access to localStorage (Private Browsing Prevents Access)
+The following HTML5 browser functions are required for the framework to run:
+
+* Support / Access to __localStorage__ - _please note that private browsing prevents access_
 
 ---
 

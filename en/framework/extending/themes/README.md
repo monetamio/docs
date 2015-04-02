@@ -8,7 +8,7 @@ By default, they should be found in the `/themes/` folder.
 Blockstrap currently comes with packaged with the following themes:
 
 * [Wallet](../../../applications/wallet/)
-* [Prioritizer](../../../applications/wallet/)
+* [Prioritizer](../../../applications/prioritizer/)
 
 Blockstrap is able to internally utilize the following folders:
 

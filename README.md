@@ -52,6 +52,7 @@ This should provide a complete table of contents for all English documentation.
     * [Security](en/framework/modules/security/)
     * [Styles](en/framework/modules/styles/)
     * [Templates](en/framework/modules/templates/)
+    * [Currencies](en/framework/modules/currencies/) (deprecated)
 * [Assets](en/framework/assets/)
     * [Dependencies](en/framework/assets/dependencies/)
     * [Bootstrap](en/framework/assets/bootstrap/)

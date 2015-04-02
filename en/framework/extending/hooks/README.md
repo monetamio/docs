@@ -5,8 +5,9 @@ Hooks allow you to insert new events into the core processes without needing to 
 
 The full list of available hooks where [`$.fn.blockstrap.core.apply_actions`](../../core/core-functions/#bs_apply_actions) is used include:
 
-* init
-* init_callback
+* `init` - _called at the start of $.fn.blockstrap.core.init_
+* `init_callback` - _called when the core.init function is completed_
+* `ready` - _ called at the end of $.fn.blockstrap.core.ready_
 
 An example of how to add an action to `init` can be seen below:
 

@@ -306,6 +306,12 @@ MAIN CONTENT
     text-indent: 0;
     outline: 0;
 }
+#main-content .alert {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0 20px;
+}
 
 /*
 

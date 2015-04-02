@@ -1,23 +1,23 @@
-Blockchains Module <a name="docs_home"></a>
+Currencies Module <a name="docs_home"></a>
 ==========================================
 
-Please note that it is [BitcoinJS-Lib](http://bitcoinjs.org) that makes most of these functions possible.
+<span class="alert alert-danger"><strong>Please note that the currencies module has been deprecated</strong>. It is now [blockchains.js](../blockchains/).</span>
 
-### Blockchains Functions & Variables
+### Currencies Functions & Variables
 
-The Blockchains Module features the following functions:
+The Currencies Module features the following functions:
 
-* [`$.fn.blockstrap.blockchains.check`(input)](#blockchains_check)
-* [`$.fn.blockstrap.blockchains.key`(code)](#blockchains_key)
-* [`$.fn.blockstrap.blockchains.keys`(secret, blockchain)](#blockchains_keys)
-* [`$.fn.blockstrap.blockchains.raw`(return_to, privkey, inputs, outputs, this_fee, amount_to_send)](#blockchains_raw)
-* [`$.fn.blockstrap.blockchains.send`(to_address, to_amount, from_address, keys, callback, blockchain)](#blockchains_send)
-* [`$.fn.blockstrap.blockchains.validate`(address)](#blockchains_validate)
-* [`$.fn.blockstrap.blockchains.which`(address)](#blockchains_which)
+* [`$.fn.blockstrap.currencies.check`(input)](#currencies_check)
+* [`$.fn.blockstrap.currencies.key`(code)](#currencies_key)
+* [`$.fn.blockstrap.currencies.keys`(secret, currency)](#currencies_keys)
+* [`$.fn.blockstrap.currencies.raw`(return_to, privkey, inputs, outputs, this_fee, amount_to_send)](#currencies_raw)
+* [`$.fn.blockstrap.currencies.send`(to_address, to_amount, from_address, keys, callback, currency)](#currencies_send)
+* [`$.fn.blockstrap.currencies.validate`(address)](#currencies_validate)
+* [`$.fn.blockstrap.currencies.which`(address)](#currencies_which)
 
 --------------------------------------------------------------------------------
 
-#### `blockchains.check`(input) <a name="blockchains_check" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+#### `currencies.check`(input) <a name="currencies_check" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
 This function will return the first character a validated `address`.
 
@@ -25,9 +25,9 @@ This function will return the first character a validated `address`.
 
 --------------------------------------------------------------------------------
 
-#### `blockchains.key`(code)) <a name="blockchains_key" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+#### `currencies.key`(code) <a name="currencies_key" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
-This function will return the `BitcoinJS-Lib` formatted blockchain code if provided with the Blockstrap blockchain `code`. 
+This function will return the `BitcoinJS-Lib` formatted currency code if provided with the Blockstrap currency `code`. 
 
 For example, `btc` becomes `bitcoin` and `dogt` becomes `dogecointestnet`.
 
@@ -35,9 +35,9 @@ For example, `btc` becomes `bitcoin` and `dogt` becomes `dogecointestnet`.
 
 --------------------------------------------------------------------------------
 
-#### `blockchains.keys`(secret, blockchain)) <a name="blockchains_keys" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+#### `currencies.keys`(secret, currency) <a name="currencies_keys" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
-This function takes the `secret` seed and `blockchain` and returns an object containing the public and private keys generated from the `secret`.
+This function takes the `secret` seed and `currency` and returns an object containing the public and private keys generated from the `secret`.
 
 Please note that by default, Blockstrap __DOES NOT__ store the private keys anywhere.
 
@@ -45,7 +45,7 @@ Please note that by default, Blockstrap __DOES NOT__ store the private keys anyw
 
 --------------------------------------------------------------------------------
 
-#### `blockchains.raw`(return_to, privkey, inputs, outputs, this_fee, amount_to_send)) <a name="blockchains_raw" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+#### `currencies.raw`(return_to, privkey, inputs, outputs, this_fee, amount_to_send) <a name="currencies_raw" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
 This function returns a raw transaction Hex-string that can then be relayed.
 
@@ -55,25 +55,25 @@ It already requires you to have the `inputs` and `outputs` properly formed. The 
 
 --------------------------------------------------------------------------------
 
-#### `blockchains.send`(to_address, to_amount, from_address, keys, callback, blockchain)) <a name="blockchains_send" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+#### `currencies.send`(to_address, to_amount, from_address, keys, callback, currency) <a name="currencies_send" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
-This function is used to construct a raw transaction and then relay it. Basic settings such as who to send the coins to with `to_address`, or how much to send with `to_amount` and `blockchain` are clear enough. The `from_address` will be used as the returning change address. The `keys` should be a key object as returned by [`blockchains.keys`](#blockchains_keys), which contains both the public and private keys. Before proceeding, we first check locally to see if the account belongs to this user and it has the necessary balance required to perform the transaction. If it does, the public key is used in reference to an [`api.unspents`](../api/#api_unspents) call, the results from which are then used to construct the necessary available inputs. We then call [`blockchains.raw`](#blockchains_raw) and use the returned object as the required variable in an [`api.relay`](../api/#api_relay) call.
-
-<a href="#docs_home"><small>- back to top</small></a>
-
---------------------------------------------------------------------------------
-
-#### `blockchains.validate`(address)) <a name="blockchains_validate" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
-
-This function returns a boolean and is used on conjunction with [`blockchains.check`](#blockchains_check) to validate an `address`.
+This function is used to construct a raw transaction and then relay it. Basic settings such as who to send the coins to with `to_address`, or how much to send with `to_amount` and `currency` are clear enough. The `from_address` will be used as the returning change address. The `keys` should be a key object as returned by [`currencies.keys`](#currencies_keys), which contains both the public and private keys. Before proceeding, we first check locally to see if the account belongs to this user and it has the necessary balance required to perform the transaction. If it does, the public key is used in reference to an [`api.unspents`](../api/#api_unspents) call, the results from which are then used to construct the necessary available inputs. We then call [`currencies.raw`](#currencies_raw) and use the returned object as the required variable in an [`api.relay`](../api/#api_relay) call.
 
 <a href="#docs_home"><small>- back to top</small></a>
 
 --------------------------------------------------------------------------------
 
-#### `blockchains.which`(address)) <a name="blockchains_which" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+#### `currencies.validate`(address) <a name="currencies_validate" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
-This function will return the blockchain code (or false) for a given `address`.
+This function returns a boolean and is used on conjunction with [`currencies.check`](#currencies_check) to validate an `address`.
+
+<a href="#docs_home"><small>- back to top</small></a>
+
+--------------------------------------------------------------------------------
+
+#### `currencies.which`(address) <a name="currencies_which" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+
+This function will return the currency code (or false) for a given `address`.
 
 However, please note that this __IS NOT ACCURATE__ as it currently uses a very hacky method. Sorry about that.
 
@@ -87,7 +87,7 @@ However, please note that this __IS NOT ACCURATE__ as it currently uses a very h
 4. [API](../api/)
 5. [Buttons](../buttons/)
 6. [Contacts](../contacts/)
-7. [Blockchains](../blockchains/)
+7. [Blockchains](../currencies/)
 8. [Data](../data/)
 9. [Filters](../filters/)
 10. [Forms](../forms/)

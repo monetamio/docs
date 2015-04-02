@@ -58,8 +58,9 @@ This function takes a timestamp (in seconds) and converts it into a written phra
 
 This function allows you to add custom functionality into critical core processes without needing to edit core files. It works in a way very similar to the add and apply_actions functions found in WordPress. The `hook` variable defines which event you would like to tie your action to. The current hooks available within core include:
 
-* `init`
-* `init_callback`
+* `init` - _called at the start of $.fn.blockstrap.core.init_
+* `init_callback` - _called when the core.init function is completed_
+* `ready` - _ called at the end of $.fn.blockstrap.core.ready_
 
 The `key` is used as a unique identifier for each function you would like to attach to the hook.
 
