@@ -15,7 +15,7 @@ A brief explanation of the columns listed above:
 * __Provider ID__ is used in [configuration](../../core/configuration/) to set the desired API using `api_service`
 * __Blockchains__ attribute listed above refers to the number of supported [blockchains](../blockchains/)
 * __Markets__ refers to support for the [market conditions](../../../plugins/markets/) plugin included with the framework
-* __Pagination__ refers to the ability to paginate addresses with lots of transactions
+* __Pagination__ refers to the ability to [paginate transactions](#api_transactions) within addresses
 * __Addresses__ refers to the ability to check multiple addresses with one call (used for [prioritizer](../../../applications/prioritizer) theme)
 
 -----------------------------
@@ -34,7 +34,7 @@ The API Module features the following functions:
 * [`$.fn.blockstrap.api.relay`(hash, blockchain, callback, service, return_raw)](#api_relay)
 * [`$.fn.blockstrap.api.results`(defaults, results, blockchain, request, callback)](#api_results)
 * [`$.fn.blockstrap.api.transaction`(txid, blockchain, callback, service, return_raw)](#api_transaction)
-* [`$.fn.blockstrap.api.transactions`(address, blockchain, callback, service, return_raw)](#api_transactions)
+* [`$.fn.blockstrap.api.transactions`(address, blockchain, callback, service, return_raw, count, skip)](#api_transactions)
 * [`$.fn.blockstrap.api.unspents`(address, blockchain, callback, confirms, service, return_raw)](#api_unspents)
 * [`$.fn.blockstrap.api.url`(action, key, blockchain)](#api_url)
 
@@ -386,7 +386,7 @@ If `return_raw` is set to true, the raw results will be returned through `callba
 
 --------------------------------------------------------------------------------
 
-#### `api.transactions`(address, blockchain, callback, service, return_raw) <a name="api_transactions" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+#### `api.transactions`(address, blockchain, callback, service, return_raw, count, skip) <a name="api_transactions" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
 This function uses the selected API to get information pertaining to all the transactions of a single address.
 
@@ -449,6 +449,8 @@ Which should provide the following results:
 The `service` variable allows you to override the default API service for individual calls by providing one listed in configuration.
 
 If `return_raw` is set to true, the raw results will be returned through `callback` __instead__ of passing through `api.results`.
+
+Use `count` and `skip` for pagination, to control how many records are returned or skipped (if support by selected API).
 
 <a href="#docs_home"><small>- back to top</small></a>
 
