@@ -41,7 +41,8 @@ You can then use the following functions once core has been fully initialized:
 * [`bs.string_to_array`(string)](#bs_string_to_array)
 * [`bs.stringed`(styles)](#bs_stringed)
 * [`bs.table`()](#bs_table)
-* [`bs.test_results`(expected, given, index, total, title)](#bs_test_results)
+* [`bs.test_results`(expected, given, index, total, title, api_service, chain_count, chain_total)](#bs_test_results)
+* [`bs.test_results_table`(results)](#bs_test_results_table)
 * [`bs.tests`(run)](#bs_tests)
 
 --------------------------------------------------------------------------------
@@ -672,9 +673,17 @@ It then uses these additional data attributes as advanced DataTables options:
 
 --------------------------------------------------------------------------------
 
-#### `bs.test_results`(expected, given, index, total, title) <a name="bs_test_results" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+#### `bs.test_results`(expected, given, index, total, title, api_service, chain_count, chain_total) <a name="bs_test_results" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
 This function is used to display the results related to [`core.tests`](#bs_tests) and __should not__ be called directly.
+
+<small><a href="#docs_home">- back to top</a></small>
+
+--------------------------------------------------------------------------------
+
+#### `bs.test_results_table`(results) <a name="bs_test_results_table" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+
+This function is also used to display the results related to [`core.tests`](#bs_tests) and __should not__ be called directly.
 
 <small><a href="#docs_home">- back to top</a></small>
 

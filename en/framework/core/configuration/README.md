@@ -23,7 +23,7 @@ __Secret Configuration__ is used to override all other configuration and should 
 Some important configuration settings that may go un-noticed / un-used by new developers include:
 
 * __key__: not included in configuration by default, adding it and providing a valid API Key will allow you to use APIs that require or utilize API Keys.
-* __install__: if this is set to `false` the modules and dependencies will not be auto-loaded and cache settings ignored.
+* __install__: if this is set to `false` the modules and dependencies will not be auto-loaded and cache settings will be ignored.
 * __cascade__: set to `true` by default, this tries to load / merge dependencies and modules from core and then from theme simply by adding file names. If set to `false` you will need to provide full paths for the required files but it will only try to load from there.
 * __cache__: this array selects which files are stored within localStorage and re-used upon returning visits. By default, these are all set to false, which is ideal for production. When going live, you may want to set these to `true` in order to increase the speed of page loads as follows:
 
@@ -31,12 +31,10 @@ Some important configuration settings that may go un-noticed / un-used by new de
 ```
 "cache": {
     "api": {
-        "address": 60000,
-        "timeout": 60000,
-        "markets": 60000
+        "timeout": 60000, // Used as default time to live with api module
+        "markets": 60000 // Used by markets plugin
     },
-    "pages": 60000,
-    "accounts": 60000,
+    "accounts": 60000, // Used with accounts.poll and accounts.update and theme.balance
     "dependencies": true,
     "modules": true,
     "less": true,
@@ -49,7 +47,9 @@ Some important configuration settings that may go un-noticed / un-used by new de
 }
 ```
 
-The settings listed above that have numbers in-place of boolean values represent the functions that can have specific lifespans applied to their caching, with each one set to 60 seconds by default. With all of these options set to `true` as listed above, no external files will ever need to be externally loaded once installed for the first time.
+The settings listed above that have numbers in-place of boolean values represent the functions that can have specific lifespans applied to their caching, with each one set to 60 seconds by default. With all of these options set to `true` as listed above, no external files will ever need to be externally loaded once installed and saved to localStorage for the first time.
+
+In order to see how the `install:false` setting and other configurations or scenarios works, please see the [examples](../../examples/) section for more details.
 
 -----
 

@@ -145,6 +145,11 @@
                     "text": "Core"
                 },
                 {
+                    "slug": "framework/examples/",
+                    "css": "",
+                    "text": "Examples"
+                },
+                {
                     "slug": "framework/modules/",
                     "css": "",
                     "text": "Modules"
