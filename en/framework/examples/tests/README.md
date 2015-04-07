@@ -9,7 +9,7 @@ We currently support 4 API Providers, which should return the following results:
 |Blockstrap|5|0|8|<span class="label label-success">Y</span>|<span class="label label-success">Y</span>|<span class="label label-success">Y</span>|
 |SoChain|3|2|6|<span class="label label-danger">N</span>|<span class="label label-danger">N</span>|<span class="label label-danger">N</span>|
 |Blockr|3|2|4|<span class="label label-danger">N</span>|<span class="label label-danger">N</span>|<span class="label label-danger">N</span>|
-|HelloBlock|3|2|1|<span class="label label-danger">N</span>|<span class="label label-success">Y</span>|<span class="label label-success">Y</span>|
+|HelloBlock|4|1|1|<span class="label label-danger">N</span>|<span class="label label-success">Y</span>|<span class="label label-success">Y</span>|
 
 
 ---
