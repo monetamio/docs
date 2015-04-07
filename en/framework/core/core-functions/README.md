@@ -47,6 +47,7 @@ You can then use the following functions once core has been fully initialized:
 * [`bs.core.test_results`(expected, given, index, total, title, api_service, chain_count, chain_total)](#bs_test_results)
 * [`bs.core.test_results_table`(results)](#bs_test_results_table)
 * [`bs.core.tests`(run)](#bs_tests)
+* [`bs.core.txt`(input, callback)](#bs_txt)
 * [`bs.core.upgrade`(saved_version, this_version, refresh, callback)](#bs_upgrade)
 
 --------------------------------------------------------------------------------
@@ -323,7 +324,7 @@ This function is used to collect __DATA__.json files and __TEMPLATE__.html files
 
 #### `bs.core.image`(input, callback) <a name="bs_image" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
 
-This function takes an input with type `file` and then performs the necessary `callback` function when it is used to upload a file.
+This function takes an input with type `file` and then performs the necessary `callback` function when it is used to upload an image file.
 
 <small><a href="#docs_home">- back to top</a></small>
 
@@ -783,6 +784,14 @@ These tests are strictly used in conjunction with the [API Module](../../modules
 ```
 
 Another way to run the tests without changing the configuration is visiting `tests.html` instead of `index.html`.
+
+<small><a href="#docs_home">- back to top</a></small>
+
+--------------------------------------------------------------------------------
+
+#### `bs.core.txt`(input, callback) <a name="bs_txt" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+
+This function takes an input with type `file` and then performs the necessary `callback` function when it is used to upload a `.txt` file.
 
 <small><a href="#docs_home">- back to top</a></small>
 
