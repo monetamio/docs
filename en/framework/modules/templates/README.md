@@ -62,7 +62,7 @@ var replacements = [
 ];
 ```
 
-Assuming you were viewing the [DEMO WALLET](http://demo.blockstrap.com/wallet/v0.4/), this `html`:
+Assuming you were viewing the [DEMO WALLET](http://demo.blockstrap.com/framework/v0.5/), this `html`:
 
 <!--pre-html-->
 ```
@@ -73,7 +73,7 @@ Would become:
 
 <!--pre-html-->
 ```
-<a href="http://demo.blockstrap.com/wallet/v0.4/">Homepage</a>
+<a href="http://demo.blockstrap.com/framework/v0.5/">Homepage</a>
 ```
 
 <a href="#docs_home"><small>- back to top</small></a>

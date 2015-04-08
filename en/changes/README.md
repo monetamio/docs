@@ -1,17 +1,47 @@
 Blockstrap Change Log
 =====================
 
-This page should contain all the relevant changes made to the entire Blockstrap stack. It should be in reverse chronological order...
+This page should contain all the relevant changes made to the entire Blockstrap stack. It should be in reverse chronological order.
 
 -----------------
 
-#### 23/NOV/2014: [Framework](../framework/) [`Commit 1e35ffd`](https://github.com/blockstrap/framework/commit/1e35ffd3be9cd5855868fb96c18338e4293242d9)
+#### April, 2015: [Framework](../framework/) __v0.5.0.1__
 
-Added an alert to warn users running the framework from their file-systems without using a server using a browser that does not support such methods (such as Chrome and Safari).
+The following new functions were added:
 
------------------
+* bs.core.add_commas
+* bs.core.patch
+* bs.core.test_results_table
+* bs.core.txt
+* bs.core.upgrade
+* secret config
+* markets plugin cache
+* import and export wallet as file
+* blockstrap API key options
+* added dashpay support
+* add account action icon buttons
+* replace addresses in recent transaction widget with account name
+* cache options for config, snippets, html, data, plugins and css
 
-In addition, the Framework also has its own [minimum requirements](../framework/started/requirements).
+The following important bug fixes took place:
+
+* prevent bitcoinjs-lib from caching (due to IE)
+* prevent sending coins to wrong blockchain
+* transaction pagination support
+* prevent creation of transactions with zero change
+
+The following filters were added:
+
+* ready
+
+The following new examples were added:
+
+* manual installation (no AJAX) example
+* multiple API provider tests
+
+The following components were deprecated:
+
+* bs.currencies now bs.blockchains
 
 --------------------------------------------------------------------------------
 

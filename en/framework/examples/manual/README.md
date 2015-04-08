@@ -2,18 +2,17 @@
 
 The majority of people will tell you that running evaluated JavaScript is an extremely bad idea and incredibly difficult to debug. Nonetheless, in order to auto-load assets from the client-side based on configuration settings there really is no other way to do it, especially if you want to load these assets into localStorage for caching and quicker loading later.
 
-By visiting `manual.html` rather than the `index.html` file, you will see an additional HTML attribute added to the main `blockstrap` element:
+By visiting `manual.html` rather than the `index.html` file, you will see that an ID other than `blockstrap` has been used and that the element has an additional `data-install="false"` HTML attribute added to prevent the install process from running.
 
 <!--pre-html-->
 ```
 <div id="blockstrap" data-install="false"></div>
 ```
 
-This then allows the JavaScript files to be included manually as follows:
+This then allows the JavaScript files to be included manually (after the element) as follows:
 
 <!--pre-html-->
 ```
-<head>
 <!-- INCLUDE REQUIRED DEPENDENCIES MANUALLY -->
 <script src="blockstrap/js/dependencies/jquery.min.js"></script>
 <script src="blockstrap/js/dependencies/ago.js"></script>
@@ -33,12 +32,14 @@ This then allows the JavaScript files to be included manually as follows:
 <script src="themes/default/js/dependencies/steps.js"></script>
     
 <!-- INCLUDE BS FRAMEWORK -->
+<script src="blockstrap/js/defaults.js"></script>
 <script src="blockstrap/js/blockstrap.js"></script>
 <!-- PLEASE NOTE YOU CAN NOW SET INSTALL TO FALSE IN OPTIONS -->
     
 <!-- INCLUDE REQUIRED MODULES MANUALLY -->
-<script src="blockstrap/js/modules/accounts.js"></script>
+<script src="blockstrap/js/modules/templates.js"></script>
 <script src="blockstrap/js/modules/api.js"></script>
+<script src="blockstrap/js/modules/accounts.js"></script>
 <script src="blockstrap/js/modules/blockchains.js"></script>
 <script src="blockstrap/js/modules/buttons.js"></script>
 <script src="blockstrap/js/modules/contacts.js"></script>
@@ -47,12 +48,25 @@ This then allows the JavaScript files to be included manually as follows:
 <script src="blockstrap/js/modules/forms.js"></script>
 <script src="blockstrap/js/modules/security.js"></script>
 <script src="blockstrap/js/modules/styles.js"></script>
-<script src="blockstrap/js/modules/templates.js"></script>
     
 <!-- INCLUDE REQUIRED THEME MODULES MANUALLY -->
 <script src="themes/default/js/modules/buttons.js"></script>
 <script src="themes/default/js/modules/theme.js"></script>
-</head>
+    
+<!-- INCLUDE PLUGINS MANUALLY -->
+<script src="plugins/markets/markets.js"></script>
+```
+
+Where we then need to re-initiate things manually with the following code:
+
+<!--pre-html-->
+```
+<script>
+$(document).ready(function()
+{
+    $('#blockstrap-manual').blockstrap();
+});
+</script>
 ```
 
 ---
