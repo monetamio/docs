@@ -3,12 +3,12 @@ API Module <a name="docs_home"></a>
 
 In order to demonstrate the flexibility of the framework, it is configured to supports several different API providers, but not all of the framework functionality can be provided by all providers - with the following matrix used as a summary:
 
-| API Provider | Homepage | Provider ID | Blockchains | Markets | Pagination | Addresses |
+| API Provider | Homepage | Provider ID | Blockchains | Markets | Pagination | Addresses | DNKeys |
 |---------|------------------|---------|---------|
-|Blockstrap|[http://blockstrap.com](http://blockstrap.com)|blockstrap|8|<span class="label label-success">Y</span>|<span class="label label-success">Y</span>|<span class="label label-success">Y</span>|
-|SoChain|[http://chain.so](http://chain.so)|sochain|6|<span class="label label-danger">N</span>|<span class="label label-danger">N</span>|<span class="label label-danger">N</span>|
-|Blockr|[http://blockr.io](http://blockr.io)|blockr|4|<span class="label label-danger">N</span>|<span class="label label-danger">N</span>|<span class="label label-danger">N</span>|
-|HelloBlock|[http://helloblock.io](http://helloblock.io)|helloblock|1|<span class="label label-danger">N</span>|<span class="label label-success">Y</span>|<span class="label label-success">Y</span>|
+|Blockstrap|[http://blockstrap.com](http://blockstrap.com)|blockstrap|8|<span class="label label-success">Y</span>|<span class="label label-success">Y</span>|<span class="label label-success">Y</span>|<span class="label label-success">Y</span>|
+|SoChain|[http://chain.so](http://chain.so)|sochain|6|<span class="label label-danger">N</span>|<span class="label label-danger">N</span>|<span class="label label-danger">N</span>|<span class="label label-danger">N</span>|
+|Blockr|[http://blockr.io](http://blockr.io)|blockr|4|<span class="label label-danger">N</span>|<span class="label label-danger">N</span>|<span class="label label-danger">N</span>|<span class="label label-danger">N</span>|
+|HelloBlock|[http://helloblock.io](http://helloblock.io)|helloblock|1|<span class="label label-danger">N</span>|<span class="label label-success">Y</span>|<span class="label label-success">Y</span>|<span class="label label-danger">N</span>|
 
 A brief explanation of the columns listed above:
 
@@ -17,6 +17,7 @@ A brief explanation of the columns listed above:
 * __Markets__ refers to support for the [market conditions](../../../plugins/markets/) plugin included with the framework
 * __Pagination__ refers to the ability to [paginate transactions](#api_transactions) within addresses
 * __Addresses__ refers to the ability to check multiple addresses with one call (used for [prioritizer](../../../applications/prioritizer) theme)
+* __DNKeys__ refers to the ability to check publicly listed addresses using the [DNKey](http://dnkey.me) specification
 
 -----------------------------
 
@@ -28,6 +29,8 @@ The API Module features the following functions:
 * [`$.fn.blockstrap.api.addresses`(hashes, blockchain, callback, service)](#api_addresses)
 * [`$.fn.blockstrap.api.balance`(hash, blockchain, callback, service)](#api_balance)
 * [`$.fn.blockstrap.api.block`(height, blockchain, callback, service, return_raw)](#api_block)
+* [`$.fn.blockstrap.api.dnkey`(id, blockchain, callback, service, return_raw)](#api_dnkey)
+* [`$.fn.blockstrap.api.dnkeys`(id, blockchain, callback, service, return_raw)](#api_dnkeys)
 * [`$.fn.blockstrap.api.map`(blockchain)](#api_map)
 * [`$.fn.blockstrap.api.market`(blockchain, stat, callback, service, return_raw)](#api_market)
 * [`$.fn.blockstrap.api.request`(url, callback, type, data, blockchain, call, username, password)](#api_request)
@@ -174,6 +177,22 @@ api.balance('1121cQLqCsDsLPAkJW5ddTCREZ7Bp4ufrk', 'btc', function(results)
 Which should provide the results as an integer.
 
 The `service` variable allows you to override the default API service for individual calls by providing one listed in configuration.
+
+<a href="#docs_home"><small>- back to top</small></a>
+
+--------------------------------------------------------------------------------
+
+#### `api.dnkey`(id, blockchain, callback, service, return_raw) <a name="api_dnkey" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+
+This function uses the selected `id` and `blockchain` to search for the publicly listed [DNKey](http://dnkey.me) and returns the relevant address (public key) if it is listed with the associated DNS TXT record.
+
+<a href="#docs_home"><small>- back to top</small></a>
+
+--------------------------------------------------------------------------------
+
+#### `api.dnkeys`(id, blockchain, callback, service, return_raw) <a name="api_dnkey" class="pull-right" href="#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a>
+
+This function uses the selected `id` to search for the publicly listed [DNKeys](http://dnkey.me) whilst ignoring the `blockchain` and `blockstrap` variables with hard-coded corresponding values of `multi` and `blockstrap`. To be honest, it's a complete hack and should not really be here, but we really wanted to ship 0.5 as early as possible.
 
 <a href="#docs_home"><small>- back to top</small></a>
 

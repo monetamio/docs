@@ -23,7 +23,7 @@ When first creating a new contacts called ___Blockstrap Donations___, informatio
         }
     ],
     data: {
-        contacts_email: "info@blockstrap.com"
+        contacts_dnk: false
     },
     tx_to: 0,
     tx_from: 0
@@ -33,9 +33,9 @@ When first creating a new contacts called ___Blockstrap Donations___, informatio
 
 Please note that the `id` field is auto-generated base dupon the `name`.
 
-The `blockchain` selection is a parameter of the function and should only allow those supported via configuration. Verified `addresses` can be added to each blockchain. Although the Blockstrap data structure is set-up for multiple addresses within multiple blockchains, the current UX implementation with the default wallet only allows each contact to use a single blockchain / address.
+The `blockchain` selection is a parameter of the function and should only allow those supported via configuration. Verified `addresses` can be added to each blockchain. Although the Blockstrap data structure is set-up for multiple addresses within multiple blockchains, the current UX implementation with the default wallet only allows each contact to use a single blockchain / address, unless you are importing contact addresses using the [DNKey](http://dnkey.me) specifications as supported by the Blockstrap API.
 
-The `data` field allows you to assign arbitary information to contacts, such as email addresses.
+The `data` field allows you to assign arbitary information to contacts, such as email addresses or DNKs.
 
 The `tx_to` and `tx_from` fields are not yet supported.
 
