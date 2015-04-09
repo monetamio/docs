@@ -9,6 +9,8 @@ This page should contain all the relevant changes made to the entire Blockstrap 
 
 The following new functions were added:
 
+* [DNKey](http://dnkey.me) Support (distributd usernames for addresses)
+* api.dnkey and api.dnkeys
 * bs.core.add_commas
 * bs.core.patch
 * bs.core.test_results_table
