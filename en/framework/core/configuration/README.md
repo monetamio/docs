@@ -67,7 +67,7 @@ Lines 113 onwards are used solely for internal tests and API mapping.
 <!--pre-javascript-->
 ```
 {
-    "v": "0.5.0.1", // Used internally to perform updates
+    "v": "0.5.0.2", // Used internally to perform updates
     "public": false, // Defines whether public user-views are required
     "security": false, // If user views are required, administrator needs to enter security hash
     "role": "admin", // What role should the appropriate user be given...?

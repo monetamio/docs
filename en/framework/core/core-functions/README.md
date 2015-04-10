@@ -552,6 +552,8 @@ This function loads and initiates the requested patch. Patches are used to handl
     * patches
         * 0501
             * patch-0501.js
+        * 0502
+            * patch-0502.js
             
 _Please note that the `index.html` file and `css` and `js` folders are shown above for context only._
 

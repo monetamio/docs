@@ -5,7 +5,11 @@ This page should contain all the relevant changes made to the entire Blockstrap 
 
 -----------------
 
-#### April, 2015: [Framework](../framework/) __v0.5.0.1__
+#### 10th of April, 2015: [Framework](../framework/) __v0.5.0.2__
+
+* added patch0502 to account for `drk` to `dash` and `drkt` to `dasht`
+
+#### 7th of April, 2015: [Framework](../framework/) __v0.5.0.1__
 
 The following new functions were added:
 
