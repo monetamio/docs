@@ -1,4 +1,4 @@
-## Blockstrap Framework
+## Blockstrap Wallet Framework
 
 The Blockstrap wallet framework is an open source component of the Blockstrap stack. It provides a front-end HTML5 interface for web-applications to communicate and manipulate blockchains and other dynamic data stores via external APIs. 
 

@@ -1,6 +1,8 @@
-## Welcome to The Blockstrap Community
+## Welcome to the Blockstrap Community
 
-This documentation can be viewed online at [http://docs.blockstrap.com/](http://docs.blockstrap.com/) or even [downloaded](https://github.com/blockstrap/docs/) and run locally from your own server.
+This documentation can be viewed online at [http://docs.blockstrap.com/](http://docs.blockstrap.com/) or alternatively [downloaded via GitHub](https://github.com/blockstrap/docs/) and run locally from your own server.
+
+**Disclaimer:** _We're currently a small team working on a large project, as such the documentation of our work is a continual effort as more features and functions are added over time. If there is any element of our stack that you feel is lacking appropriate documentation please reach out to us at [support@blockstrap.com](mailto:support@blockstrap.com) and we'll get right to work on improving the page and answering your query. We genuinely appreciate your patience as we improve Blockstrap experience._
 
 ---------------------
 
