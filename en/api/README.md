@@ -6,7 +6,7 @@ Currently in BETA, Blockstrap’s API makes it easy for developers to quickly an
 
 The Blockstrap API operates as a simple RESTful JSON API that can be accessed via **`http://api.blockstrap.com`** or **`https://api.blockstrap.com`**.
 
-If you need any help with your implementation or have requests for features, please reach out to us at [support@blockstrap.com](mailto:support@blockstrap.com). By requesting an API key you'll automatically be kept up to date on new features and changes as they are rolled out.
+If you need any help with your implementation or have requests for features please reach out to us at [support@blockstrap.com](mailto:support@blockstrap.com). By requesting an API key you'll automatically be kept up to date on new features and changes as they are rolled out.
 
 
 
