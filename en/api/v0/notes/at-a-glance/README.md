@@ -1,16 +1,17 @@
 ## At A Glance
 
-A Cheatsheet of Blockstrap API methods.
+A cheatsheet of Blockstrap API methods.
 
 Notes:
 * `<API_ENDPOINT>` http://api.blockstrap.com OR https://api.blockstrap.com
-* `<CHN>` Chain to use (xxx**T**=Testnet): BTC, BTCT, DOGE, DOGT, LTC, LTCT, PPC, PPCT
-* Additional Transaction information, add to query string: `?showtxn=1` `?showtxnio=1`
+* `<CHN>` Chain to use (xxx**T** = **testnet**): BTC, BTCT, DOGE, DOGT, LTC, LTCT, DASH, DASHT
+* Additional transaction information, add to query string: `?showtxn=1` `?showtxnio=1`
 * Address functions include pagination query string options: `records=500`, `skip=1000`
 * Values are in Satoshi (or chain equivalent) Fiat currencies are approximate values.
 * [Block object](../../blocks/blockobject/) - [Transaction object](../../transactions/transactionobject/) -
 [Address object](../../addresses/addressobject/) -[Request object](../requestobject/)
 
+### Example calls
 
 | Method | URL | Notes |
 |--------|-----|-------|
