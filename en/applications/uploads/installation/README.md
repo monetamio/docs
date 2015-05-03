@@ -4,13 +4,16 @@ After having [downloaded](../../../downloads/) the blockchain uploader, you will
 
 <!--pre-html-->
 ```
-[app]
-id = BCAUTH
+[aws]
+key = ADD_YOUR_S3_API_KEY_HERE
+secret = ADD_YOUR_S3_API_SECRET_HERE
+bucket = ADD_THE_BUCKET_NAME_ALREADY_CREATED_HERE
+
+[urls]
+image = php/image.php
 
 [salts]
-cookie = XXX
-address = YYY
-username = ZZZ
+file_hash = XXX
 
 [addresses]
 btc = 1GjHvbkCyYpy3uaNPvHsxe2EptH2RxEvMt
@@ -22,6 +25,14 @@ dasht = y67MSj12Wm9YJA4291VPpnC8pGS128tH4J
 doget = ncq5H5EdCwmGVtQtquk2TKyXDTNApoDpwq
 ltct = moyssLnSTs6EBWDoyRMaXkUKnDmLCSXBte
 ```
+
+The `aws` settings are used to upload files.
+
+The `salts` allow you to add network specific hashing.
+
+The `addresses` are used recieve payments for uploads and logging credentials.
+
+-----
 
 Please note that the full source code for this application is available via [GitHub](http://github.com/blockstrap/faucets).
 
