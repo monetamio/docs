@@ -31,6 +31,13 @@ btct = mxaFY8bG7DgH6AGe4dT3EAaTRd3NG96UHk
 dasht = xyq7bwGUzPbSaCucM8r9LvhKZwKVfvacDU
 doget = nhY8rzwwQBVj7UkPUDsdZGFMXDCyeCd9FK
 ltct = mwJ9ebyT8kzaCECyUqwNU8cRj5aU8jL2op
+
+[codes]
+lifetime = 10
+daily = 2
+weekly = 4
+monthly = 6
+whitelist = admin@your-domain.com, admin@your-friends-domain.com
 ```
 
 The `salts` allow you to securely generate deterministic components whislt the `keys` provide you with a way to sign (server-side) un-signed raw transactions generated within the browser.
@@ -38,6 +45,8 @@ The `salts` allow you to securely generate deterministic components whislt the `
 The `ports` define where the local QTs are hosted whereas the `app` details are used when sending emails.
 
 The `addresses` must refer to those that have `keys` listed above.
+
+The `codes` govern rules regarding which email addresses are able to collect additional payouts. The lifetime, daily, weekly and monthly provide limits based upon the (slightly delayed) Mandrill __Tags__ API whereas the whitelist ables you to override these settings for friends and family.
 
 -----
 
