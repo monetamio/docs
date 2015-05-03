@@ -1,7 +1,28 @@
 ## Ruby SDK
 
-And then?
+The [Ruby SDK](https://github.com/blockstrap/blockstrap-ruby) currently supports the following modules:
 
+* __api__ (requires cache)
+
+## Installation
+
+Add this line to your application's Gemfile:
+
+```ruby
+gem 'blockstrap-ruby'
+```
+
+And then execute:
+
+    $ bundle
+
+Or install it yourself as:
+
+    $ gem install blockstrap-ruby
+
+## Usage
+
+More instructions on example usage coming soon.
 
 --------------------------------------------------------------------------------
 

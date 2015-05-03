@@ -1,6 +1,6 @@
 ## PHP SDK
 
-The PHP SDK currently supports the following modules:
+The [PHP SDK](https://github.com/blockstrap/blockstrap-php) currently supports the following modules:
 
 * __blockstrap__ (core class)
 * __api__ (requires cache)
