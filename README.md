@@ -14,6 +14,9 @@ This should provide a complete table of contents for all English documentation.
 * [Downloads](en/downloads/)
 * [Plugins](en/plugins/)
     * [Markets](en/plugins/markets/)
+* [SDKs](en/sdks/)
+    * [PHP](en/sdks/php/)
+    * [PHP](en/sdks/ruby/)
 * [Change Log](en/changes/)
 
 #### Applications
@@ -27,6 +30,12 @@ This should provide a complete table of contents for all English documentation.
     * [Installation](en/applications/explorer/installation/)
 * [Prioritizer](en/applications/prioritizer/)
     * [Installation](en/applications/prioritizer/installation/)
+* [BlockAuth](en/applications/blockauth/)
+    * [Installation](en/applications/blockauth/installation/)
+* [Faucets](en/applications/faucets/)
+    * [Installation](en/applications/faucets/installation/)
+* [Uploads](en/applications/uploads/)
+    * [Installation](en/applications/uploads/installation/)
 
 #### Framework
 

@@ -101,6 +101,11 @@
                     "text": "Plugins"
                 },
                 {
+                    "slug": "sdks/",
+                    "css": "",
+                    "text": "SDKs"
+                },
+                {
                     "slug": "changes/",
                     "css": "",
                     "text": "Change Log"
@@ -126,6 +131,21 @@
                     "slug": "applications/prioritizer/",
                     "css": "",
                     "text": "Priortizer"
+                },
+                {
+                    "slug": "applications/blockauth/",
+                    "css": "",
+                    "text": "BlockAuth"
+                },
+                {
+                    "slug": "applications/faucets/",
+                    "css": "",
+                    "text": "Faucets"
+                },
+                {
+                    "slug": "applications/uploads/",
+                    "css": "",
+                    "text": "Blockchain Uploader"
                 }
             ]
         },
