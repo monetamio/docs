@@ -18,7 +18,7 @@ This should provide a complete table of contents for all English documentation.
     * [Markets](en/plugins/markets/)
 * [SDKs](en/sdks/)
     * [PHP](en/sdks/php/)
-    * [PHP](en/sdks/ruby/)
+    * [RUBY](en/sdks/ruby/)
 * [Change Log](en/changes/)
 
 #### Applications
